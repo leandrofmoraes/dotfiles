@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/run/media/leandro-f/Arquivos/Cursos/Informatica/Web/Exercicios/Projeto do Curso de Flexbox'
+let g:netrw_dirhist_6='/run/media/leandro-f/Arquivos/Cursos/Informatica/Web/Exercicios/Projeto do Curso de Flexbox/css'
+let g:netrw_dirhist_5='/run/media/leandro-f/Arquivos/Cursos/Informatica/Web/Exercicios/Projeto do Curso de Flexbox'
+let g:netrw_dirhist_4='/run/media/leandro-f/Arquivos/Cursos/Informatica/Web/Exercicios'
+let g:netrw_dirhist_3='/run/media/leandro-f/Arquivos/Cursos/Informatica/Web'
+let g:netrw_dirhist_2='/run/media/leandro-f/Arquivos/Cursos/Informatica'
+let g:netrw_dirhist_1='/run/media/leandro-f/Arquivos/Cursos'
+let g:netrw_dirhist_0='/run/media/leandro-f/Arquivos'
+let g:netrw_dirhist_9='/run/media/leandro-f'
+let g:netrw_dirhist_8='/run/media'

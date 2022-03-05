@@ -1,0 +1,104 @@
+#! /bin/sh
+
+####################################################
+#                                                   #
+#  ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗    #
+#  ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║    #
+#  ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║    #
+#  ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║    #
+#  ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║    #
+#  ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝    # 
+#####################################################
+
+# export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus
+# dbus-launch bspwm-session
+
+sxhkd &
+# pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor eDP -d 1 2 3 4 5
+# bspc monitor HDMI1 -d 6 7 8 9 0
+# bspc monitor -d I II III IV V VI VII VIII IX X
+
+# checa se existem dois monitores definidos
+# MON=$(xrandr --listmonitors | grep Monitors | cut -b 11-)
+
+    # caso tenha, executa o setup para dois
+# if [[ $MON == 2 ]] ; then
+#     xrandr --output eDP1 --primary --left-of eDP1 --auto &
+#     bspc monitor eDP -d 1 2 3 4 5 
+#     bspc monitor HDMI -d 6 7 8 9
+# else
+#     bspc monitor eDP -d 1 2 3 4 5
+# fi
+
+
+########## Window Settings ##############
+bspc config border_width         1
+bspc config window_gap           10  
+bspc config focus_follows_pointer	true
+
+bspc config split_ratio          0.50 
+# bspc config split_ratio          0.52
+
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+########## Border Colors #################
+# bspc config focused_border_color "#2E3440"
+# bspc config normal_border_color "#2E3440"
+
+### Dracula Theme ###
+# bspc wm -r
+bspc config presel_feedback_color "#6272a4"
+bspc config normal_border_color "#44475a"
+
+# bspc config active_border_color "#bd93f9"
+# bspc config focused_border_color "#ff79c6"
+#--Cyan
+# bspc config active_border_color "#6272a4"
+bspc config active_border_color "#62AEEF"
+bspc config focused_border_color "#8be9fd"
+
+
+######### Program settings ################
+# bspc rule -a Gimp desktop='^8' state=floating follow=on
+# bspc rule -a mplayer2 state=floating
+# bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+# bspc rule -a TelegramDesktop desktop='^4'
+bspc rule -a Firefox desktop='^2' state=floating
+bspc rule -a Chrome desktop='^2' state=floating
+bspc rule -a Thunar state=floating
+
+######### Other Settings ################
+xsetroot -cursor_name left_ptr &
+xbacklight -set 40
+
+######## MY picom :) ###################
+# picom  &
+picom -b --experimental-backends
+# picom -b
+
+######## THe real beauty behind rice ####
+# nitrogen --restore &
+~/.fehbg
+
+######### My Bar ###############
+# polybar main 
+#polybar example -c ~/.config/polybar/Gloom-Oned-Theme/polybar/config.ini
+~/.config/polybar/switch_theme.sh wolf &
+
+# variável guarda a quantidade de monitores
+# MONS=$(polybar --list-monitors | wc -l)
+    # caso tenha dois, execute as duas barras
+    # A bar1 é a barra com mais informações. Ela irá para o monitor
+    # externo (HDMI1) caso ele esteja conectado.
+# if [[ "$MONS" == "2" ]] ; then
+#     MON1=HDMI1 polybar --reload bar2 &
+#     MON2=eDP1 polybar --reload bar1 &
+# else
+#     MON1=eDP1 polybar --reload bar1 &
+# fi
+######## Dunst #############
+# dunst ~/.config/dunst/dunstrc &

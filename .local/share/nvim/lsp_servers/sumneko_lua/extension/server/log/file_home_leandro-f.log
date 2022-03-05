@@ -1,0 +1,1346 @@
+[15:56:43.656][info] [#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:49]: Lua Lsp startup, root: 	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server
+[15:56:43.657][debug][#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:50]: ROOT:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server
+[15:56:43.657][debug][#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:51]: LOGPATH:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/log
+[15:56:43.657][debug][#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:52]: METAPATH:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta
+[15:56:43.658][debug][#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:53]: VERSION:	2.6.4
+[15:56:44.066][info] [#0:script/service/telemetry.lua:22]: Telemetry Token:	1DBB19B5C896E263
+[15:56:44.101][info] [#0:script/pub/pub.lua:48]: Create brave:	1
+[15:56:44.102][info] [#0:script/pub/pub.lua:48]: Create brave:	2
+[15:56:44.102][info] [#0:script/pub/pub.lua:48]: Create brave:	3
+[15:56:44.103][info] [#0:script/pub/pub.lua:48]: Create brave:	4
+[15:56:44.104][debug][#0:script/service/service.lua:141]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 1.350 MB
+        # 00 : 1.350 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[15:56:44.443][debug][#0:script/client.lua:399]: Client init	{
+    capabilities = {
+        callHierarchy = {
+            dynamicRegistration = false,
+        },
+        textDocument = {
+            codeAction = {
+                codeActionLiteralSupport = {
+                    codeActionKind = {
+                        valueSet = {
+                            [01] = "",
+                            [02] = "Empty",
+                            [03] = "QuickFix",
+                            [04] = "Refactor",
+                            [05] = "RefactorExtract",
+                            [06] = "RefactorInline",
+                            [07] = "RefactorRewrite",
+                            [08] = "Source",
+                            [09] = "SourceOrganizeImports",
+                            [10] = "quickfix",
+                            [11] = "refactor",
+                            [12] = "refactor.extract",
+                            [13] = "refactor.inline",
+                            [14] = "refactor.rewrite",
+                            [15] = "source",
+                            [16] = "source.organizeImports",
+                        },
+                    },
+                },
+                dataSupport = true,
+                dynamicRegistration = false,
+                resolveSupport = {
+                    properties = {
+                        [1] = "edit",
+                    },
+                },
+            },
+            completion = {
+                completionItem = {
+                    commitCharactersSupport = true,
+                    deprecatedSupport = true,
+                    documentationFormat = {
+                        [1] = "markdown",
+                        [2] = "plaintext",
+                    },
+                    insertReplaceSupport = true,
+                    labelDetailsSupport = true,
+                    preselectSupport = true,
+                    resolveSupport = {
+                        properties = {
+                            [1] = "documentation",
+                            [2] = "detail",
+                            [3] = "additionalTextEdits",
+                        },
+                    },
+                    snippetSupport = true,
+                    tagSupport = {
+                        valueSet = {
+                            [1] = 1,
+                        },
+                    },
+                },
+                completionItemKind = {
+                    valueSet = {
+                        [01] = 1,
+                        [02] = 2,
+                        [03] = 3,
+                        [04] = 4,
+                        [05] = 5,
+                        [06] = 6,
+                        [07] = 7,
+                        [08] = 8,
+                        [09] = 9,
+                        [10] = 10,
+                        [11] = 11,
+                        [12] = 12,
+                        [13] = 13,
+                        [14] = 14,
+                        [15] = 15,
+                        [16] = 16,
+                        [17] = 17,
+                        [18] = 18,
+                        [19] = 19,
+                        [20] = 20,
+                        [21] = 21,
+                        [22] = 22,
+                        [23] = 23,
+                        [24] = 24,
+                        [25] = 25,
+                    },
+                },
+                contextSupport = false,
+                dynamicRegistration = false,
+            },
+            declaration = {
+                linkSupport = true,
+            },
+            definition = {
+                linkSupport = true,
+            },
+            documentHighlight = {
+                dynamicRegistration = false,
+            },
+            documentSymbol = {
+                dynamicRegistration = false,
+                hierarchicalDocumentSymbolSupport = true,
+                symbolKind = {
+                    valueSet = {
+                        [01] = 1,
+                        [02] = 2,
+                        [03] = 3,
+                        [04] = 4,
+                        [05] = 5,
+                        [06] = 6,
+                        [07] = 7,
+                        [08] = 8,
+                        [09] = 9,
+                        [10] = 10,
+                        [11] = 11,
+                        [12] = 12,
+                        [13] = 13,
+                        [14] = 14,
+                        [15] = 15,
+                        [16] = 16,
+                        [17] = 17,
+                        [18] = 18,
+                        [19] = 19,
+                        [20] = 20,
+                        [21] = 21,
+                        [22] = 22,
+                        [23] = 23,
+                        [24] = 24,
+                        [25] = 25,
+                        [26] = 26,
+                    },
+                },
+            },
+            hover = {
+                contentFormat = {
+                    [1] = "markdown",
+                    [2] = "plaintext",
+                },
+                dynamicRegistration = false,
+            },
+            implementation = {
+                linkSupport = true,
+            },
+            publishDiagnostics = {
+                relatedInformation = true,
+                tagSupport = {
+                    valueSet = {
+                        [1] = 1,
+                        [2] = 2,
+                    },
+                },
+            },
+            references = {
+                dynamicRegistration = false,
+            },
+            rename = {
+                dynamicRegistration = false,
+                prepareSupport = true,
+            },
+            signatureHelp = {
+                dynamicRegistration = false,
+                signatureInformation = {
+                    activeParameterSupport = true,
+                    documentationFormat = {
+                        [1] = "markdown",
+                        [2] = "plaintext",
+                    },
+                    parameterInformation = {
+                        labelOffsetSupport = true,
+                    },
+                },
+            },
+            synchronization = {
+                didSave = true,
+                dynamicRegistration = false,
+                willSave = false,
+                willSaveWaitUntil = false,
+            },
+            typeDefinition = {
+                linkSupport = true,
+            },
+        },
+        window = {
+            showDocument = {
+                support = false,
+            },
+            showMessage = {
+                messageActionItem = {
+                    additionalPropertiesSupport = false,
+                },
+            },
+            workDoneProgress = true,
+        },
+        workspace = {
+            applyEdit = true,
+            configuration = true,
+            symbol = {
+                dynamicRegistration = false,
+                hierarchicalWorkspaceSymbolSupport = true,
+                symbolKind = {
+                    valueSet = {
+                        [01] = 1,
+                        [02] = 2,
+                        [03] = 3,
+                        [04] = 4,
+                        [05] = 5,
+                        [06] = 6,
+                        [07] = 7,
+                        [08] = 8,
+                        [09] = 9,
+                        [10] = 10,
+                        [11] = 11,
+                        [12] = 12,
+                        [13] = 13,
+                        [14] = 14,
+                        [15] = 15,
+                        [16] = 16,
+                        [17] = 17,
+                        [18] = 18,
+                        [19] = 19,
+                        [20] = 20,
+                        [21] = 21,
+                        [22] = 22,
+                        [23] = 23,
+                        [24] = 24,
+                        [25] = 25,
+                        [26] = 26,
+                    },
+                },
+            },
+            workspaceEdit = {
+                resourceOperations = {
+                    [1] = "rename",
+                    [2] = "create",
+                    [3] = "delete",
+                },
+            },
+            workspaceFolders = true,
+        },
+    },
+    clientInfo = {
+        name = "Neovim",
+        version = "0.6.1",
+    },
+    initializationOptions = {
+    },
+    processId = 81667,
+    rootPath = "/home/leandro-f",
+    rootUri = "file:///home/leandro-f",
+    trace = "off",
+    workspaceFolders = {
+        [1] = {
+            name = "/home/leandro-f",
+            uri = "file:///home/leandro-f",
+        },
+    },
+}
+[15:56:44.444][info] [#0:script/language.lua:135]: VSC language: nil
+[15:56:44.444][info] [#0:script/language.lua:136]: LS  language: en-us
+[15:56:44.444][info] [#0:script/workspace/workspace.lua:37]: Workspace init root: 	file:///home/leandro-f
+[15:56:44.445][info] [#0:script/workspace/workspace.lua:41]: Log path: 	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/log/file_home_leandro-f.log
+[15:56:44.453][info] [#0:script/workspace/workspace.lua:47]: Workspace create: 	file:///home/leandro-f
+[15:56:44.453][debug][#0:script/filewatch.lua:35]: fw.add	/home/leandro-f
+[15:56:44.666][debug][#0:script/provider/provider.lua:37]: Load config from client	file:///home/leandro-f
+[15:56:44.667][debug][#0:script/provider/provider.lua:38]: {
+    Lua = {
+        completion = {
+            callSnippet = "Replace",
+        },
+        diagnostics = {
+            globals = {
+                [1] = "vim",
+                [2] = "lvim",
+            },
+        },
+        runtime = {
+            path = {
+                [1] = "?.lua",
+                [2] = "?/init.lua",
+            },
+            version = "LuaJIT",
+        },
+        telemetry = {
+            enable = false,
+        },
+        workspace = {
+            library = {
+                ["/home/leandro-f/.local/share/lunarvim/lvim/lua"] = true,
+                ["/home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types"] = true,
+                ["/home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua"] = true,
+                ["/usr/share/nvim/runtime/lua"] = true,
+            },
+            maxPreload = 100000,
+            preloadFileSize = 10000,
+        },
+    },
+}
+[15:56:44.668][debug][#0:script/provider/provider.lua:37]: Load config from client	file:///home/leandro-f
+[15:56:44.669][debug][#0:script/provider/provider.lua:38]: {
+    Lua = {
+        completion = {
+            callSnippet = "Replace",
+        },
+        diagnostics = {
+            globals = {
+                [1] = "vim",
+                [2] = "lvim",
+            },
+        },
+        runtime = {
+            path = {
+                [1] = "?.lua",
+                [2] = "?/init.lua",
+            },
+            version = "LuaJIT",
+        },
+        telemetry = {
+            enable = false,
+        },
+        workspace = {
+            library = {
+                ["/home/leandro-f/.local/share/lunarvim/lvim/lua"] = true,
+                ["/home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types"] = true,
+                ["/home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua"] = true,
+                ["/usr/share/nvim/runtime/lua"] = true,
+            },
+            maxPreload = 100000,
+            preloadFileSize = 10000,
+        },
+    },
+}
+[15:56:44.771][debug][#0:script/provider/provider.lua:51]: Load config from client	fallback
+[15:56:44.772][debug][#0:script/provider/provider.lua:52]: {
+    Lua = {
+        completion = {
+            callSnippet = "Replace",
+        },
+        diagnostics = {
+            globals = {
+                [1] = "vim",
+                [2] = "lvim",
+            },
+        },
+        runtime = {
+            path = {
+                [1] = "?.lua",
+                [2] = "?/init.lua",
+            },
+            version = "LuaJIT",
+        },
+        telemetry = {
+            enable = false,
+        },
+        workspace = {
+            library = {
+                ["/home/leandro-f/.local/share/lunarvim/lvim/lua"] = true,
+                ["/home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types"] = true,
+                ["/home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua"] = true,
+                ["/usr/share/nvim/runtime/lua"] = true,
+            },
+            maxPreload = 100000,
+            preloadFileSize = 10000,
+        },
+    },
+}
+[15:56:44.773][info] [#0:script/library.lua:206]: Init builtin library at:	nil
+[15:56:44.784][info] [#0:script/library.lua:240]: Builtin status:	io	default
+[15:56:44.789][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/io.lua
+[15:56:44.790][info] [#0:script/library.lua:240]: Builtin status:	utf8	default
+[15:56:44.792][info] [#0:script/library.lua:240]: Builtin status:	debug	default
+[15:56:44.797][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/debug.lua
+[15:56:44.798][info] [#0:script/library.lua:240]: Builtin status:	table	default
+[15:56:44.800][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/table.lua
+[15:56:44.800][info] [#0:script/library.lua:240]: Builtin status:	package	default
+[15:56:44.803][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/package.lua
+[15:56:44.803][info] [#0:script/library.lua:240]: Builtin status:	builtin	default
+[15:56:44.804][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/builtin.lua
+[15:56:44.804][info] [#0:script/library.lua:240]: Builtin status:	jit	default
+[15:56:44.805][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/jit.lua
+[15:56:44.805][info] [#0:script/library.lua:240]: Builtin status:	string	default
+[15:56:44.814][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/string.lua
+[15:56:44.814][info] [#0:script/library.lua:240]: Builtin status:	ffi	default
+[15:56:44.816][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/ffi.lua
+[15:56:44.816][info] [#0:script/library.lua:240]: Builtin status:	math	default
+[15:56:44.822][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/math.lua
+[15:56:44.822][info] [#0:script/library.lua:240]: Builtin status:	os	default
+[15:56:44.825][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/os.lua
+[15:56:44.825][info] [#0:script/library.lua:240]: Builtin status:	bit32	default
+[15:56:44.829][info] [#0:script/library.lua:240]: Builtin status:	basic	default
+[15:56:44.842][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/basic.lua
+[15:56:44.842][info] [#0:script/library.lua:240]: Builtin status:	coroutine	default
+[15:56:44.845][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/coroutine.lua
+[15:56:44.845][info] [#0:script/library.lua:240]: Builtin status:	bit	default
+[15:56:44.846][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/bit.lua
+[15:56:44.850][info] [#0:script/library.lua:206]: Init builtin library at:	file:///home/leandro-f
+[15:56:44.861][info] [#0:script/library.lua:240]: Builtin status:	io	default
+[15:56:44.867][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/io.lua
+[15:56:44.867][info] [#0:script/library.lua:240]: Builtin status:	utf8	default
+[15:56:44.869][info] [#0:script/library.lua:240]: Builtin status:	debug	default
+[15:56:44.875][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/debug.lua
+[15:56:44.875][info] [#0:script/library.lua:240]: Builtin status:	table	default
+[15:56:44.878][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/table.lua
+[15:56:44.878][info] [#0:script/library.lua:240]: Builtin status:	package	default
+[15:56:44.880][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/package.lua
+[15:56:44.880][info] [#0:script/library.lua:240]: Builtin status:	builtin	default
+[15:56:44.881][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/builtin.lua
+[15:56:44.882][info] [#0:script/library.lua:240]: Builtin status:	jit	default
+[15:56:44.883][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/jit.lua
+[15:56:44.883][info] [#0:script/library.lua:240]: Builtin status:	string	default
+[15:56:44.892][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/string.lua
+[15:56:44.892][info] [#0:script/library.lua:240]: Builtin status:	ffi	default
+[15:56:44.893][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/ffi.lua
+[15:56:44.894][info] [#0:script/library.lua:240]: Builtin status:	math	default
+[15:56:44.899][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/math.lua
+[15:56:44.900][info] [#0:script/library.lua:240]: Builtin status:	os	default
+[15:56:44.903][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/os.lua
+[15:56:44.904][info] [#0:script/library.lua:240]: Builtin status:	bit32	default
+[15:56:44.907][info] [#0:script/library.lua:240]: Builtin status:	basic	default
+[15:56:44.921][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/basic.lua
+[15:56:44.921][info] [#0:script/library.lua:240]: Builtin status:	coroutine	default
+[15:56:44.923][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/coroutine.lua
+[15:56:44.924][info] [#0:script/library.lua:240]: Builtin status:	bit	default
+[15:56:44.925][info] [#0:script/library.lua:252]: Meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8/bit.lua
+[15:56:44.929][info] [#0:script/plugin.lua:80]: plugin path:	nil
+[15:56:44.929][info] [#0:script/plugin.lua:80]: plugin path:	nil
+[15:56:44.929][debug][#0:script/provider/provider.lua:51]: Load config from client	fallback
+[15:56:44.930][debug][#0:script/provider/provider.lua:52]: {
+    Lua = {
+        completion = {
+            callSnippet = "Replace",
+        },
+        diagnostics = {
+            globals = {
+                [1] = "vim",
+                [2] = "lvim",
+            },
+        },
+        runtime = {
+            path = {
+                [1] = "?.lua",
+                [2] = "?/init.lua",
+            },
+            version = "LuaJIT",
+        },
+        telemetry = {
+            enable = false,
+        },
+        workspace = {
+            library = {
+                ["/home/leandro-f/.local/share/lunarvim/lvim/lua"] = true,
+                ["/home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types"] = true,
+                ["/home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua"] = true,
+                ["/usr/share/nvim/runtime/lua"] = true,
+            },
+            maxPreload = 100000,
+            preloadFileSize = 10000,
+        },
+    },
+}
+[15:56:44.931][debug][#0:script/proto/proto.lua:174]: Method [initialized] takes [0.289]sec. {
+    jsonrpc = "2.0",
+    method = "initialized",
+    params = {
+    },
+}
+[15:56:44.932][debug][#0:script/proto/proto.lua:174]: Method [workspace/didChangeConfiguration] takes [0.279]sec. {
+    jsonrpc = "2.0",
+    method = "workspace/didChangeConfiguration",
+    params = {
+        settings = {
+            Lua = {
+                completion = {
+                    callSnippet = "Replace",
+                },
+                diagnostics = {
+                    globals = {
+                        [1] = "vim",
+                        [2] = "lvim",
+                    },
+                },
+                runtime = {
+                    path = {
+                        [1] = "?.lua",
+                        [2] = "?/init.lua",
+                    },
+                    version = "LuaJIT",
+                },
+                telemetry = {
+                    enable = false,
+                },
+                workspace = {
+                    library = {
+                        ["/home/leandro-f/.local/share/lunarvim/lvim/lua"] = true,
+                        ["/home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types"] = true,
+                        ["/home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua"] = true,
+                        ["/usr/share/nvim/runtime/lua"] = true,
+                    },
+                    maxPreload = 100000,
+                    preloadFileSize = 10000,
+                },
+            },
+        },
+    },
+}
+[15:56:44.932][debug][#0:script/provider/semantic-tokens.lua:50]: Refresh semantic tokens.
+[15:56:44.933][debug][#0:script/provider/semantic-tokens.lua:50]: Refresh semantic tokens.
+[15:56:44.933][debug][#0:script/provider/semantic-tokens.lua:50]: Refresh semantic tokens.
+[15:56:44.934][debug][#0:script/provider/semantic-tokens.lua:50]: Refresh semantic tokens.
+[15:56:44.934][info] [#0:script/workspace/workspace.lua:275]: Preload start:	file:///home/leandro-f
+[15:56:44.935][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/Área de trabalho/
+[15:56:44.935][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/Documentos/
+[15:56:44.935][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/Downloads/
+[15:56:44.935][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/Modelos/
+[15:56:44.935][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/Música/
+[15:56:44.935][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/Público/
+[15:56:44.935][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/Vídeos/
+[15:56:44.935][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/workspace/
+[15:56:44.935][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.cargo/
+[15:56:44.935][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.lyrics/
+[15:56:44.935][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.mozilla/
+[15:56:44.935][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.fonts/
+[15:56:44.935][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.icons/
+[15:56:44.936][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.kde4/
+[15:56:44.936][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.npm/
+[15:56:44.936][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.pki/
+[15:56:44.936][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.rustup/
+[15:56:44.936][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.subversion/
+[15:56:44.936][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.themes/
+[15:56:44.936][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.vim/
+[15:56:44.936][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.vscode/
+[15:56:44.936][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.yarn/
+[15:56:44.936][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.bash_history
+[15:56:44.936][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.bash_logout
+[15:56:44.936][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.bash_profile
+[15:56:44.936][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.dir_colors
+[15:56:44.937][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.fonts.conf
+[15:56:44.937][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.gitconfig
+[15:56:44.937][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.gitignore.old
+[15:56:44.937][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.gtkrc-2.0
+[15:56:44.937][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.lesshst
+[15:56:44.937][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.sdirs
+[15:56:44.937][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.viminfo
+[15:56:44.937][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.wget-hsts
+[15:56:44.937][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.Xauthority
+[15:56:44.937][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.Xclients
+[15:56:44.937][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.xinitrc
+[15:56:44.937][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.yarnrc
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.zcompdump
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.zhistory
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!.fehbg
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!.zshrc
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!.bashrc
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!.my_aliases
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!.my_functions
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!.p10k.zsh
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	Imagens/*
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/Imagens/wallpapers/
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/Imagens/Screenshots/
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.cache/
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.config/*
+[15:56:44.938][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/bspwm/
+[15:56:44.939][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/lvim/
+[15:56:44.939][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/nvim/
+[15:56:44.939][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/alacritty/
+[15:56:44.939][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/kitty/
+[15:56:44.939][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/mpd/
+[15:56:44.939][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/mpv/
+[15:56:44.939][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/picom/
+[15:56:44.939][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/dunst/
+[15:56:44.939][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.config/dunst/*
+[15:56:44.939][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/dunst/dunstrc
+[15:56:44.939][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/dunst/bluetooth_notfication.sh
+[15:56:44.939][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/dunst/brightness_notification.sh
+[15:56:44.939][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/dunst/calendar.sh
+[15:56:44.940][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/dunst/music_notification.sh
+[15:56:44.940][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/ncmpcpp/
+[15:56:44.940][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.config/ncmpcpp/*
+[15:56:44.940][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/ncmpcpp/config
+[15:56:44.940][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/polybar/
+[15:56:44.940][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.config/polybar*
+[15:56:44.940][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/polybar/config
+[15:56:44.940][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/polybar/launch.sh
+[15:56:44.940][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/polybar/switch_theme.sh
+[15:56:44.940][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/polybar/themes/
+[15:56:44.940][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.config/polybar/themes/*
+[15:56:44.940][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/polybar/themes/wolf/
+[15:56:44.940][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/pulseaudio-ctl/
+[15:56:44.941][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/ranger/
+[15:56:44.941][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/rofi/
+[15:56:44.941][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.config/rofi/*
+[15:56:44.941][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/rofi/app_menu/
+[15:56:44.941][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/rofi/config
+[15:56:44.941][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/rofi/config.rasi
+[15:56:44.941][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/rofi/music/
+[15:56:44.941][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/rofi/rofi-bluetooth/
+[15:56:44.941][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/rofi/themes/
+[15:56:44.941][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/rofi/wifi/
+[15:56:44.941][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.config/sxhkd/
+[15:56:44.941][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	/.config/sxhkd/hotkeys.txt
+[15:56:44.941][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.local/*
+[15:56:44.942][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.local/bin
+[15:56:44.942][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.local/bin/*
+[15:56:44.942][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.local/bin/lvim
+[15:56:44.942][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.local/bin/pulseaudio-ctl
+[15:56:44.942][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!/.local/share
+[15:56:44.942][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	.local/share/*
+[15:56:44.942][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!.local/share/lunarvim/
+[15:56:44.942][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!.local/share/nvim/
+[15:56:44.942][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	!.local/share/rofi/
+[15:56:44.942][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	LICENSE
+[15:56:44.942][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	menu.gif
+[15:56:44.942][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	README.md
+[15:56:44.942][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	rofi-bluetooth
+[15:56:44.943][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	rofi-bluetooth.bak
+[15:56:44.943][info] [#0:script/workspace/workspace.lua:112]: Ignore by .gitignore:	theme.rasi
+[15:56:44.943][info] [#0:script/workspace/workspace.lua:139]: Ignore by library:	/home/leandro-f/.local/share/lunarvim/lvim/lua
+[15:56:44.943][info] [#0:script/workspace/workspace.lua:139]: Ignore by library:	/home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:44.943][info] [#0:script/workspace/workspace.lua:139]: Ignore by library:	/usr/share/nvim/runtime/lua
+[15:56:44.943][info] [#0:script/workspace/workspace.lua:139]: Ignore by library:	/home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua
+[15:56:44.971][info] [#0:script/workspace/workspace.lua:163]: Build library matchers:	{scope|folder|file:///home/leandro-f}
+[15:56:44.972][info] [#0:script/workspace/workspace.lua:184]: meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8
+[15:56:44.975][debug][#0:script/workspace/workspace.lua:205]: library matcher:	{
+    [1] = {
+        matcher = {
+            errors = {
+            },
+            interface = {
+                list = function: 0x561c3b3b6290,
+                type = function: 0x561c3b3b6250,
+            },
+            matcher = {
+            },
+            options = {
+                ignoreCase = false,
+                root = "/home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua",
+            },
+            pattern = {
+            },
+        },
+        uri = "file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua",
+    },
+    [2] = {
+        matcher = {
+            errors = {
+            },
+            interface = {
+                list = function: 0x561c3b3b6290,
+                type = function: 0x561c3b3b6250,
+            },
+            matcher = {
+            },
+            options = {
+                ignoreCase = false,
+                root = "/home/leandro-f/.local/share/lunarvim/lvim/lua",
+            },
+            pattern = {
+            },
+        },
+        uri = "file:///home/leandro-f/.local/share/lunarvim/lvim/lua",
+    },
+    [3] = {
+        matcher = {
+            errors = {
+            },
+            interface = {
+                list = function: 0x561c3b3b6290,
+                type = function: 0x561c3b3b6250,
+            },
+            matcher = {
+            },
+            options = {
+                ignoreCase = false,
+                root = "/home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types",
+            },
+            pattern = {
+            },
+        },
+        uri = "file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types",
+    },
+    [4] = {
+        matcher = {
+            errors = {
+            },
+            interface = {
+                list = function: 0x561c3b3b6290,
+                type = function: 0x561c3b3b6250,
+            },
+            matcher = {
+            },
+            options = {
+                ignoreCase = false,
+                root = "/usr/share/nvim/runtime/lua",
+            },
+            pattern = {
+            },
+        },
+        uri = "file:///usr/share/nvim/runtime/lua",
+    },
+    [5] = {
+        matcher = {
+            errors = {
+            },
+            interface = {
+                list = function: 0x561c3b3b6290,
+                type = function: 0x561c3b3b6250,
+            },
+            matcher = {
+            },
+            options = {
+                ignoreCase = false,
+                root = "/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8",
+            },
+            pattern = {
+            },
+        },
+        uri = "file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8",
+    },
+}
+[15:56:44.975][info] [#0:script/workspace/workspace.lua:281]: Scan files at:	file:///home/leandro-f
+[15:56:44.994][info] [#0:script/workspace/workspace.lua:275]: Preload start:	<fallback>
+[15:56:44.995][info] [#0:script/workspace/workspace.lua:139]: Ignore by library:	/home/leandro-f/.local/share/lunarvim/lvim/lua
+[15:56:44.995][info] [#0:script/workspace/workspace.lua:139]: Ignore by library:	/home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:44.995][info] [#0:script/workspace/workspace.lua:139]: Ignore by library:	/usr/share/nvim/runtime/lua
+[15:56:44.995][info] [#0:script/workspace/workspace.lua:139]: Ignore by library:	/home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua
+[15:56:44.998][info] [#0:script/workspace/workspace.lua:163]: Build library matchers:	{scope|fallback}
+[15:56:44.999][info] [#0:script/workspace/workspace.lua:184]: meta path:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8
+[15:56:45.001][debug][#0:script/workspace/workspace.lua:205]: library matcher:	{
+    [1] = {
+        matcher = {
+            errors = {
+            },
+            interface = {
+                list = function: 0x561c3b3b6290,
+                type = function: 0x561c3b3b6250,
+            },
+            matcher = {
+            },
+            options = {
+                ignoreCase = false,
+                root = "/home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua",
+            },
+            pattern = {
+            },
+        },
+        uri = "file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua",
+    },
+    [2] = {
+        matcher = {
+            errors = {
+            },
+            interface = {
+                list = function: 0x561c3b3b6290,
+                type = function: 0x561c3b3b6250,
+            },
+            matcher = {
+            },
+            options = {
+                ignoreCase = false,
+                root = "/home/leandro-f/.local/share/lunarvim/lvim/lua",
+            },
+            pattern = {
+            },
+        },
+        uri = "file:///home/leandro-f/.local/share/lunarvim/lvim/lua",
+    },
+    [3] = {
+        matcher = {
+            errors = {
+            },
+            interface = {
+                list = function: 0x561c3b3b6290,
+                type = function: 0x561c3b3b6250,
+            },
+            matcher = {
+            },
+            options = {
+                ignoreCase = false,
+                root = "/home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types",
+            },
+            pattern = {
+            },
+        },
+        uri = "file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types",
+    },
+    [4] = {
+        matcher = {
+            errors = {
+            },
+            interface = {
+                list = function: 0x561c3b3b6290,
+                type = function: 0x561c3b3b6250,
+            },
+            matcher = {
+            },
+            options = {
+                ignoreCase = false,
+                root = "/usr/share/nvim/runtime/lua",
+            },
+            pattern = {
+            },
+        },
+        uri = "file:///usr/share/nvim/runtime/lua",
+    },
+    [5] = {
+        matcher = {
+            errors = {
+            },
+            interface = {
+                list = function: 0x561c3b3b6290,
+                type = function: 0x561c3b3b6250,
+            },
+            matcher = {
+            },
+            options = {
+                ignoreCase = false,
+                root = "/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8",
+            },
+            pattern = {
+            },
+        },
+        uri = "file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8",
+    },
+}
+[15:56:45.002][info] [#0:script/workspace/workspace.lua:290]: Scan library at:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua
+[15:56:45.009][warn] [#0:script/proto/proto.lua:124]: Response of [workspace/semanticTokens/refresh] error [-32601]: MethodNotFound
+[15:56:45.009][warn] [#0:script/proto/proto.lua:124]: Response of [workspace/semanticTokens/refresh] error [-32601]: MethodNotFound
+[15:56:45.009][warn] [#0:script/proto/proto.lua:124]: Response of [workspace/semanticTokens/refresh] error [-32601]: MethodNotFound
+[15:56:45.009][warn] [#0:script/proto/proto.lua:124]: Response of [workspace/semanticTokens/refresh] error [-32601]: MethodNotFound
+[15:56:45.099][debug][#0:script/filewatch.lua:35]: fw.add	/home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua
+[15:56:45.099][info] [#0:script/workspace/workspace.lua:290]: Scan library at:	file:///home/leandro-f/.local/share/lunarvim/lvim/lua
+[15:56:45.187][debug][#0:script/filewatch.lua:35]: fw.add	/home/leandro-f/.local/share/lunarvim/lvim/lua
+[15:56:45.187][info] [#0:script/workspace/workspace.lua:290]: Scan library at:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:45.215][debug][#0:script/filewatch.lua:35]: fw.add	/home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:45.215][info] [#0:script/workspace/workspace.lua:290]: Scan library at:	file:///usr/share/nvim/runtime/lua
+[15:56:45.261][debug][#0:script/filewatch.lua:35]: fw.add	/usr/share/nvim/runtime/lua
+[15:56:45.261][info] [#0:script/workspace/workspace.lua:290]: Scan library at:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:45.276][debug][#0:script/filewatch.lua:35]: fw.add	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT en-us utf8
+[15:56:52.452][warn] [#0:script/await.lua:189]: Await step takes [0.126] sec.
+[15:56:54.264][info] [#0:script/workspace/workspace.lua:290]: Scan library at:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/start/plenary.nvim/lua
+[15:56:54.356][info] [#0:script/workspace/workspace.lua:290]: Scan library at:	file:///home/leandro-f/.local/share/lunarvim/lvim/lua
+[15:56:54.390][info] [#0:script/workspace/workspace.lua:290]: Scan library at:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:54.399][info] [#0:script/workspace/workspace.lua:290]: Scan library at:	file:///usr/share/nvim/runtime/lua
+[15:56:54.410][info] [#0:script/workspace/workspace.lua:290]: Scan library at:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.420][info] [#0:script/workspace/workspace.lua:303]: Found 212 files at:	<fallback>
+[15:56:54.420][info] [#0:script/workspace/loading.lua:145]: Loaded 0/212 files
+[15:56:54.420][info] [#0:script/workspace/workspace.lua:303]: Found 2540 files at:	file:///home/leandro-f
+[15:56:54.420][info] [#0:script/workspace/loading.lua:145]: Loaded 0/2540 files
+[15:56:54.429][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/io.lua , size = 6.375 KB
+[15:56:54.500][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/io.lua
+[15:56:54.500][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.501][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/io.lua , size = 6.375 KB
+[15:56:54.501][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/io.lua
+[15:56:54.501][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.502][info] [#0:script/workspace/loading.lua:145]: Loaded 1/212 files
+[15:56:54.502][info] [#0:script/workspace/loading.lua:145]: Loaded 1/2540 files
+[15:56:54.503][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/jit.lua , size = 0.651 KB
+[15:56:54.514][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/jit.lua
+[15:56:54.514][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.515][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/jit.lua , size = 0.651 KB
+[15:56:54.515][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/jit.lua
+[15:56:54.515][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.516][info] [#0:script/workspace/loading.lua:145]: Loaded 2/212 files
+[15:56:54.517][info] [#0:script/workspace/loading.lua:145]: Loaded 2/2540 files
+[15:56:54.518][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/string.lua , size = 6.189 KB
+[15:56:54.580][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/string.lua
+[15:56:54.580][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.581][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/string.lua , size = 6.189 KB
+[15:56:54.581][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/string.lua
+[15:56:54.581][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.582][info] [#0:script/workspace/loading.lua:145]: Loaded 3/212 files
+[15:56:54.583][info] [#0:script/workspace/loading.lua:145]: Loaded 3/2540 files
+[15:56:54.584][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/table.lua , size = 2.767 KB
+[15:56:54.606][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/table.lua
+[15:56:54.606][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.607][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/table.lua , size = 2.767 KB
+[15:56:54.607][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/table.lua
+[15:56:54.607][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.609][info] [#0:script/workspace/loading.lua:145]: Loaded 4/212 files
+[15:56:54.610][info] [#0:script/workspace/loading.lua:145]: Loaded 4/2540 files
+[15:56:54.611][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/basic.lua , size = 13.929 KB
+[15:56:54.700][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/basic.lua
+[15:56:54.700][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.701][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/basic.lua , size = 13.929 KB
+[15:56:54.701][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/basic.lua
+[15:56:54.701][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.703][info] [#0:script/workspace/loading.lua:145]: Loaded 5/212 files
+[15:56:54.704][info] [#0:script/workspace/loading.lua:145]: Loaded 5/2540 files
+[15:56:54.705][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/os.lua , size = 4.244 KB
+[15:56:54.763][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/os.lua
+[15:56:54.763][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.764][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/os.lua , size = 4.244 KB
+[15:56:54.764][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/os.lua
+[15:56:54.764][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.768][info] [#0:script/workspace/loading.lua:145]: Loaded 6/212 files
+[15:56:54.769][info] [#0:script/workspace/loading.lua:145]: Loaded 6/2540 files
+[15:56:54.770][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/package.lua , size = 2.691 KB
+[15:56:54.789][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/package.lua
+[15:56:54.789][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.790][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/package.lua , size = 2.691 KB
+[15:56:54.790][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/package.lua
+[15:56:54.790][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.794][info] [#0:script/workspace/loading.lua:145]: Loaded 7/212 files
+[15:56:54.795][info] [#0:script/workspace/loading.lua:145]: Loaded 7/2540 files
+[15:56:54.796][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/bit.lua , size = 1.316 KB
+[15:56:54.817][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/bit.lua
+[15:56:54.817][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.818][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/bit.lua , size = 1.316 KB
+[15:56:54.818][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/bit.lua
+[15:56:54.818][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.823][info] [#0:script/workspace/loading.lua:145]: Loaded 8/212 files
+[15:56:54.824][info] [#0:script/workspace/loading.lua:145]: Loaded 8/2540 files
+[15:56:54.825][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/ffi.lua , size = 2.365 KB
+[15:56:54.880][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/ffi.lua
+[15:56:54.881][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.882][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/ffi.lua , size = 2.365 KB
+[15:56:54.882][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/ffi.lua
+[15:56:54.882][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.886][info] [#0:script/workspace/loading.lua:145]: Loaded 9/212 files
+[15:56:54.886][info] [#0:script/workspace/loading.lua:145]: Loaded 9/2540 files
+[15:56:54.888][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/math.lua , size = 8.034 KB
+[15:56:54.944][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/math.lua
+[15:56:54.944][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.945][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/math.lua , size = 8.034 KB
+[15:56:54.945][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/math.lua
+[15:56:54.945][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:54.949][info] [#0:script/workspace/loading.lua:145]: Loaded 10/212 files
+[15:56:54.950][info] [#0:script/workspace/loading.lua:145]: Loaded 10/2540 files
+[15:56:54.951][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/debug.lua , size = 7.122 KB
+[15:56:55.029][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/debug.lua
+[15:56:55.029][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:55.030][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/debug.lua , size = 7.122 KB
+[15:56:55.030][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/debug.lua
+[15:56:55.030][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:55.035][info] [#0:script/workspace/loading.lua:145]: Loaded 11/212 files
+[15:56:55.035][info] [#0:script/workspace/loading.lua:145]: Loaded 11/2540 files
+[15:56:55.036][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/coroutine.lua , size = 2.508 KB
+[15:56:55.054][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/coroutine.lua
+[15:56:55.054][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:55.054][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/coroutine.lua , size = 2.508 KB
+[15:56:55.054][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/coroutine.lua
+[15:56:55.055][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:55.059][info] [#0:script/workspace/loading.lua:145]: Loaded 12/212 files
+[15:56:55.060][info] [#0:script/workspace/loading.lua:145]: Loaded 12/2540 files
+[15:56:55.061][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/builtin.lua , size = 0.223 KB
+[15:56:55.066][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/builtin.lua
+[15:56:55.066][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:55.067][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/builtin.lua , size = 0.223 KB
+[15:56:55.067][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8/builtin.lua
+[15:56:55.067][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/LuaJIT%20en-us%20utf8
+[15:56:55.071][info] [#0:script/workspace/loading.lua:145]: Loaded 13/212 files
+[15:56:55.071][info] [#0:script/workspace/loading.lua:145]: Loaded 13/2540 files
+[15:56:55.072][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/man.lua , size = 4.848 KB
+[15:56:55.140][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/man.lua
+[15:56:55.140][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:55.141][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/man.lua , size = 4.848 KB
+[15:56:55.141][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/man.lua
+[15:56:55.141][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:55.144][info] [#0:script/workspace/loading.lua:145]: Loaded 14/212 files
+[15:56:55.145][info] [#0:script/workspace/loading.lua:145]: Loaded 14/2540 files
+[15:56:55.146][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/health.lua , size = 0.379 KB
+[15:56:55.152][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/health.lua
+[15:56:55.152][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:55.153][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/health.lua , size = 0.379 KB
+[15:56:55.153][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/health.lua
+[15:56:55.153][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:55.157][info] [#0:script/workspace/loading.lua:145]: Loaded 15/212 files
+[15:56:55.157][info] [#0:script/workspace/loading.lua:145]: Loaded 15/2540 files
+[15:56:55.158][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/compat.lua , size = 0.508 KB
+[15:56:55.163][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/compat.lua
+[15:56:55.163][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:55.164][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/compat.lua , size = 0.508 KB
+[15:56:55.164][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/compat.lua
+[15:56:55.164][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:55.167][info] [#0:script/workspace/loading.lua:145]: Loaded 16/212 files
+[15:56:55.168][info] [#0:script/workspace/loading.lua:145]: Loaded 16/2540 files
+[15:56:55.170][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/diagnostic.lua , size = 52.197 KB
+[15:56:55.463][warn] [#0:script/files.lua:494]: Compile [file:///usr/share/nvim/runtime/lua/vim/diagnostic.lua] takes [0.290] sec, size [53.450] kb.
+[15:56:55.574][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/diagnostic.lua
+[15:56:55.574][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:55.575][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/diagnostic.lua , size = 52.197 KB
+[15:56:55.575][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/diagnostic.lua
+[15:56:55.575][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:55.578][info] [#0:script/workspace/loading.lua:145]: Loaded 17/212 files
+[15:56:55.579][info] [#0:script/workspace/loading.lua:145]: Loaded 17/2540 files
+[15:56:55.580][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/uri.lua , size = 3.345 KB
+[15:56:55.607][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/uri.lua
+[15:56:55.607][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:55.608][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/uri.lua , size = 3.345 KB
+[15:56:55.608][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/uri.lua
+[15:56:55.608][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:55.616][info] [#0:script/workspace/loading.lua:145]: Loaded 18/212 files
+[15:56:55.617][info] [#0:script/workspace/loading.lua:145]: Loaded 18/2540 files
+[15:56:55.618][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/_meta.lua , size = 19.112 KB
+[15:56:55.760][warn] [#0:script/files.lua:494]: Compile [file:///usr/share/nvim/runtime/lua/vim/_meta.lua] takes [0.139] sec, size [19.571] kb.
+[15:56:55.788][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/_meta.lua
+[15:56:55.788][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:55.788][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/_meta.lua , size = 19.112 KB
+[15:56:55.788][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/_meta.lua
+[15:56:55.789][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:55.796][info] [#0:script/workspace/loading.lua:145]: Loaded 19/212 files
+[15:56:55.797][info] [#0:script/workspace/loading.lua:145]: Loaded 19/2540 files
+[15:56:55.801][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp.lua , size = 63.850 KB
+[15:56:56.053][warn] [#0:script/files.lua:494]: Compile [file:///usr/share/nvim/runtime/lua/vim/lsp.lua] takes [0.250] sec, size [65.382] kb.
+[15:56:56.185][warn] [#0:script/files.lua:505]: Parse LuaDoc of [file:///usr/share/nvim/runtime/lua/vim/lsp.lua] takes [0.131] sec, size [65.382] kb.
+[15:56:56.212][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp.lua
+[15:56:56.212][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.213][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp.lua , size = 63.850 KB
+[15:56:56.213][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp.lua
+[15:56:56.213][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.220][info] [#0:script/workspace/loading.lua:145]: Loaded 20/212 files
+[15:56:56.221][info] [#0:script/workspace/loading.lua:145]: Loaded 20/2540 files
+[15:56:56.222][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/F.lua , size = 0.757 KB
+[15:56:56.231][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/F.lua
+[15:56:56.231][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.231][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/F.lua , size = 0.757 KB
+[15:56:56.231][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/F.lua
+[15:56:56.231][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.249][info] [#0:script/workspace/loading.lua:145]: Loaded 21/212 files
+[15:56:56.250][info] [#0:script/workspace/loading.lua:145]: Loaded 21/2540 files
+[15:56:56.251][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/treesitter/languagetree.lua , size = 15.418 KB
+[15:56:56.338][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/treesitter/languagetree.lua
+[15:56:56.338][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.339][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/treesitter/languagetree.lua , size = 15.418 KB
+[15:56:56.339][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/treesitter/languagetree.lua
+[15:56:56.339][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.357][info] [#0:script/workspace/loading.lua:145]: Loaded 22/212 files
+[15:56:56.357][info] [#0:script/workspace/loading.lua:145]: Loaded 22/2540 files
+[15:56:56.358][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/treesitter/language.lua , size = 1.217 KB
+[15:56:56.371][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/treesitter/language.lua
+[15:56:56.371][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.372][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/treesitter/language.lua , size = 1.217 KB
+[15:56:56.372][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/treesitter/language.lua
+[15:56:56.372][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.390][info] [#0:script/workspace/loading.lua:145]: Loaded 23/212 files
+[15:56:56.391][info] [#0:script/workspace/loading.lua:145]: Loaded 23/2540 files
+[15:56:56.392][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/treesitter/health.lua , size = 1.136 KB
+[15:56:56.465][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/treesitter/health.lua
+[15:56:56.465][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.466][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/treesitter/health.lua , size = 1.136 KB
+[15:56:56.466][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/treesitter/health.lua
+[15:56:56.466][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.485][info] [#0:script/workspace/loading.lua:145]: Loaded 24/212 files
+[15:56:56.485][info] [#0:script/workspace/loading.lua:145]: Loaded 24/2540 files
+[15:56:56.488][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua , size = 8.089 KB
+[15:56:56.544][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua
+[15:56:56.544][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.545][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua , size = 8.089 KB
+[15:56:56.545][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua
+[15:56:56.545][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.558][info] [#0:script/workspace/loading.lua:145]: Loaded 25/212 files
+[15:56:56.559][info] [#0:script/workspace/loading.lua:145]: Loaded 25/2540 files
+[15:56:56.560][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/treesitter/query.lua , size = 16.371 KB
+[15:56:56.662][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/treesitter/query.lua
+[15:56:56.663][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.663][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/treesitter/query.lua , size = 16.371 KB
+[15:56:56.663][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/treesitter/query.lua
+[15:56:56.663][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.676][info] [#0:script/workspace/loading.lua:145]: Loaded 26/212 files
+[15:56:56.677][info] [#0:script/workspace/loading.lua:145]: Loaded 26/2540 files
+[15:56:56.678][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/treesitter.lua , size = 2.848 KB
+[15:56:56.769][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/treesitter.lua
+[15:56:56.769][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.770][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/treesitter.lua , size = 2.848 KB
+[15:56:56.770][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/treesitter.lua
+[15:56:56.770][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.782][info] [#0:script/workspace/loading.lua:145]: Loaded 27/212 files
+[15:56:56.782][info] [#0:script/workspace/loading.lua:145]: Loaded 27/2540 files
+[15:56:56.783][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/highlight.lua , size = 3.317 KB
+[15:56:56.810][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/highlight.lua
+[15:56:56.811][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.811][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/highlight.lua , size = 3.317 KB
+[15:56:56.811][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/highlight.lua
+[15:56:56.811][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.818][info] [#0:script/workspace/loading.lua:145]: Loaded 28/212 files
+[15:56:56.818][info] [#0:script/workspace/loading.lua:145]: Loaded 28/2540 files
+[15:56:56.820][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/shared.lua , size = 17.089 KB
+[15:56:56.956][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/shared.lua
+[15:56:56.956][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.957][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/shared.lua , size = 17.089 KB
+[15:56:56.957][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/shared.lua
+[15:56:56.958][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.965][info] [#0:script/workspace/loading.lua:145]: Loaded 29/212 files
+[15:56:56.966][info] [#0:script/workspace/loading.lua:145]: Loaded 29/2540 files
+[15:56:56.967][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/ui.lua , size = 2.616 KB
+[15:56:56.984][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/ui.lua
+[15:56:56.984][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.984][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/ui.lua , size = 2.616 KB
+[15:56:56.984][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/ui.lua
+[15:56:56.985][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:56.991][info] [#0:script/workspace/loading.lua:145]: Loaded 30/212 files
+[15:56:56.992][info] [#0:script/workspace/loading.lua:145]: Loaded 30/2540 files
+[15:56:56.992][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/inspect.lua , size = 9.502 KB
+[15:56:57.121][warn] [#0:script/files.lua:494]: Compile [file:///usr/share/nvim/runtime/lua/vim/inspect.lua] takes [0.127] sec, size [9.730] kb.
+[15:56:57.135][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/inspect.lua
+[15:56:57.135][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:57.136][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/inspect.lua , size = 9.502 KB
+[15:56:57.136][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/inspect.lua
+[15:56:57.136][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:57.142][info] [#0:script/workspace/loading.lua:145]: Loaded 31/212 files
+[15:56:57.143][info] [#0:script/workspace/loading.lua:145]: Loaded 31/2540 files
+[15:56:57.145][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/diagnostic.lua , size = 25.556 KB
+[15:56:57.299][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/diagnostic.lua
+[15:56:57.299][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:57.300][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/diagnostic.lua , size = 25.556 KB
+[15:56:57.300][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/diagnostic.lua
+[15:56:57.300][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:57.306][info] [#0:script/workspace/loading.lua:145]: Loaded 32/212 files
+[15:56:57.307][info] [#0:script/workspace/loading.lua:145]: Loaded 32/2540 files
+[15:56:57.309][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/buf.lua , size = 22.072 KB
+[15:56:57.464][warn] [#0:script/files.lua:494]: Compile [file:///usr/share/nvim/runtime/lua/vim/lsp/buf.lua] takes [0.156] sec, size [22.602] kb.
+[15:56:57.507][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/buf.lua
+[15:56:57.507][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:57.508][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/buf.lua , size = 22.072 KB
+[15:56:57.508][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/buf.lua
+[15:56:57.508][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:57.517][info] [#0:script/workspace/loading.lua:145]: Loaded 33/212 files
+[15:56:57.517][info] [#0:script/workspace/loading.lua:145]: Loaded 33/2540 files
+[15:56:57.520][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/util.lua , size = 66.326 KB
+[15:56:57.872][warn] [#0:script/files.lua:494]: Compile [file:///usr/share/nvim/runtime/lua/vim/lsp/util.lua] takes [0.352] sec, size [67.918] kb.
+[15:56:58.008][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/util.lua
+[15:56:58.008][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.009][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/util.lua , size = 66.326 KB
+[15:56:58.009][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/util.lua
+[15:56:58.009][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.018][info] [#0:script/workspace/loading.lua:145]: Loaded 34/212 files
+[15:56:58.019][info] [#0:script/workspace/loading.lua:145]: Loaded 34/2540 files
+[15:56:58.021][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/sync.lua , size = 15.155 KB
+[15:56:58.094][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/sync.lua
+[15:56:58.095][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.095][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/sync.lua , size = 15.155 KB
+[15:56:58.095][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/sync.lua
+[15:56:58.095][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.111][info] [#0:script/workspace/loading.lua:145]: Loaded 35/212 files
+[15:56:58.112][info] [#0:script/workspace/loading.lua:145]: Loaded 35/2540 files
+[15:56:58.114][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/protocol.lua , size = 32.275 KB
+[15:56:58.276][warn] [#0:script/files.lua:494]: Compile [file:///usr/share/nvim/runtime/lua/vim/lsp/protocol.lua] takes [0.159] sec, size [33.050] kb.
+[15:56:58.299][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/protocol.lua
+[15:56:58.299][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.300][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/protocol.lua , size = 32.275 KB
+[15:56:58.300][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/protocol.lua
+[15:56:58.300][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.317][info] [#0:script/workspace/loading.lua:145]: Loaded 36/212 files
+[15:56:58.317][info] [#0:script/workspace/loading.lua:145]: Loaded 36/2540 files
+[15:56:58.318][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/health.lua , size = 0.836 KB
+[15:56:58.328][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/health.lua
+[15:56:58.328][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.329][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/health.lua , size = 0.836 KB
+[15:56:58.329][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/health.lua
+[15:56:58.329][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.349][info] [#0:script/workspace/loading.lua:145]: Loaded 37/212 files
+[15:56:58.350][info] [#0:script/workspace/loading.lua:145]: Loaded 37/2540 files
+[15:56:58.352][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/rpc.lua , size = 20.306 KB
+[15:56:58.464][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/rpc.lua
+[15:56:58.465][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.465][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/rpc.lua , size = 20.306 KB
+[15:56:58.465][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/rpc.lua
+[15:56:58.465][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.486][info] [#0:script/workspace/loading.lua:145]: Loaded 38/212 files
+[15:56:58.487][info] [#0:script/workspace/loading.lua:145]: Loaded 38/2540 files
+[15:56:58.491][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/handlers.lua , size = 17.542 KB
+[15:56:58.680][warn] [#0:script/files.lua:505]: Parse LuaDoc of [file:///usr/share/nvim/runtime/lua/vim/lsp/handlers.lua] takes [0.105] sec, size [17.963] kb.
+[15:56:58.692][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/handlers.lua
+[15:56:58.692][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.693][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/handlers.lua , size = 17.542 KB
+[15:56:58.693][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/handlers.lua
+[15:56:58.693][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.711][info] [#0:script/workspace/loading.lua:145]: Loaded 39/212 files
+[15:56:58.712][info] [#0:script/workspace/loading.lua:145]: Loaded 39/2540 files
+[15:56:58.715][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/codelens.lua , size = 7.201 KB
+[15:56:58.770][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/codelens.lua
+[15:56:58.770][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.771][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/codelens.lua , size = 7.201 KB
+[15:56:58.771][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/codelens.lua
+[15:56:58.771][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.790][info] [#0:script/workspace/loading.lua:145]: Loaded 40/212 files
+[15:56:58.791][info] [#0:script/workspace/loading.lua:145]: Loaded 40/2540 files
+[15:56:58.792][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/tagfunc.lua , size = 2.347 KB
+[15:56:58.814][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/tagfunc.lua
+[15:56:58.814][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.814][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/tagfunc.lua , size = 2.347 KB
+[15:56:58.814][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/tagfunc.lua
+[15:56:58.815][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.832][info] [#0:script/workspace/loading.lua:145]: Loaded 41/212 files
+[15:56:58.833][info] [#0:script/workspace/loading.lua:145]: Loaded 41/2540 files
+[15:56:58.834][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/_snippet.lua , size = 9.171 KB
+[15:56:58.918][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/_snippet.lua
+[15:56:58.919][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.919][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/_snippet.lua , size = 9.171 KB
+[15:56:58.919][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/_snippet.lua
+[15:56:58.919][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.931][info] [#0:script/workspace/loading.lua:145]: Loaded 42/212 files
+[15:56:58.932][info] [#0:script/workspace/loading.lua:145]: Loaded 42/2540 files
+[15:56:58.933][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/log.lua , size = 4.021 KB
+[15:56:58.964][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/log.lua
+[15:56:58.964][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.965][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///usr/share/nvim/runtime/lua/vim/lsp/log.lua , size = 4.021 KB
+[15:56:58.965][debug][#0:script/files.lua:370]: add ref	file:///usr/share/nvim/runtime/lua/vim/lsp/log.lua
+[15:56:58.965][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///usr/share/nvim/runtime/lua
+[15:56:58.975][info] [#0:script/workspace/loading.lua:145]: Loaded 43/212 files
+[15:56:58.976][info] [#0:script/workspace/loading.lua:145]: Loaded 43/2540 files
+[15:56:58.978][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.3.lua , size = 50.145 KB
+[15:56:59.185][warn] [#0:script/files.lua:505]: Parse LuaDoc of [file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.3.lua] takes [0.142] sec, size [51.348] kb.
+[15:56:59.208][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.3.lua
+[15:56:59.208][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:59.209][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.3.lua , size = 50.145 KB
+[15:56:59.209][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.3.lua
+[15:56:59.209][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:59.216][info] [#0:script/workspace/loading.lua:145]: Loaded 44/212 files
+[15:56:59.217][info] [#0:script/workspace/loading.lua:145]: Loaded 44/2540 files
+[15:56:59.224][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.2.lua , size = 50.402 KB
+[15:56:59.372][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.2.lua
+[15:56:59.372][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:59.373][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.2.lua , size = 50.402 KB
+[15:56:59.373][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.2.lua
+[15:56:59.373][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:59.380][info] [#0:script/workspace/loading.lua:145]: Loaded 45/212 files
+[15:56:59.380][info] [#0:script/workspace/loading.lua:145]: Loaded 45/2540 files
+[15:56:59.388][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.1.lua , size = 50.211 KB
+[15:56:59.495][warn] [#0:script/files.lua:494]: Compile [file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.1.lua] takes [0.105] sec, size [51.416] kb.
+[15:56:59.625][warn] [#0:script/files.lua:505]: Parse LuaDoc of [file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.1.lua] takes [0.129] sec, size [51.416] kb.
+[15:56:59.652][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.1.lua
+[15:56:59.652][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:59.653][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.1.lua , size = 50.211 KB
+[15:56:59.653][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.1.lua
+[15:56:59.653][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:59.665][info] [#0:script/workspace/loading.lua:145]: Loaded 46/212 files
+[15:56:59.665][info] [#0:script/workspace/loading.lua:145]: Loaded 46/2540 files
+[15:56:59.667][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/diagnostic.lua , size = 15.156 KB
+[15:56:59.719][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/diagnostic.lua
+[15:56:59.719][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:59.720][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/diagnostic.lua , size = 15.156 KB
+[15:56:59.720][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/diagnostic.lua
+[15:56:59.720][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:59.740][info] [#0:script/workspace/loading.lua:145]: Loaded 47/212 files
+[15:56:59.741][info] [#0:script/workspace/loading.lua:145]: Loaded 47/2540 files
+[15:56:59.744][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.lua , size = 50.223 KB
+[15:56:59.857][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.lua
+[15:56:59.858][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:59.858][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.lua , size = 50.223 KB
+[15:56:59.858][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.lua
+[15:56:59.859][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:56:59.877][info] [#0:script/workspace/loading.lua:145]: Loaded 48/212 files
+[15:56:59.878][info] [#0:script/workspace/loading.lua:145]: Loaded 48/2540 files
+[15:56:59.881][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.6.lua , size = 50.264 KB
+[15:57:00.070][warn] [#0:script/files.lua:494]: Compile [file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.6.lua] takes [0.187] sec, size [51.470] kb.
+[15:57:00.151][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.6.lua
+[15:57:00.151][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:00.152][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.6.lua , size = 50.264 KB
+[15:57:00.152][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.6.lua
+[15:57:00.152][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:00.176][info] [#0:script/workspace/loading.lua:145]: Loaded 49/212 files
+[15:57:00.177][info] [#0:script/workspace/loading.lua:145]: Loaded 49/2540 files
+[15:57:00.179][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/lsp.lua , size = 25.406 KB
+[15:57:00.299][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/lsp.lua
+[15:57:00.300][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:00.301][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/lsp.lua , size = 25.406 KB
+[15:57:00.301][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/lsp.lua
+[15:57:00.301][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:00.332][info] [#0:script/workspace/loading.lua:145]: Loaded 50/212 files
+[15:57:00.332][info] [#0:script/workspace/loading.lua:145]: Loaded 50/2540 files
+[15:57:00.336][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/lua.lua , size = 11.699 KB
+[15:57:00.397][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/lua.lua
+[15:57:00.397][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:00.398][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/lua.lua , size = 11.699 KB
+[15:57:00.398][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/lua.lua
+[15:57:00.398][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:00.428][info] [#0:script/workspace/loading.lua:145]: Loaded 51/212 files
+[15:57:00.429][info] [#0:script/workspace/loading.lua:145]: Loaded 51/2540 files
+[15:57:00.433][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.2.lua , size = 50.416 KB
+[15:57:00.635][warn] [#0:script/files.lua:494]: Compile [file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.2.lua] takes [0.199] sec, size [51.626] kb.
+[15:57:00.694][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.2.lua
+[15:57:00.694][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:00.695][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.2.lua , size = 50.416 KB
+[15:57:00.695][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.2.lua
+[15:57:00.695][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:00.722][info] [#0:script/workspace/loading.lua:145]: Loaded 52/212 files
+[15:57:00.723][info] [#0:script/workspace/loading.lua:145]: Loaded 52/2540 files
+[15:57:00.727][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.5.lua , size = 50.308 KB
+[15:57:00.860][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.5.lua
+[15:57:00.860][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:00.861][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.5.lua , size = 50.308 KB
+[15:57:00.861][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.5.lua
+[15:57:00.861][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:00.886][info] [#0:script/workspace/loading.lua:145]: Loaded 53/212 files
+[15:57:00.887][info] [#0:script/workspace/loading.lua:145]: Loaded 53/2540 files
+[15:57:00.891][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.3.lua , size = 52.583 KB
+[15:57:01.130][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.3.lua
+[15:57:01.131][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:01.188][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.3.lua , size = 52.583 KB
+[15:57:01.188][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/vim.fn.3.lua
+[15:57:01.188][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:01.214][info] [#0:script/workspace/loading.lua:145]: Loaded 54/212 files
+[15:57:01.215][info] [#0:script/workspace/loading.lua:145]: Loaded 54/2540 files
+[15:57:01.219][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.1.lua , size = 51.057 KB
+[15:57:01.333][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.1.lua
+[15:57:01.334][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:01.334][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.1.lua , size = 51.057 KB
+[15:57:01.334][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/options.1.lua
+[15:57:01.334][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:01.364][info] [#0:script/workspace/loading.lua:145]: Loaded 55/212 files
+[15:57:01.365][info] [#0:script/workspace/loading.lua:145]: Loaded 55/2540 files
+[15:57:01.369][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/api.lua , size = 50.413 KB
+[15:57:01.549][warn] [#0:script/files.lua:505]: Parse LuaDoc of [file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/api.lua] takes [0.111] sec, size [51.623] kb.
+[15:57:01.596][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/api.lua
+[15:57:01.596][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:01.597][info] [#0:script/workspace/loading.lua:96]: Preload file at: file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/api.lua , size = 50.413 KB
+[15:57:01.597][debug][#0:script/files.lua:370]: add ref	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types/api.lua
+[15:57:01.597][info] [#0:script/workspace/loading.lua:104]: ++++As library of:	file:///home/leandro-f/.local/share/lunarvim/site/pack/packer/opt/lua-dev.nvim/types
+[15:57:01.597][info] [#0:script/provider/provider.lua:151]: Server shutdown.
+[15:57:01.598][warn] [#0:script/pub/report.lua:25]: Load proto error:	Disconnected!

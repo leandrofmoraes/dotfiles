@@ -1,0 +1,111 @@
+scrolling:
+  history: 10000
+  multiplier: 3
+
+window:
+  # Window dimensions (changes require restart)
+  #
+  # Number of lines/columns (not pixels) in the terminal. The number of columns
+  # must be at least `2`, while using a value of `0` for columns and lines will
+  # fall back to the window manager's recommended size.
+  padding:
+    x: 3
+    y: 1
+
+  dimensions:
+   columns: 110
+   lines: 28
+
+  opacity: 0.75
+  # Window class (Linux/BSD only):
+  class:
+    # Application instance name
+    instance: Alacritty
+    # General application class
+    general: Alacritty
+  # Allow terminal applications to change Alacritty's window title.
+  dynamic_title: true
+
+
+  # GTK theme variant (Linux/BSD only)
+  #
+  # Override the variant of the GTK theme. Commonly supported values are `dark`
+  # and `light`. Set this to `None` to use the default theme variant.
+  #gtk_theme_variant: None
+
+font:
+  normal:
+    # family: JetBrains Mono Nerd Font
+    family: DroidSansMono Nerd Font
+    style:  Book
+    # style:  Medium
+  bold:
+    # family: JetBrains Mono Nerd Font
+    family: DroidSansMono Nerd Font
+    style:  Bold
+  italic:
+    # family: JetBrains Mono Nerd Font
+    family: DroidSansMono Nerd Font
+    style:  MediumItalic
+  bold_italic:
+    # family: JetBrains Mono Nerd Font
+    family: DroidSansMono Nerd Font
+    style: BoldItalic
+  size: 9
+draw_bold_text_with_bright_colors: true
+
+cursor:
+  # Cursor style
+  style:
+    # Cursor shape
+    #
+    # Values for `shape`:
+    #   - ▇ Block
+    #   - _ Underline
+    #   - | Beam
+    shape: Block
+
+    # Cursor blinking state
+    #
+    # Values for `blinking`:
+    #   - Never: Prevent the cursor from ever blinking
+    #   - Off: Disable blinking by default
+    #   - On: Enable blinking by default
+    #   - Always: Force the cursor to always blink
+    blinking: On
+
+colors:
+  primary:
+    background: "#000819"
+    foreground: "#a9b1d6"
+  normal:
+    black: "#32344a"
+    blue: "#62AEEF"  #blue: "#7aa2f7"
+    magenta: "#ad8ee6"
+    white: "#787c99"
+    cyan: "#7BE9FD" #"#449dab"
+    green: "#50FA7B" #"#9ece6a"
+    orange: "#FFB86C"
+    pink: "#FF79C6"
+    purple: "#BD93F9"
+    red: "#FF5555" #"#f7768e"
+    yellow: "#F1FA8C" #"#e0af68"
+  bright:
+    black: "#444b6a"
+    red: "#ff7a93"
+    green: "#b9f27c"
+    yellow: "#ff9e64"
+    blue: "#62AEEF"  #blue: "#7aa2f7"
+    magenta: "#bb9af7"
+    cyan: "#0db9d7"
+    white: "#acb0d0"
+
+selection:
+  save_to_clipboard: true
+
+shell:
+  program: /usr/bin/zsh
+
+key_bindings:
+  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
+

@@ -1,0 +1,39 @@
+#==============
+# My alias list
+#==============
+
+alias ~Arquivos="/run/media/$(whoami)/Arquivos"
+
+alias nzrc="nvim ~/.zshrc"
+
+alias lvi="lvim"
+alias nvi="nvim"
+alias nvrc="nvim ~/.config/nvim/init.vim" # Abre arquivo de configuração do neovim
+alias nbrc="nvim ~/.bashrc"               # Abre arquivo de configuração do bash
+alias nzrc="nvim ~/.zshrc"                # Abre arquivo de configuração do zsh
+
+alias lc='ls -C'
+alias lsl='ls -l'
+alias ll='ls -lht'
+alias la='ls -aCt'
+alias lla="ls -tlha" 
+alias lm="ls -alht | more"
+
+alias cp="cp -i"                          # confirm before overwriting somethin    g
+alias df="df -h"                          # human-readable sizes
+alias mo="more"
+alias mkd="mkdir"
+alias free="free -m"                      # show sizes in MB
+#alias np="nano -w PKGBUILD"
+
+alias logoff="sudo pkill -KILL -u"
+
+#alias spy="pqiv"                         # Visualisador de imagens pelo terminal
+alias xplore="ranger"                    # Explorador de arquivos
+
+#TMUX Alias
+alias tmx="tmux"
+alias tmxns="tmux new -s"
+alias tmxks="tmux kill-session -t"
+alias tmxa="tmux attach -t"
+

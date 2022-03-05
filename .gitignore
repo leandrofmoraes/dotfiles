@@ -1,0 +1,145 @@
+## Home Directory 
+
+#.git/
+/Área de trabalho/
+/Documentos/
+/Downloads/
+/Modelos/
+/Música/
+/Público/
+/Vídeos/
+/workspace/
+/.cargo/
+/.lyrics/
+/.mozilla/
+/.fonts/
+/.icons/
+/.kde4/
+/.npm/
+#.oh-my-bash/
+/.pki/
+/.rustup/
+/.subversion/
+/.themes/
+/.vim/
+/.vscode/
+/.yarn/
+.bash_history
+.bash_logout
+.bash_profile
+.dir_colors
+.fonts.conf
+.gitconfig
+#.gitignore
+.gitignore.old
+.gtkrc-2.0
+.lesshst
+.sdirs
+.viminfo
+.wget-hsts
+.Xauthority
+.Xclients
+.xinitrc
+.yarnrc
+.zcompdump
+.zhistory
+
+## not ignored
+!.fehbg
+!.zshrc
+!.bashrc
+!.my_aliases
+!.my_functions
+!.p10k.zsh
+
+## Imagens
+Imagens/*
+!/Imagens/wallpapers/
+!/Imagens/Screenshots/
+
+/.cache/
+
+## .config
+.config/*
+!/.config/bspwm/
+!/.config/lvim/
+!/.config/nvim/
+!/.config/alacritty/
+!/.config/kitty/
+!/.config/mpd/
+!/.config/mpv/
+!/.config/picom/
+
+#!/.config/gcolor3/
+
+## Dunst
+!/.config/dunst/
+.config/dunst/*
+!/.config/dunst/dunstrc
+!/.config/dunst/bluetooth_notfication.sh
+!/.config/dunst/brightness_notification.sh
+!/.config/dunst/calendar.sh
+!/.config/dunst/music_notification.sh
+
+## NCMPCPP
+!/.config/ncmpcpp/
+.config/ncmpcpp/*
+!/.config/ncmpcpp/config
+
+## Polybar
+!/.config/polybar/
+.config/polybar*
+!/.config/polybar/config
+!/.config/polybar/launch.sh
+!/.config/polybar/switch_theme.sh
+!/.config/polybar/themes/
+.config/polybar/themes/*
+!/.config/polybar/themes/wolf/
+
+#!/.config/pulse/
+!/.config/pulseaudio-ctl/
+!/.config/ranger/
+
+## Rofi
+!/.config/rofi/
+.config/rofi/*
+!/.config/rofi/app_menu/
+!/.config/rofi/config
+!/.config/rofi/config.rasi
+!/.config/rofi/music/
+
+!/.config/rofi/rofi-bluetooth/
+.config/rofi/rofi-bluetooth/*
+!/.config/rofi/rofi-bluetooth/LICENSE
+#!/.config/rofi/rofi-bluetooth/menu.gif
+#!/.config/rofi/rofi-bluetooth/README.md
+!/.config/rofi/rofi-bluetooth/rofi-bluetooth
+!/.config/rofi/rofi-bluetooth/theme.rasi
+
+!/.config/rofi/themes/
+!/.config/rofi/wifi/
+#!/.config/rofi/powermenu/
+
+## SXHKD
+!/.config/sxhkd/
+/.config/sxhkd/hotkeys.txt
+
+## .local
+.local/*
+
+## local/bin
+!/.local/bin
+.local/bin/*
+!/.local/bin/lvim
+!/.local/bin/pulseaudio-ctl
+
+## local/share
+!/.local/share
+.local/share/*
+!.local/share/lunarvim/
+!.local/share/nvim/
+!.local/share/rofi/
+#!.local/share/ranger/
+#!.local/share/fonts/
+#!.local/share/icons/
+

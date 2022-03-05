@@ -1,0 +1,53 @@
+#==============
+# My Functions
+#==============
+
+git-svn(){
+  if [[ ! -z "$1" && ! -z "$2" ]]; then
+          echo "Iniciando o clone/cópia ..."
+          repo=$(echo $1 | sed 's/\/$\|.git$//')
+          svn export "$repo/trunk/$2"
+  else
+          echo "Use: git-svn <repository> <subdirectory>"
+  fi  
+}
+
+function imgv(){
+    local caminho=$HOME/.config/nvim
+
+    if [ -f $1 ]; then
+        pqiv -ic $1
+    fi
+    if [ -d $1 ]; then
+        pqiv $1    
+    fi 
+}
+
+function imgs(){
+    local caminho=$HOME/.config/nvim
+
+    if [ -f $1 ]; then
+        sxiv -b $1
+    fi
+    if [ -d $1 ]; then
+        sxiv -t $1    
+    fi 
+}
+
+# alias ncmp="ncmpcpp"
+function ncmp(){
+    mpd=$(pidof mpd)
+    kill $mpd
+    mpd
+    ncmpcpp
+}
+
+function nvchange(){
+    local caminho=$HOME/.config/nvim
+
+    if [ -f $caminho/init.vim ]; then
+            mv $caminho/init.vim $caminho/init.vim.bkp && mv $caminho/init.lua.bkp $caminho/init.lua
+    else
+        mv $caminho/init.lua $caminho/init.lua.bkp && mv $caminho/init.vim.bkp $caminho/init.vim
+    fi 
+}

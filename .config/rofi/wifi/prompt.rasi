@@ -1,0 +1,75 @@
+configuration {
+  sort:			true;
+  sorting-method:	"normal";
+  disable-history:	false;
+  scroll-method:	0;
+  window-thumbnail:	true;
+}
+
+@theme "/dev/null"
+
+* {
+  bg:		#0C0F09;
+  fg:		#05E289;
+  bgAlt: #1B1E25;
+  button:		#05E289;
+  background-color:	@bg;
+  text-color:		@fg;
+}
+
+@import "~/.config/rofi/wifi/theme.rasi"
+
+mainbox { children: [ inputbar, listview ]; }
+
+window {
+  transparency:		"real";
+  border:		10px 10px 10px 10px;
+  border-radius:	10px;
+  border-color: @bg;
+}
+
+inputbar {
+  children:		[ prompt ];
+  expand:		false;
+  padding:		3px 3px 3px 3px;
+}
+
+prompt { 
+  enabled: true; 
+  background-color:	@bg;
+  padding:		3px;
+  border-radius:	10px;
+}
+
+listview {
+  columns:		1;
+  lines:        5;
+  cycle:		true;
+  dynamic:		true;
+  layout:		vertical;
+  scrollbar:    false;
+  /* scrollbar:    true; */
+  cycle:        true;
+  dynamic:      true;
+  /* padding:		10px 2px 10px 2px; */
+}
+
+element {
+  orientation:		vertical;
+  margin:		3px 5px 3px 5px;
+  border-radius:	10px;
+  background-color:	@bgAlt;
+}
+
+element-text {
+  expand:		true;
+  margin:		5px 10px 5px 10px;
+  background-color:	inherit;
+  text-color:		inherit;
+}
+
+element selected {
+  background-color:	@fg;
+  text-color:		@bgAlt;
+  border-radius:	10px;
+}

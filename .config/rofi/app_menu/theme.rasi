@@ -1,0 +1,123 @@
+/*
+ * Author  : Leandro Fernandes
+ * Mail    : leandrofmraes@gmail.com
+ * Github  : @leandrofmoraes
+ */
+
+configuration {
+    font:                           "FiraCode Nerd Font 10";
+    show-icons:                     true;
+	icon-theme: 					"Papirus";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+* {
+    bg:                             #05142F66;
+    bgAlt:                          #05142F;
+    fg:                             #62AEEF;
+    button:                         @bgAlt;
+    background-color:               @bg;
+    text-color:                     @fg;
+}
+
+window {
+    transparency:                   "real";
+    background-color:               @bg;
+    text-color:                     @fg;
+	border:							0px;
+	border-color:					@ac;
+    border-radius:	                12px;
+	height:							94%;
+	width:							20%;
+    location:                       west;
+    x-offset:                       10px;
+    y-offset:                       13px;
+}
+
+prompt {
+	font:							"FiraCode Nerd Font 10";
+    enabled: 						true;
+	background-color: 				@bgAlt;
+	text-color: 					@fg;
+	padding: 						0.5% 0.5% 0% 0%;
+}
+
+entry {
+    background-color:               @bgAlt;
+    text-color:                     @CCCCCC;
+    placeholder-color:              @fg;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "  Search";
+    padding:                        0.5% 0% 0% 0%;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ prompt, entry ];
+    background-color:               @bgAlt;
+    text-color:                     @fg;
+    expand:                         false;
+	border:							1px;
+	border-color:					@fg;
+    border-radius:	                10px;
+    margin:                         0% 0% 0% 0%;
+    padding:                        0.5%;
+}
+
+listview {
+    background-color:               inherit;
+    padding:                        0px;
+    columns:                        1;
+    lines:                          5;
+    spacing:                        5px;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @bg;
+	border:							0% 0% 0% 0%;
+    border-radius:                  12px;
+	border-color:					@bg;
+    children:                       [ inputbar, listview ];
+    spacing:                       	0.5%;
+    padding:                        0%;
+}
+
+element {
+    background-color:	            @bgAlt;
+    text-color:                     @fg;
+    orientation:                    horizontal;
+    border-radius:                  10px;
+    padding:                        0.25% 0.5% 0.25% 0.5%;
+}
+
+element-icon {
+    size:                           24px;
+    border:                         0px;
+    background-color:	            inherit;
+}
+
+element-text {
+    expand:                         true;
+    horizontal-align:               0;
+    vertical-align:                 0.5;
+    margin:                         0% 0.25% 0% 0.25%;
+    background-color:	            inherit;
+    text-color:		                inherit;
+}
+
+element selected {
+    background-color:               @fg;
+    text-color:                     @bgAlt;
+	border:							0% 0% 0% 0%;
+    border-radius:                  10px;
+    border-color:                  	@bg;
+}

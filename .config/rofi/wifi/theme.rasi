@@ -1,0 +1,23 @@
+* {
+/* bg: #1E222A; */
+bg: #05142F66;
+bgAlt: #05142F;
+/* fg: #61AFEF; */
+fg: #62AEEF;
+button: @bgAlt;
+background-color: @bg;
+text-color: @fg;
+}
+
+configuration {
+  font: "FiraCode Nerd Font 11";
+}
+
+window {
+    location:                       northeast;
+    x-offset:                       -10px;
+    y-offset:                       41px;
+    border-radius:	                10px;
+    width:		                    250px;
+    height:		                    250px;
+}

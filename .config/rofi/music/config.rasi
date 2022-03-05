@@ -1,0 +1,69 @@
+
+@theme "/dev/null"
+
+configuration {
+  font: "FiraCode Nerd Font 13";
+}
+
+* {
+    bg:			        #05142F4F;
+    /* bgAlt: #252931; */
+    bgAlt: #05142F;
+    fg:			        #62AEEF;
+    /* button:		        #1B1E25; */
+    button: @bgAlt;
+    background-color:	@bg;
+    text-color:		    @fg; 
+}
+
+/* @import "../themes/style.rasi" */
+
+window {
+  transparency:		"real";
+  width:		    300px;
+  height:		    300px;
+  border-radius:    10px;
+  location:         northeast;
+  x-offset:         -35px;
+  y-offset:         41px;
+}
+
+prompt {
+  padding:		20px;
+  border-radius:	10px;
+  expand: false;
+}
+
+inputbar {
+  children:		[ prompt ];
+  background-image:	url("/tmp/cover.png");
+  expand:		false;
+  border-radius:	10px;
+  padding:		95px 5px 5px 5px;
+}
+
+listview {
+  cycle:		true;
+  layout:		horizontal;
+  padding:		10px 5px 5px 5px;
+}
+
+mainbox { children: [ inputbar, listview ]; }
+
+element {
+  padding:		0px 10px 0px 10px;
+  border-radius: 15px;
+}
+
+element-text {
+  margin:		5px 5px 5px 5px;
+  padding:		0px 1px 0px 1px;
+  font:			"FiraCode Nerd Font 24";
+  background-color:	inherit;
+  text-color:		inherit; 
+}
+element selected {
+  background-color:	@fg;
+  text-color:		@bgAlt;
+}
+

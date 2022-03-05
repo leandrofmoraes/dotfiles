@@ -1,0 +1,216 @@
+## Function Keymaps
+# XF86AudioPlay
+# XF86AudioStop
+# XF86AudioNext
+# XF86AudioPrev
+# XF86AudioRaiseVolume
+# XF86AudioLowerVolume
+# XF86AudioMute
+# XF86MonBrightnessDown
+# XF86MonBrightnessUp
+
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+{super + Return, ctrl + alt + t}
+	konsole
+
+# program launcher
+{ctrl + @space, super + s}
+	rofi -show drun -show-icons
+
+# file explorer
+super + e
+	konsole -e ranger
+
+super + shift + e
+	thunar
+
+# flameshot options
+{Print}
+    flameshot gui
+
+shift + Print
+    ~/.config/rofi/applets/android/screenshot-flameshot.sh
+
+# Volume Control
+XF86AudioRaiseVolume 
+    pulseaudio-ctl up
+    # amixer -Mq set Master,0 2%+ unmute && ~/.config/dunst/custom_notification.sh --vol_up
+XF86AudioLowerVolume
+    pulseaudio-ctl down
+    # amixer -Mq set Master,0 2%- unmute && ~/.config/dunst/custom_notification.sh --vol_down
+XF86AudioMute
+    pulseaudio-ctl mute
+    # amixer -q set Master toggle && ~/.config/dunst/custom_notification.sh --mute
+    # ~/.config/rofi/scripts/volume.sh mute
+
+# NCMPCPP (Music Player)
+super + m
+    mpd && konsole -e ncmpcpp || konsole -e ncmpcpp
+
+# super + shift + m
+#     xdotool search --class Visualizer &>/dev/null && (ps x | grep "konsole --class Visualizer" | grep -v grep | awk '{print $1}' | xargs kill) || konsole --class Visualizer -o background_opacity=1 -o font_size=8 -o window_margin_width=0 -e cava &
+
+# Music Player Control
+
+XF86AudioPlay
+    mpc -q toggle && ~/.config/dunst/music_notification.sh || playerctl -p spotify play-pause || playerctl play-pause
+
+XF86AudioNext
+    mpc -q next && ~/.config/dunst/music_notification.sh || playerctl -p spotify next || playerctl next
+
+XF86AudioPrev
+    mpc -q prev && ~/.config/dunst/music_notification.sh || playerctl -p spotify prev || playerctl prev
+
+XF86AudioStop
+    mpc -q stop || playerctl -p spotify stop || playerctl stop
+    
+
+# Brightness Control
+XF86MonBrightnessUp
+    brightnessctl -q set +5% && ~/.config/dunst/brightness_notification.sh --inc 
+XF86MonBrightnessDown
+    brightnessctl -q set 5%- && ~/.config/dunst/brightness_notification.sh --dec 
+    # brightnessctl -q set 10%- && notify-send -t 1500 "Brightness Up $(brightnessctl get)%" -h int:value:$(brightnessctl get) -u low
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#
+# bspwm hotkeys
+#
+
+# quit/restart bspwm
+ctrl + alt + {q,r}
+	bspc {quit,wm -r}
+
+# close and kill
+super + {_,shift + }w
+	bspc node -{c,k}
+
+# close app
+super + x
+	bspc node -c
+
+# set the window state to fullscreen
+super + shift + f
+	bspc node -t {fullscreen, tiled}
+
+# alternate between the tiled and monocle layout
+super + f
+	bspc desktop -l next
+
+# Toggle beetwen floating & tiled
+super + t
+    bspc node -t "~"{floating,tiled}
+
+# Pseudo Tiled & tiled mode
+super + shift + t
+    bspc node -t {pseudo_tiled}
+
+# super + alt + {t,shift + t,s,f}
+	# bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# send the newest marked node to the newest preselected node
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# swap the current node and the biggest node
+super + g
+	bspc node -s biggest
+
+#
+# state/flags
+#
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+#
+# focus/swap
+#
+
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the node for the given path jump
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# focus the next/previous node in the current desktop
+super + {_,shift + }c
+	bspc node -f {next,prev}.local
+
+## focus the next/previous desktop in the current monitor
+# super + bracket{left,right}
+
+# Switch workspace
+super + {Left,Right}
+	bspc desktop -f {prev,next}.local
+# or
+ctrl + alt + {Left,Right}
+	bspc desktop -f {prev,next}.local
+
+# focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# focus the older or newer node in the focus history
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+#
+# preselect
+#
+
+# preselect the direction
+super + shift + {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+#
+# move/resize
+#
+
+# set the window state
+# super + alt + {t,shift + t,s,f}
+	# bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+super + ctrl + {h,j,k,l}
+    bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# move a floating window
+# super + shift + {h,j,k,l}
+	# bspc node -v {-20 0,0 20,0 -20,20 0}
