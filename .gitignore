@@ -1,4 +1,7 @@
 ## Home Directory 
+*.pyc 
+*.pyo
+*.class
 
 #.git/
 /Área de trabalho/
@@ -16,7 +19,7 @@
 /.icons/
 /.kde4/
 /.npm/
-#.oh-my-bash/
+.oh-my-bash/
 /.pki/
 /.rustup/
 /.subversion/
@@ -136,7 +139,7 @@ Imagens/*
 ## local/share
 !/.local/share
 .local/share/*
-!.local/share/lunarvim/
+!.local/share/lunarvim/*
 !.local/share/nvim/
 !.local/share/rofi/
 #!.local/share/ranger/
