@@ -3,20 +3,18 @@
 ### Summary
 <p>This repository contains a collection of configuration files that I currently use.
 It was customized and designed with the idea of creating a minimalistic development environment with Arch and Bspwm but it can be easily adapted to any linux distro as long as it installs the required dependencies.</p>
-##### 
-
-### Contents
 
 <p align="center">
+<img src="https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_05.png" align="right" width="400px">
+</p>
+
+### Contents
 1. <a href="https://github.com/leandrofmoraes/dotfiles#features" target="_blank">Features</a>
 2. <a href="https://github.com/leandrofmoraes/dotfiles#dependencies" target="_blank">Dependencies</a>
 3. <a href="https://github.com/leandrofmoraes/dotfiles#how-to-install-" target="_blank">Installation</a>
 4. <a href="https://github.com/leandrofmoraes/dotfiles#more-screenshots" target="_blank">Screenshots</a>
 5. <a href="https://github.com/leandrofmoraes/dotfiles#notes" target="_blank">Notes</a>
 </p> 
-<p align="center">
-	<img src="https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_05.png">
-</p>
 
 ### Features.
 - Modern look with transparency effects
