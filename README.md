@@ -1,6 +1,6 @@
 ## My Dotfiles!
 
-### About
+### Summary
 <p>This repository contains a collection of configuration files that I currently use.
 It was customized and designed with the idea of creating a minimalistic development environment with Arch and Bspwm but it can be easily adapted to any linux distro as long as it installs the required dependencies.</p>
 ##### 
