@@ -6,24 +6,25 @@ It was customized and designed with the idea of creating a minimalistic developm
 ##### 
 
 ### Contents
-<p align="center">
-1. <a href="Features" target="_blank"></a>
-2. <a href="Dependencies" target="_blank"></a>
-3. <a href="Screenshots" target="_blank"></a>
-4. <a href="Installation" target="_blank"></a>
-5. <a href="Notes" target="_blank"></a>
+<p>
+1. <a href="https://github.com/leandrofmoraes/dotfiles#features" target="_blank">Features</a>
+2. <a href="https://github.com/leandrofmoraes/dotfiles#dependencies" target="_blank">Dependencies</a>
+3. <a href="https://github.com/leandrofmoraes/dotfiles#how-to-install-" target="_blank">Installation</a>
+4. <a href="https://github.com/leandrofmoraes/dotfiles#more-screenshots" target="_blank">Screenshots</a>
+5. <a href="https://github.com/leandrofmoraes/dotfiles#notes" target="_blank">Notes</a>
 </p>
 
-- <summary><b>Previews</b></summary>
+<summary><b>Previews</b></summary>
 
 <p align="center">
-	<img src="Screenshot Here">
+	<img src="https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_05.png">
 </p>
 
 ### Features.
 - Modern look with transparency effects
 - Polybar with informative and interactive modules
 - Verbose system of notifications using dunst. (battery, music, bluetooth, volume, brightness, calendar)
+- Lightweight system can consume on average 430MB of RAM or less after boot. (Depends on the distro used as a base)
 - Improved productivity with VI keyboard shortcuts and less frequent mouse use.
 #####
 
@@ -72,18 +73,19 @@ $ cp -r . $HOME
 
 ### More Screenshots
 
-![img](url...)
+![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_01.png)
 
-![img](url...)
+![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_02.png)
 
 (On fresh boot)
 
-![img](url...)
+![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_04.png)
 
 With no windows open
 
-![img](url...)
+![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_06.png)
 
-Bar
+![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_03.png)
+
 
 #### Notes
