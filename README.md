@@ -6,19 +6,16 @@ It was customized and designed with the idea of creating a minimalistic developm
 ##### 
 
 ### Contents
-<p>
+|-|-|
+|!<p align="center">
 1. <a href="https://github.com/leandrofmoraes/dotfiles#features" target="_blank">Features</a>
 2. <a href="https://github.com/leandrofmoraes/dotfiles#dependencies" target="_blank">Dependencies</a>
 3. <a href="https://github.com/leandrofmoraes/dotfiles#how-to-install-" target="_blank">Installation</a>
 4. <a href="https://github.com/leandrofmoraes/dotfiles#more-screenshots" target="_blank">Screenshots</a>
 5. <a href="https://github.com/leandrofmoraes/dotfiles#notes" target="_blank">Notes</a>
-</p>
-
-<summary><b>Previews</b></summary>
-
-<p align="center">
+</p>|!<p align="center">
 	<img src="https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_05.png">
-</p>
+</p>|
 
 ### Features.
 - Modern look with transparency effects
@@ -68,24 +65,19 @@ $ git clone "..." /tmp && cd "/tmp/repo/dotfiles"
 ```
 $ cp -r . $HOME
 ```
-###### Note in the future I intend to create a script to facilitate this process.
-
+###### Note: in the future I intend to create a script to facilitate this process.
 
 ### More Screenshots
+<details>
+<summary></summary>
 
-![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_01.png)
+|-|-|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_01.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_02.png)|
 
-![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_02.png)
-
-(On fresh boot)
-
-![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_04.png)
-
-With no windows open
-
-![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_06.png)
-
-![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_03.png)
-
+|On fresh boot| With no windows open |
+|-|-|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_04.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_06.png)|
+|-|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_03.png)|
 
 #### Notes

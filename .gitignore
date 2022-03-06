@@ -75,6 +75,7 @@ Imagens/*
 !/.config/mpd/mpd.conf
 !/.config/mpd/mpd.fifo
 !/.config/mpd/socket
+#!/.config/mpd/playlists/
 #!/.config/mpd/database
 
 !/.config/mpv/
