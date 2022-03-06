@@ -98,7 +98,7 @@ Imagens/*
 
 ## Polybar
 !/.config/polybar/
-.config/polybar*
+.config/polybar/*
 !/.config/polybar/config
 !/.config/polybar/launch.sh
 !/.config/polybar/switch_theme.sh
