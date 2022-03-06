@@ -20,9 +20,9 @@ configuration {
 }
 
 * {
-    background:                     #05142F66;
+    background:                     #05142F88;
     background-alt:              	#05142F;
-    background-bar:                 #62AEEF33;
+    background-bar:                 #62AEEF66;
     foreground:                     #62AEEF;
     accent:			            	#62AEEFDD;
 }
@@ -94,7 +94,7 @@ mainbox {
 }
 
 element {
-    background-color:               @background-alt;
+    background-color:               @background;
     text-color:                     @foreground;
     /* orientation:                    vertical; */
     border-radius:                  10px;
@@ -117,8 +117,8 @@ element selected {
 
 element-text {
     expand:                         true;
-    background-color:	inherit;
-    text-color:		inherit;
+    background-color:	            inherit;
+    text-color:		                inherit;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
     margin:                         0.5% 0.3% 0.5% 0.3%;

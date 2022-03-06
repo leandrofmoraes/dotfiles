@@ -1,14 +1,14 @@
-[15:56:43.656][info] [#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:49]: Lua Lsp startup, root: 	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server
-[15:56:43.657][debug][#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:50]: ROOT:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server
-[15:56:43.657][debug][#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:51]: LOGPATH:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/log
-[15:56:43.657][debug][#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:52]: METAPATH:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta
-[15:56:43.658][debug][#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:53]: VERSION:	2.6.4
-[15:56:44.066][info] [#0:script/service/telemetry.lua:22]: Telemetry Token:	1DBB19B5C896E263
-[15:56:44.101][info] [#0:script/pub/pub.lua:48]: Create brave:	1
-[15:56:44.102][info] [#0:script/pub/pub.lua:48]: Create brave:	2
-[15:56:44.102][info] [#0:script/pub/pub.lua:48]: Create brave:	3
-[15:56:44.103][info] [#0:script/pub/pub.lua:48]: Create brave:	4
-[15:56:44.104][debug][#0:script/service/service.lua:141]: 
+[13:58:30.075][info] [#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:49]: Lua Lsp startup, root: 	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server
+[13:58:30.075][debug][#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:50]: ROOT:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server
+[13:58:30.075][debug][#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:51]: LOGPATH:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/log
+[13:58:30.075][debug][#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:52]: METAPATH:	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta
+[13:58:30.076][debug][#0:/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:53]: VERSION:	2.6.4
+[13:58:30.132][info] [#0:script/service/telemetry.lua:22]: Telemetry Token:	1DBB19B5C896E263
+[13:58:30.140][info] [#0:script/pub/pub.lua:48]: Create brave:	1
+[13:58:30.140][info] [#0:script/pub/pub.lua:48]: Create brave:	2
+[13:58:30.140][info] [#0:script/pub/pub.lua:48]: Create brave:	3
+[13:58:30.140][info] [#0:script/pub/pub.lua:48]: Create brave:	4
+[13:58:30.140][debug][#0:script/service/service.lua:141]: 
 ========= Medical Examination Report =========
     --------------- Memory ---------------
         Total: 1.350 MB
@@ -30,7 +30,7 @@
         Holdon:   0
         Waiting:  0
 ==============================================
-[15:56:44.443][debug][#0:script/client.lua:399]: Client init	{
+[13:58:30.248][debug][#0:script/client.lua:399]: Client init	{
     capabilities = {
         callHierarchy = {
             dynamicRegistration = false,
@@ -280,7 +280,7 @@
     },
     initializationOptions = {
     },
-    processId = 81667,
+    processId = 45339,
     rootPath = "/home/leandro-f",
     rootUri = "file:///home/leandro-f",
     trace = "off",
@@ -291,7 +291,7 @@
         },
     },
 }
-[15:56:44.444][info] [#0:script/language.lua:135]: VSC language: nil
-[15:56:44.444][info] [#0:script/language.lua:136]: LS  language: en-us
-[15:56:44.444][info] [#0:script/workspace/workspace.lua:37]: Workspace init root: 	file:///home/leandro-f
-[15:56:44.445][info] [#0:script/workspace/workspace.lua:41]: Log path: 	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/log/file_home_leandro-f.log
+[13:58:30.248][info] [#0:script/language.lua:135]: VSC language: nil
+[13:58:30.248][info] [#0:script/language.lua:136]: LS  language: en-us
+[13:58:30.248][info] [#0:script/workspace/workspace.lua:37]: Workspace init root: 	file:///home/leandro-f
+[13:58:30.248][info] [#0:script/workspace/workspace.lua:41]: Log path: 	/home/leandro-f/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/log/file_home_leandro-f.log

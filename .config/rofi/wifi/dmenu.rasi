@@ -61,7 +61,7 @@ element {
   orientation:		vertical;
   margin:		2px 2px 2px 2px;
   border-radius:	10px;
-  background-color: @bgAlt;
+  background-color: @bg;
 }
 
 element-text {

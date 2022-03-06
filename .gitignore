@@ -69,7 +69,14 @@ Imagens/*
 !/.config/nvim/
 !/.config/alacritty/
 !/.config/kitty/
+
 !/.config/mpd/
+.config/mpd/*
+!/.config/mpd/mpd.conf
+!/.config/mpd/mpd.fifo
+!/.config/mpd/socket
+#!/.config/mpd/database
+
 !/.config/mpv/
 !/.config/picom/
 
