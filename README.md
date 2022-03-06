@@ -6,6 +6,7 @@ It was customized and designed with the idea of creating a minimalistic developm
 ##### 
 
 ### Contents
+| | |
 |-|-|
 |!<p align="center">
 1. <a href="https://github.com/leandrofmoraes/dotfiles#features" target="_blank">Features</a>
@@ -70,14 +71,18 @@ $ cp -r . $HOME
 ### More Screenshots
 <details>
 <summary></summary>
-
+| | |
 |-|-|
 |![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_01.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_02.png)|
 
 |On fresh boot| With no windows open |
 |-|-|
 |![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_04.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_06.png)|
+
+| |
 |-|
 |![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_03.png)|
+
+</details>
 
 #### Notes
