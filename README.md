@@ -58,7 +58,7 @@ $ yay -Sy rofi playerctl mpc ffmpeg xclip bluez bluez-utils blueberry alacritty 
 - Install LunarVim following the steps can be seen in its <a href=https://github.com/LunarVim/LunarVim target="_blank">official repository</a>.
 - clone this repository to the current user's home directory or /tmp.
 ```
-$ git clone "https://github.com/leandrofmoraes/dotfiles.git" /tmp && cd "/tmp/repo/dotfiles"
+$ git clone https://github.com/leandrofmoraes/dotfiles.git /tmp && cd "/tmp/repo/dotfiles"
 ```
 - copy or move their contents to their respective directories.
 ```
