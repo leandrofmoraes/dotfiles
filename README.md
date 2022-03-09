@@ -82,6 +82,10 @@ $ cp -r . $HOME
 |-|
 |![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_03.png)|
 
+|Polybar with rounded corners and LunarVim with onedark color scheme|
+|-|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_08.png)|
+
 </details>
 
 #### Notes
