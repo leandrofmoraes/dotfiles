@@ -89,3 +89,6 @@ $ cp -r . $HOME
 </details>
 
 #### Notes
+Some scripts were used as the basis for rofi bluetooth menu and rofi wifi and deserve credit.
+- Rofi Wifi: [Rofi-Scripts](https://github.com/niraj998/Rofi-Scripts/tree/main/rofi/wifi)
+- Bluetooth menu: [rofi-bluetooth](https://github.com/nickclyde/rofi-bluetooth)
