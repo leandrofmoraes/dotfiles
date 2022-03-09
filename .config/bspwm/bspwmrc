@@ -86,8 +86,8 @@ picom -b --experimental-backends
 
 ######### My Bar ###############
 # polybar main 
-#polybar example -c ~/.config/polybar/Gloom-Oned-Theme/polybar/config.ini
-~/.config/polybar/switch_theme.sh wolf &
+~/.config/polybar/switch_theme.sh tempest &
+# ~/.config/polybar/switch_theme.sh tempest_rc &
 
 # variável guarda a quantidade de monitores
 # MONS=$(polybar --list-monitors | wc -l)

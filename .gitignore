@@ -105,7 +105,8 @@ Imagens/*
 !/.config/polybar/switch_theme.sh
 !/.config/polybar/themes/
 .config/polybar/themes/*
-!/.config/polybar/themes/wolf/
+!/.config/polybar/themes/tempest/
+!/.config/polybar/themes/tempest_rc/
 
 #!/.config/pulse/
 !/.config/pulseaudio-ctl/
