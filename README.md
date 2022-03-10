@@ -68,21 +68,21 @@ $ cp -r . $HOME
 
 ### More Screenshots
 <details>
-<summary></summary>
+<summary>click</summary>
 
-|LunarVim|With Ranger and Calendar notification|
+| LunarVim (NeoVim with Lua) | With Ranger and Calendar notification |
 |-|-|
 |![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_01.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_02.png)|
 
-|On fresh boot| With no windows open |
+| On fresh boot | With no windows open |
 |-|-|
 |![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_04.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_06.png)|
 
-|NCMPCPP and music notification |
+| NCMPCPP and music notification |
 |-|
 |![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_03.png)|
 
-|Polybar with rounded corners and LunarVim with onedark color scheme|
+| Polybar with rounded corners and LunarVim with onedark color scheme |
 |-|
 |![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_08.png)|
 
