@@ -69,6 +69,7 @@ Imagens/*
 !/.config/nvim/
 !/.config/alacritty/
 !/.config/kitty/
+!/.config/redshift/
 
 !/.config/mpd/
 .config/mpd/*

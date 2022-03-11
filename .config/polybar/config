@@ -16,10 +16,9 @@
 ;
 ;==========================================================
 
-include-file = ~/.config/polybar/themes/tempest/modules.ini
+include-file = ~/.config/polybar/themes/tempest_rc/modules.ini
 
 [colors]
-
 background = ${xrdb:color0:#9905142F}
 foreground = ${xrdb:color15:#62AEEF}
 
@@ -29,20 +28,10 @@ foreground = ${xrdb:color15:#62AEEF}
 ; | |_) | (_| | |  \__ \
 ; |_.__/ \__,_|_|  |___/
 
-[bar/bar]
-enable-ipc=true
-height = 28
-width = 98.5%
-offset-y = 5
-offset-x = 10
-padding = 1
-radius = 10
-; border-size = 1
-; border-color = #62AEEF
+label = %date%, %time%
 
-background = ${colors.background}
-foreground = ${colors.foreground}
 
+[bar/base]
 font-0=Iosevka Nerd Font:size=11;3
 font-1=IPAGothic:size=12:antialias=true;3
 font-2=PowerlineSymbols:size=12:antialias=true;3
@@ -60,22 +49,60 @@ font-8= "Material Icons Round:9;4"
 ; font-5=SF Pro Display:style=Semibold:size=12;4
 ; font-0=DroidSansMono\ Nerd\ Font:style=Book:size=11:antialias=true;3
 
-label = %date%, %time%
+dpi = 100
+enable-ipc=true
+height = 28
+width = 98%
+padding = 1
+;border-size = 1
+;border-color = #62AEEF
+;Works very well with a ;radius like this! Put it on every bar.
+radius = 15
+
+override-redirect=false
+offset-y = 5
+
+background = ${colors.background}
+foreground = ${colors.foreground}
 cursor-click = pointer
 
-dpi = 100
+[bar/center]
+inherit = bar/base
+wm-restack = bspwm
+background = #000000FF
+;background = #9905142F
+width = 13%
 
-modules-left = launcher xwindow
+offset-x = 43.5%
+
 modules-center = bspwm
-modules-right = music date-time pulseaudio bluetooth wlan battery session
-
-; modules-left =  bspwm 
-; modules-center = time 
-; modules-right = time pulseaudio battery
-
 scroll-up = bspwn-wsnext
 scroll-down = bspwn-wsprev
 
+
+[bar/right]
+inherit = bar/base
 wm-restack = bspwm
-override-redirect = false
+;foreground = #05142F
+;background = #62AEEF
+background = #99000819
+enable-ipc = true
+width = 30%
+
+offset-x = 69.4%
+
+modules-right = music date-time pulseaudio bluetooth wlan battery session
+
+[bar/left]
+inherit = bar/base
+wm-restack = bspwm
+;foreground = #05142F
+;background = #62AEEF
+background = #99000819
+width = 30%
+
+padding-right = 0
+offset-x = 0.6%
+
+modules-left = launcher xwindow
 

@@ -51,9 +51,6 @@ XF86AudioMute
 super + m
     mpd && konsole -e ncmpcpp || konsole -e ncmpcpp
 
-# super + shift + m
-#     xdotool search --class Visualizer &>/dev/null && (ps x | grep "konsole --class Visualizer" | grep -v grep | awk '{print $1}' | xargs kill) || konsole --class Visualizer -o background_opacity=1 -o font_size=8 -o window_margin_width=0 -e cava &
-
 # Music Player Control
 
 XF86AudioPlay
@@ -75,6 +72,10 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
     brightnessctl -q set 5%- && ~/.config/dunst/brightness_notification.sh --dec 
     # brightnessctl -q set 10%- && notify-send -t 1500 "Brightness Up $(brightnessctl get)%" -h int:value:$(brightnessctl get) -u low
+
+# Toggle Redshift temporarily
+super + shift + n
+    pkill -USR1 redshift
 
 # make sxhkd reload its configuration files:
 super + Escape

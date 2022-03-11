@@ -56,11 +56,11 @@ width = 98%
 padding = 1
 ;border-size = 1
 ;border-color = #62AEEF
-radius = 15
 ;Works very well with a ;radius like this! Put it on every bar.
+radius = 15
 
 override-redirect=false
-offset-y = 10
+offset-y = 5
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -68,6 +68,7 @@ cursor-click = pointer
 
 [bar/center]
 inherit = bar/base
+wm-restack = bspwm
 background = #000000FF
 ;background = #9905142F
 width = 13%
@@ -78,10 +79,10 @@ modules-center = bspwm
 scroll-up = bspwn-wsnext
 scroll-down = bspwn-wsprev
 
-wm-restack = bspwm
 
 [bar/right]
 inherit = bar/base
+wm-restack = bspwm
 ;foreground = #05142F
 ;background = #62AEEF
 background = #99000819
@@ -94,6 +95,7 @@ modules-right = music date-time pulseaudio bluetooth wlan battery session
 
 [bar/left]
 inherit = bar/base
+wm-restack = bspwm
 ;foreground = #05142F
 ;background = #62AEEF
 background = #99000819

@@ -73,7 +73,8 @@ bspc rule -a Thunar state=floating
 
 ######### Other Settings ################
 xsetroot -cursor_name left_ptr &
-xbacklight -set 40
+xbacklight -set 50
+redshift &
 
 ######## MY picom :) ###################
 # picom  &
@@ -86,8 +87,8 @@ picom -b --experimental-backends
 
 ######### My Bar ###############
 # polybar main 
-~/.config/polybar/switch_theme.sh tempest &
-# ~/.config/polybar/switch_theme.sh tempest_rc &
+# ~/.config/polybar/switch_theme.sh tempest &
+~/.config/polybar/switch_theme.sh tempest_rc &
 
 # variável guarda a quantidade de monitores
 # MONS=$(polybar --list-monitors | wc -l)

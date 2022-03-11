@@ -47,6 +47,7 @@ It was customized and designed with the idea of creating a minimalistic developm
 - Images (optional): [sxiv](https://github.com/muennich/sxiv)
 - Images: (To set backgrounds) [feh](https://github.com/derf/feh)
 - bluetooth: [bluez-utils](https://archlinux.org/packages/extra/x86_64/bluez-utils)
+- Night Light: (optional): [redshift](https://github.com/jonls/redshift)
 - Shell: Zsh
 
 ### How to Install ?
