@@ -91,7 +91,8 @@ width = 30%
 
 offset-x = 69.4%
 
-modules-right = music date-time pulseaudio bluetooth wlan battery session
+modules-right = music pulseaudio bluetooth wlan battery session
+modules-left = date-time
 
 [bar/left]
 inherit = bar/base
