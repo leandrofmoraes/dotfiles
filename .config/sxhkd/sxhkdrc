@@ -77,6 +77,10 @@ XF86MonBrightnessDown
 super + shift + n
     pkill -USR1 redshift
 
+# Betterlockscreen
+super + shift + l
+    betterlockscreen -l
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -131,7 +135,6 @@ super + g
 # set the node flags
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
-
 #
 # focus/swap
 #
@@ -145,7 +148,9 @@ super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous node in the current desktop
-super + {_,shift + }c
+#super + {_,shift + }c
+    #bspc node -f next.local && bspc node -t fullscreen
+alt + Tab
 	bspc node -f {next,prev}.local
 
 ## focus the next/previous desktop in the current monitor

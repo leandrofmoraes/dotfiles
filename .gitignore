@@ -37,6 +37,7 @@
 .gitignore.old
 .gtkrc-2.0
 .lesshst
+.node_repl_history
 .sdirs
 .viminfo
 .wget-hsts
@@ -64,6 +65,7 @@ Imagens/*
 
 ## .config
 .config/*
+!/.config/betterlockscreenrc
 !/.config/bspwm/
 !/.config/lvim/
 !/.config/nvim/

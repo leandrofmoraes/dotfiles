@@ -73,7 +73,7 @@ bspc rule -a Thunar state=floating
 
 ######### Other Settings ################
 xsetroot -cursor_name left_ptr &
-xbacklight -set 45
+xbacklight -set 40
 redshift &
 
 ######## MY picom :) ###################
