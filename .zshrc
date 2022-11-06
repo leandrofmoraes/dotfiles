@@ -5,6 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+#set lunar vim as default editor
+VISUAL=/home/leandro-f/.local/bin/lvim
+export EDITOR="$VISUAL"
+
 # Use powerline
 USE_POWERLINE="true"
 # Source manjaro-zsh-configuration

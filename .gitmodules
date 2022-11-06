@@ -1,0 +1,5 @@
+[submodule ".local/share/lunarvim/lvim"]
+    path = .local/share/lunarvim/lvim
+    url = https://github.com/LunarVim/LunarVim.git
+    ignore = dirty
+

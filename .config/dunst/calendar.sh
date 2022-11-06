@@ -1,12 +1,14 @@
-#! /bin/bash
+#!/usr/bin/bash
 
 send_notification() {
 	TODAY=$(date '+%-d')
 	HEAD=$(cal "$1" | head -n1)
 	BODY=$(cal "$1" | tail -n7 | sed -z "s|$TODAY|<u><b>$TODAY</b></u>|1")
-	FOOT="\n<i>       ~ calendar</i> 󰸗 "
-	notify-send -h string:x-canonical-private-synchronous:calendar \
-		-i calendar "$HEAD" "$BODY$FOOT" -u normal
+	# FOOT="\n<i>       ~ calendar</i> 󰸗 "
+    #LINE="------------------------"
+	FOOT="\n  $TEMPERATURE  ~ $CURRENT_CONDITION"
+	dunstify -h string:x-canonical-private-synchronous:calendar \
+		-i calendar "$HEAD" "$BODY$LINE$FOOT" -u normal
 }
 
 handle_action() {
@@ -29,4 +31,10 @@ case $1 in
 	"prev") DIFF=$((DIFF-1));;
 esac
 
+weather_condition(){
+    TEMPERATURE=$(curl -s 'wttr.in/SantoAndré?format=%t\n' | cut -d '+' -f2)
+    CURRENT_CONDITION=$(curl -s 'wttr.in/SantoAndré?format=%c%C\n')
+}
+
+weather_condition
 handle_action

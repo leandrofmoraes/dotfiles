@@ -2,6 +2,7 @@
 *.pyc 
 *.pyo
 *.class
+*.log
 
 #.git/
 /Área de trabalho/
@@ -11,22 +12,38 @@
 /Música/
 /Público/
 /Vídeos/
+/Arduino/
 /workspace/
+/Postman/
 /.cargo/
+/.lemminx/
 /.lyrics/
 /.mozilla/
+/.eclipse/
 /.fonts/
+/.gnome/
 /.icons/
 /.kde4/
+/.m2/
 /.npm/
 .oh-my-bash/
 /.pki/
 /.rustup/
+/.ssh/
+/.swt
 /.subversion/
 /.themes/
+/.var/
 /.vim/
 /.vscode/
 /.yarn/
+/.appimages/
+/.redhat/
+/.p2/
+/.java/
+/.docker/
+/docker-images
+.arduino15
 .bash_history
 .bash_logout
 .bash_profile
@@ -37,6 +54,8 @@
 .gitignore.old
 .gtkrc-2.0
 .lesshst
+.luarc.json
+.mysql_history
 .node_repl_history
 .sdirs
 .viminfo
@@ -47,6 +66,7 @@
 .yarnrc
 .zcompdump
 .zhistory
+.python_history
 
 ## not ignored
 !.fehbg
@@ -151,8 +171,13 @@ Imagens/*
 ## local/share
 !/.local/share
 .local/share/*
-!.local/share/lunarvim/*
-!.local/share/nvim/
+!.local/share/lunarvim
+.local/share/lunarvim/*
+!.local/share/lunarvim/lvim
+.local/share/lunarvim/lvim/*
+!.local/share/lunarvim/lvim/lua
+!.local/share/lunarvim/lvim/init.lua
+.local/share/nvim/
 !.local/share/rofi/
 #!.local/share/ranger/
 #!.local/share/fonts/

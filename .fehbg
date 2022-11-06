@@ -1,4 +1,10 @@
 #!/bin/sh
 # feh --no-fehbg --bg-scale '/home/leandro-f/Imagens/wallpapers/55hg8youpru21.jpg' #Cervo
 # feh --no-fehbg --bg-scale '/home/leandro-f/Imagens/wallpapers/wp5440815-aesthetic-gaming-4k-wallpapers.png' # Coruja
-feh --no-fehbg --bg-scale '/home/leandro-f/Imagens/wallpapers/dc2d14bf8591b7ebe65203b02d0a4d45.jpg' # Rio
+# feh --no-fehbg --bg-scale '/home/leandro-f/Imagens/wallpapers/dc2d14bf8591b7ebe65203b02d0a4d45.jpg' # Rio
+# feh --no-fehbg --bg-scale '/home/leandro-f/Imagens/wallpapers/wp5267294-neon-4k-desktop-wallpapers.jpg' # Naves
+# feh --no-fehbg --bg-scale '/home/leandro-f/Imagens/wallpapers/c25eb66ea965c789902119a4a8003353.jpg' # Cyberpunk 2077
+# feh --no-fehbg --bg-scale '/home/leandro-f/Imagens/wallpapers/4044889.jpg' # Neon City
+# feh --no-fehbg --bg-scale '/home/leandro-f/Imagens/wallpapers/4044881.jpg' # Samurai
+# feh --no-fehbg --bg-scale '/home/leandro-f/Imagens/wallpapers/wp5267287-neon-4k-desktop-wallpapers.jpg' # Neon City 2
+feh --no-fehbg --bg-scale '/home/leandro-f/Imagens/wallpapers/wallpaperflare.com_wallpaper (1).jpg' # Interior Carro

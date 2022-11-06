@@ -69,7 +69,7 @@ bspc rule -a Screenkey manage=off
 # bspc rule -a TelegramDesktop desktop='^4'
 bspc rule -a Firefox desktop='^2' state=floating
 bspc rule -a Chrome desktop='^2' state=floating
-bspc rule -a Thunar state=floating
+# bspc rule -a Thunar state=floating
 
 ######### Other Settings ################
 xsetroot -cursor_name left_ptr &

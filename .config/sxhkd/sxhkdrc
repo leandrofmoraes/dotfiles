@@ -28,6 +28,10 @@ super + e
 super + shift + e
 	thunar
 
+# Internet Browser
+super + n
+    google-chrome-stable
+
 # flameshot options
 {Print}
     flameshot gui
