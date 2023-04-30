@@ -81,9 +81,9 @@ $ cp -r . $HOME
 <details>
 <summary>click</summary>
 
-| Polybar with rounded corners and LunarVim with Lunar color scheme | Visual Studio Code with Winter is Coming theme |
-|-|-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_08.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_09.png)|
+| Polybar with rounded corners, Alacritty, Rofi Search Menu and Ranger File Manager |
+|-|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_06.png)|
 
 | NCMPCPP, LunarVim, cava and music notification |
 |-|
@@ -93,9 +93,9 @@ $ cp -r . $HOME
 |-|-|
 |![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_03.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_07.png)|
 
-| Polybar with rounded corners, Alacritty, Rofi Search Menu and Ranger File Manager |
-|-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_06.png)|
+| Polybar with rounded corners and LunarVim with Lunar color scheme | Visual Studio Code with Winter is Coming theme |
+|-|-|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_08.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_09.png)|
 
 </details>
 
