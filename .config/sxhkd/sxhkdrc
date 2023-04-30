@@ -14,23 +14,38 @@
 #
 
 # terminal emulator
-{super + Return, ctrl + alt + t}
-	konsole
+{super + Return}
+    alacritty
+    # bspterm
+    # kitty
+	# konsole
+
+{ctrl + alt + t}
+    bspterm --float
 
 # program launcher
-{ctrl + @space, super + s}
-	rofi -show drun -show-icons
+super + s
+    rofi -show drun -show-icons
+
+{super + r}
+    rofi -show run -show-icons -terminal alacritty
+# rofi -dmenu -theme-str 'entry{placeholder: " Run";}'
 
 # file explorer
 super + e
-	konsole -e ranger
+	alacritty -e ranger
+    # kitty -e ranger
+	# konsole -e ranger
 
 super + shift + e
 	thunar
 
 # Internet Browser
-super + n
+super + shift + b
     google-chrome-stable
+
+super + b
+    qutebrowser
 
 # flameshot options
 {Print}
@@ -52,22 +67,24 @@ XF86AudioMute
     # ~/.config/rofi/scripts/volume.sh mute
 
 # NCMPCPP (Music Player)
-super + m
-    mpd && konsole -e ncmpcpp || konsole -e ncmpcpp
+super + n
+    mpd && alacritty -e ncmpcpp || alacritty -e ncmpcpp
+    # mpd && kitty -e ncmpcpp || kitty -e ncmpcpp
+    # mpd && konsole -e ncmpcpp || konsole -e ncmpcpp
 
 # Music Player Control
 
 XF86AudioPlay
-    mpc -q toggle && ~/.config/dunst/music_notification.sh || playerctl -p spotify play-pause || playerctl play-pause
+    mpc -q toggle && ~/.config/dunst/music_notification.sh || playerctl -p spotify play-pause || mocp -G || playerctl play-pause
 
 XF86AudioNext
-    mpc -q next && ~/.config/dunst/music_notification.sh || playerctl -p spotify next || playerctl next
+    mpc -q next && ~/.config/dunst/music_notification.sh || playerctl -p spotify next || mocp -f || playerctl next
 
 XF86AudioPrev
-    mpc -q prev && ~/.config/dunst/music_notification.sh || playerctl -p spotify prev || playerctl prev
+    mpc -q prev && ~/.config/dunst/music_notification.sh || playerctl -p spotify prev || mocp -r || playerctl prev
 
 XF86AudioStop
-    mpc -q stop || playerctl -p spotify stop || playerctl stop
+    mpc -q stop || playerctl -p spotify stop || mocp -s || playerctl stop
     
 
 # Brightness Control

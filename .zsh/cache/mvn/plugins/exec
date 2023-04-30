@@ -1,0 +1,4 @@
+_goals=( ${(Q)"${(z)$(<<\EO:_goals
+'exec:A Plugin for executing external programs. ' 'help:Display help information on exec-maven-plugin. Call mvn exec\:help -Ddetail=true -Dgoal=<goal-name> to display parameter details. ' 'java:Executes the supplied java class in the current VM with the enclosing project'\''s dependencies as classpath.'
+EO:_goals
+)}"} )

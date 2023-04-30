@@ -8,6 +8,7 @@ fi
 #set lunar vim as default editor
 VISUAL=/home/leandro-f/.local/bin/lvim
 export EDITOR="$VISUAL"
+export PATH=$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin
 
 # Use powerline
 USE_POWERLINE="true"
@@ -47,10 +48,19 @@ typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uF17C' #Tux OS symbol
 # \uF179 - Apple (or \uE711)
 # \uE7B0 - Docker
 # \uE722 - Rasberry Pi
+# \uf315 - Raspberry Pi
 
 source /home/leandro/.my_aliases
 source /home/leandro/.my_functions
 PATH=$PATH:/usr/sbin:/sbin
+
+#Plugins
+source /usr/share/zsh/plugins/cp/cp.plugin.zsh
+source /usr/share/zsh/plugins/fzf/fzf.plugin.zsh
+# source /usr/share/zsh/plugins/zsh-colorls/zsh-colorls.plugin.zsh
+source /usr/share/zsh/plugins/colored-man-pages/colored-man-pages.plugin.zsh
+# source /usr/share/zsh/plugins/zsh-extend-history/extend-history.plugin.zsh
+# source /usr/share/zsh/plugins/auto-color-ls/auto-color-ls.plugin.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

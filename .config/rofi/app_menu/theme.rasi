@@ -13,12 +13,14 @@ configuration {
     disable-history:                false;
     fullscreen:                     false;
 	hide-scrollbar: 				true;
-	sidebar-mode: 					false;
+	/* sidebar-mode: 					false; */
+	sidebar-mode: 					true;
+    /* fixed-num-lines: false; */
 }
 
 * {
-    bg:                             #05142F88;
-    bgAlt:                          #05142F;
+    bg:                             #05142F33;
+    bgAlt:                          #05142FA9;
     fg:                             #62AEEF;
     button:                         @bgAlt;
     background-color:               @bg;
@@ -31,12 +33,13 @@ window {
     text-color:                     @fg;
 	border:							0px;
 	border-color:					@ac;
-    border-radius:	                12px;
-	height:							94%;
-	width:							20%;
-    location:                       west;
-    x-offset:                       10px;
-    y-offset:                       13px;
+    border-radius:	                2px;
+	/* height:							94%; */
+	height:							3.8%;
+	width:							26.5%;
+    location:                       northwest;
+    x-offset:                       50px;
+    y-offset:                       3px;
 }
 
 prompt {
@@ -51,7 +54,6 @@ entry {
     background-color:               @bgAlt;
     text-color:                     @CCCCCC;
     placeholder-color:              @fg;
-    expand:                         true;
     horizontal-align:               0;
     placeholder:                    "  Search";
     padding:                        0.5% 0% 0% 0%;
@@ -62,10 +64,9 @@ inputbar {
 	children: 						[ prompt, entry ];
     background-color:               @bgAlt;
     text-color:                     @fg;
-    expand:                         false;
-	border:							1px;
+	border:							0px;
 	border-color:					@fg;
-    border-radius:	                10px;
+    border-radius:	                15px;
     margin:                         0% 0% 0% 0%;
     padding:                        0.5%;
 }
@@ -75,16 +76,19 @@ listview {
     padding:                        0px;
     columns:                        1;
     lines:                          5;
+    require-input:                  true;
     spacing:                        5px;
-    cycle:                          false;
+    cycle:                          true;
     dynamic:                        true;
+    scrollbar: true;
+    fixed-height:                 false;
     layout:                         vertical;
 }
 
 mainbox {
     background-color:               @bg;
 	border:							0% 0% 0% 0%;
-    border-radius:                  12px;
+    border-radius:                  15px;
 	border-color:					@bg;
     children:                       [ inputbar, listview ];
     spacing:                       	0.5%;

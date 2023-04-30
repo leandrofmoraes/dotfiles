@@ -1,0 +1,4 @@
+_properties=( ${(Q)"${(z)$(<<\EO:_properties
+'addOutputToClasspath:Add project output directory to classpath. This might be undesirable when the exec plugin is run before the compile step. Default is true.' 'addResourcesToClasspath:Add project resource directories to classpath. This is especially useful if the exec plugin is used for a code generator that reads its settings from the classpath.' 'sourceRoot:This folder is added to the list of those folders containing source to be compiled. Use this if your plugin generates source code.' 'testSourceRoot:This folder is added to the list of those folders containing source to be compiled for testing. Use this if your plugin generates test source code.'
+EO:_properties
+)}"} )

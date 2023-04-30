@@ -5,15 +5,16 @@
 It was customized and designed with the idea of creating a minimalistic development environment with Arch and Bspwm but it can be easily adapted to any linux distro as long as it installs the required dependencies.</p>
 
 <p align="center">
-<img src="https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_05.png" align="right" width="400px">
+<img src="https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_01.png" align="right" width="400px">
 </p>
 
 ### Contents
 1. <a href="https://github.com/leandrofmoraes/dotfiles#features" target="_blank">Features</a>
-2. <a href="https://github.com/leandrofmoraes/dotfiles#dependencies" target="_blank">Dependencies</a>
-3. <a href="https://github.com/leandrofmoraes/dotfiles#how-to-install-" target="_blank">Installation</a>
-4. <a href="https://github.com/leandrofmoraes/dotfiles#more-screenshots" target="_blank">Screenshots</a>
-5. <a href="https://github.com/leandrofmoraes/dotfiles#notes" target="_blank">Notes</a>
+2. <a href="https://github.com/leandrofmoraes/dotfiles#changelogs" target="_blank">Changelogs</a>
+3. <a href="https://github.com/leandrofmoraes/dotfiles#dependencies" target="_blank">Dependencies</a>
+4. <a href="https://github.com/leandrofmoraes/dotfiles#how-to-install-" target="_blank">Installation</a>
+5. <a href="https://github.com/leandrofmoraes/dotfiles#more-screenshots" target="_blank">Screenshots</a>
+6. <a href="https://github.com/leandrofmoraes/dotfiles#notes" target="_blank">Notes</a>
 </p> 
 
 ### Features.
@@ -22,17 +23,23 @@ It was customized and designed with the idea of creating a minimalistic developm
 - Verbose system of notifications using dunst. (battery, music, bluetooth, volume, brightness, calendar)
 - Lightweight system can consume on average 430MB of RAM or less after boot. (Depends on the distro used as a base)
 - Improved productivity with VI keyboard shortcuts and less frequent mouse use.
+
+### Changelogs
+- Settings using picom to provide rounded corners and blur effect.
+- Added support for multiple screens in bspwm configuration file
 #####
 
 ### Dependencies.
 - WM: [Bspwm](https://github.com/baskerville/bspwm.git)
 - Hotkey daemon: [sxhkd](https://github.com/baskerville/sxhkd)
 - Terminal: [Alacritty](https://github.com/alacritty/alacritty)
-- Terminal (optional): [kitty](https://github.com/kovidgoyal/kitty.git)
+- Terminal: [kitty](https://github.com/kovidgoyal/kitty.git)
 - Notification daemon: [dunst](https://github.com/dunst-project/dunst)
 - IDE: [neovim](https://github.com/neovim/neovim)
 - IDE: (optional but recommended) [lunarvim](https://github.com/LunarVim/LunarVim)
 - Launcher:	[rofi](https://github.com/davatorium/rofi.git)
+- UI for git: [LazyGit](https://github.com/jesseduffield/lazygit)
+- Monitor of resources: [btop](https://github.com/aristocratos/btop) or [bashtop](https://github.com/aristocratos/bashtop)
 - bar: [polybar](https://github.com/polybar/polybar)
 - Compositor: [picom](https://github.com/ibhagwan/picom.git)
 - Audio: [pulseaudio](https://gitlab.freedesktop.org/pulseaudio/pulseaudio)
@@ -40,8 +47,10 @@ It was customized and designed with the idea of creating a minimalistic developm
 - Music: [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp.git)
 - Music: (ncmpcpp dependency): [mpd](https://github.com/MusicPlayerDaemon/MPD)
 - Music: (mpd dependency): [mpc](https://github.com/MusicPlayerDaemon/mpc)
+- Music: (optional): [mocp](https://github.com/jonsafari/mocp)
 - Visualizer: [Cava](https://github.com/karlstav/cava.git)
 - File manager: [ranger](https://github.com/ranger/ranger)
+- File manager (optional): [Thunar](https://wiki.archlinux.org/title/thunar)
 - Images: (ranger dependency): [ueberzug](https://github.com/seebye/ueberzug)
 - Images: [pqiv](https://github.com/seebye/ueberzug)
 - Images (optional): [sxiv](https://github.com/muennich/sxiv)
@@ -72,21 +81,21 @@ $ cp -r . $HOME
 <details>
 <summary>click</summary>
 
-| LunarVim (NeoVim with Lua) | With Ranger and Calendar notification |
+| Polybar with rounded corners and LunarVim with Lunar color scheme | Visual Studio Code with Winter is Coming theme |
 |-|-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_01.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_02.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_08.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_09.png)|
 
-| On fresh boot | With no windows open |
+| NCMPCPP, LunarVim, cava and music notification |
+|-|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_05.png)|
+
+| LunarVim (NeoVim with Lua), mocp (Music player) and LazyGit | btop |
 |-|-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_04.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_06.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_03.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_07.png)|
 
-| NCMPCPP and music notification |
+| Polybar with rounded corners, Alacritty, Rofi Search Menu and Ranger File Manager |
 |-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_03.png)|
-
-| Polybar with rounded corners and LunarVim with onedark color scheme |
-|-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/Screenshots/Screenshot_08.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_06.png)|
 
 </details>
 

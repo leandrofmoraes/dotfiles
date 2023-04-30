@@ -6,6 +6,7 @@
 
 #.git/
 /Área de trabalho/
+/.doom.d/
 /Documentos/
 /Downloads/
 /Modelos/
@@ -15,11 +16,13 @@
 /Arduino/
 /workspace/
 /Postman/
+/.byobu/
 /.cargo/
 /.lemminx/
 /.lyrics/
 /.mozilla/
 /.eclipse/
+/eclipse-workspace/
 /.fonts/
 /.gnome/
 /.icons/
@@ -59,6 +62,8 @@
 .node_repl_history
 .sdirs
 .viminfo
+/.vnc/
+/.webclipse/
 .wget-hsts
 .Xauthority
 .Xclients
@@ -79,7 +84,7 @@
 ## Imagens
 Imagens/*
 !/Imagens/wallpapers/
-!/Imagens/Screenshots/
+!/Imagens/assets/
 
 /.cache/
 
@@ -93,6 +98,10 @@ Imagens/*
 !/.config/kitty/
 !/.config/redshift/
 
+.config/Code/*
+!/.config/Code/Backups/
+
+
 !/.config/mpd/
 .config/mpd/*
 !/.config/mpd/mpd.conf
@@ -103,6 +112,8 @@ Imagens/*
 
 !/.config/mpv/
 !/.config/picom/
+.config/picom/picom.conf.example
+.config/picom/picom.conf.bak-2
 
 #!/.config/gcolor3/
 
@@ -122,14 +133,7 @@ Imagens/*
 
 ## Polybar
 !/.config/polybar/
-.config/polybar/*
-!/.config/polybar/config
-!/.config/polybar/launch.sh
-!/.config/polybar/switch_theme.sh
-!/.config/polybar/themes/
-.config/polybar/themes/*
-!/.config/polybar/themes/tempest/
-!/.config/polybar/themes/tempest_rc/
+.config/polybar/themes/reference-themes
 
 #!/.config/pulse/
 !/.config/pulseaudio-ctl/
@@ -165,21 +169,12 @@ Imagens/*
 ## local/bin
 !/.local/bin
 .local/bin/*
-!/.local/bin/lvim
 !/.local/bin/pulseaudio-ctl
 
 ## local/share
-!/.local/share
-.local/share/*
-!.local/share/lunarvim
-.local/share/lunarvim/*
-!.local/share/lunarvim/lvim
-.local/share/lunarvim/lvim/*
-!.local/share/lunarvim/lvim/lua
-!.local/share/lunarvim/lvim/init.lua
-.local/share/nvim/
-!.local/share/rofi/
+# !/.local/share
+# .local/share/*
+# !.local/share/rofi/
 #!.local/share/ranger/
 #!.local/share/fonts/
 #!.local/share/icons/
-

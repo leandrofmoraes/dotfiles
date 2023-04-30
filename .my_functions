@@ -13,7 +13,7 @@ git-svn(){
 }
 
 function imgv(){
-    local caminho=$HOME/.config/nvim
+    # local caminho=$HOME/.config/nvim
 
     if [ -f $1 ]; then
         pqiv -ic $1
@@ -24,7 +24,7 @@ function imgv(){
 }
 
 function imgs(){
-    local caminho=$HOME/.config/nvim
+    # local caminho=$HOME/.config/nvim
 
     if [ -f $1 ]; then
         sxiv -b $1
@@ -42,12 +42,12 @@ function ncmp(){
     ncmpcpp
 }
 
-function nvchange(){
-    local caminho=$HOME/.config/nvim
+# function nvchange(){
+#     local caminho=$HOME/.config/nvim
 
-    if [ -f $caminho/init.vim ]; then
-            mv $caminho/init.vim $caminho/init.vim.bkp && mv $caminho/init.lua.bkp $caminho/init.lua
-    else
-        mv $caminho/init.lua $caminho/init.lua.bkp && mv $caminho/init.vim.bkp $caminho/init.vim
-    fi 
-}
+#     if [ -f $caminho/init.vim ]; then
+#             mv $caminho/init.vim $caminho/init.vim.bkp && mv $caminho/init.lua.bkp $caminho/init.lua
+#     else
+#         mv $caminho/init.lua $caminho/init.lua.bkp && mv $caminho/init.vim.bkp $caminho/init.vim
+#     fi 
+# }

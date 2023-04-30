@@ -1,5 +1,25 @@
+import:
+  - ~/.config/alacritty/themes/breeze.yaml
+  # - ~/.config/alacritty/themes/catppuccin-mocha.yml
+  # - ~/.config/alacritty/themes/catppuccin-macchiato.yml
+  # - ~/.config/alacritty/themes/catppuccin-latte.yml
+
+env:
+  TERM: 'xterm-256color'
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+# TERM: 'xterm-256color'
+
+colors:
+  primary:
+    background: '0x000819'
+
 scrolling:
-  history: 10000
+  history: 5000
   multiplier: 3
 
 window:
@@ -9,14 +29,29 @@ window:
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
   padding:
-    x: 3
-    y: 1
+    x: 5
+    y: 5
+
+  # Spread additional padding evenly around the terminal content.
+  dynamic_padding: false
+
+  # Window title
+  title: Alacritty
+
+  # Window class (Linux/BSD only):
+  class:
+    # Application instance name
+    instance: Alacritty
+    # General application class
+    general: Alacritty
 
   dimensions:
    columns: 110
    lines: 28
 
-  opacity: 0.75
+  opacity: 0.7
+  # opacity: 0.5
+
   # Window class (Linux/BSD only):
   class:
     # Application instance name
@@ -35,24 +70,25 @@ window:
 
 font:
   normal:
-    # family: JetBrains Mono Nerd Font
-    family: DroidSansMono Nerd Font
-    style:  Book
+    family: 'JetBrains Mono Nerd Font'
+    # family: 'DroidSansMono Nerd Font'
+    # style:  Book
+    style:  Regular
     # style:  Medium
   bold:
-    # family: JetBrains Mono Nerd Font
-    family: DroidSansMono Nerd Font
+    family: 'JetBrains Mono Nerd Font'
+    # family: 'DroidSansMono Nerd Font'
     style:  Bold
   italic:
-    # family: JetBrains Mono Nerd Font
-    family: DroidSansMono Nerd Font
+    family: 'JetBrains Mono Nerd Font'
+    # family: 'DroidSansMono Nerd Font'
     style:  MediumItalic
   bold_italic:
-    # family: JetBrains Mono Nerd Font
-    family: DroidSansMono Nerd Font
+    family: 'JetBrains Mono Nerd Font'
+    # family: 'DroidSansMono Nerd Font'
     style: BoldItalic
   size: 9
-draw_bold_text_with_bright_colors: true
+# draw_bold_text_with_bright_colors: true
 
 cursor:
   # Cursor style
@@ -63,6 +99,8 @@ cursor:
     #   - ▇ Block
     #   - _ Underline
     #   - | Beam
+    shape: Underline
+  vi_mode_style:
     shape: Block
 
     # Cursor blinking state
@@ -74,37 +112,20 @@ cursor:
     #   - Always: Force the cursor to always blink
     blinking: On
 
-colors:
-  primary:
-    background: "#000819"
-    foreground: "#a9b1d6"
-  normal:
-    black: "#32344a"
-    blue: "#62AEEF"  #blue: "#7aa2f7"
-    magenta: "#ad8ee6"
-    white: "#787c99"
-    cyan: "#7BE9FD" #"#449dab"
-    green: "#50FA7B" #"#9ece6a"
-    orange: "#FFB86C"
-    pink: "#FF79C6"
-    purple: "#BD93F9"
-    red: "#FF5555" #"#f7768e"
-    yellow: "#F1FA8C" #"#e0af68"
-  bright:
-    black: "#444b6a"
-    red: "#ff7a93"
-    green: "#b9f27c"
-    yellow: "#ff9e64"
-    blue: "#62AEEF"  #blue: "#7aa2f7"
-    magenta: "#bb9af7"
-    cyan: "#0db9d7"
-    white: "#acb0d0"
+#vi_mode_style: None
+# Cursor blinking interval in milliseconds.
+  #blink_interval: 750
 
+  # Time after which cursor stops blinking, in seconds.
+  #
+  # Specifying '0' will disable timeout for blinking.
+  #blink_timeout: 5
+  
 selection:
   save_to_clipboard: true
 
 shell:
-  program: /usr/bin/zsh
+  program: /bin/zsh
 
 key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }

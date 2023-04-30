@@ -4,11 +4,14 @@ configuration {
   show-icons:         true;
   icon-theme:         "Papirus";
 }
+
 //@theme "/usr/share/rofi/themes/DarkBlue.rasi"
 //@theme "/home/leandro-f/.local/share/rofi/themes/rounded-custom.rasi"
-//@theme "/usr/share/rofi/themes/DarkBlue.rasi"
 //@theme "/home/leandro-f/.local/share/rofi/themes/rounded-custom.rasi"
 //@theme "/home/leandro-f/.config/rofi/themes/launchpad.rasi"
 //@theme "/home/leandro-f/.config/rofi/themes/rounded-custom.rasi"
 //@theme "/home/leandro-f/.local/share/rofi/themes/spotlight-dark.rasi"
-@theme "/home/leandro-f/.local/share/rofi/themes/rounded-custom.rasi"
+//@theme "/home/leandro-f/.local/share/rofi/themes/rounded-custom.rasi"
+//@theme "/home/leandro-f/.local/share/rofi/themes/search_bar.rasi"
+@theme "themes/search_bar.rasi"
+//@theme "themes/sample.config.rasi"

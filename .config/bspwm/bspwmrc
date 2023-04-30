@@ -16,26 +16,26 @@
 sxhkd &
 # pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor eDP -d 1 2 3 4 5
-# bspc monitor HDMI1 -d 6 7 8 9 0
+# bspc monitor eDP -d 1 2 3 4 5
+# bspc monitor HDMI1 -d 5 6 7 8 9 
 # bspc monitor -d I II III IV V VI VII VIII IX X
 
 # checa se existem dois monitores definidos
-# MON=$(xrandr --listmonitors | grep Monitors | cut -b 11-)
+MON=$(xrandr --listmonitors | grep Monitors | cut -b 11-)
 
-    # caso tenha, executa o setup para dois
-# if [[ $MON == 2 ]] ; then
-#     xrandr --output eDP1 --primary --left-of eDP1 --auto &
-#     bspc monitor eDP -d 1 2 3 4 5 
-#     bspc monitor HDMI -d 6 7 8 9
-# else
-#     bspc monitor eDP -d 1 2 3 4 5
-# fi
+# caso tenha, executa o setup para dois
+if [[ $MON == 2 ]] ; then
+    xrandr --output eDP --primary --left-of eDP --auto &
+    bspc monitor eDP -d 1 2 3 4 5 
+    bspc monitor HDMI -d 6 7 8 9
+else
+    bspc monitor eDP -d 1 2 3 4 5
+fi
 
 
 ########## Window Settings ##############
 bspc config border_width         1
-bspc config window_gap           10  
+bspc config window_gap           6 #8 #10  
 bspc config focus_follows_pointer	true
 
 bspc config split_ratio          0.50 
@@ -56,30 +56,34 @@ bspc config normal_border_color "#44475a"
 # bspc config active_border_color "#bd93f9"
 # bspc config focused_border_color "#ff79c6"
 #--Cyan
-# bspc config active_border_color "#6272a4"
-bspc config active_border_color "#62AEEF"
-bspc config focused_border_color "#8be9fd"
+bspc config active_border_color "#6272a4"
+# bspc config active_border_color "#62AEEF" # Borda Azul
+# bspc config focused_border_color "#B542FF" # Borda Pink
+bspc config focused_border_color "#62AEEF" # Borda Azul
+# bspc config focused_border_color "#8be9fd"
 
 
 ######### Program settings ################
 # bspc rule -a Gimp desktop='^8' state=floating follow=on
 # bspc rule -a mplayer2 state=floating
-# bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 # bspc rule -a TelegramDesktop desktop='^4'
-bspc rule -a Firefox desktop='^2' state=floating
-bspc rule -a Chrome desktop='^2' state=floating
+bspc rule -a Firefox desktop='^2' follow=on
+bspc rule -a Google-chrome desktop='^2' follow=on
 # bspc rule -a Thunar state=floating
+# bspc rule -a Java desktop='^3' state=floating
+bspc rule -a Eclipse desktop='^3' state=floating follow=on # center=on 
+bspc rule -a Mpv state=floating focus=on
 
 ######### Other Settings ################
 xsetroot -cursor_name left_ptr &
-xbacklight -set 40
+xbacklight -set 30
 redshift &
 
 ######## MY picom :) ###################
 # picom  &
-picom -b --experimental-backends
-# picom -b
+# picom -b --experimental-backends
+picom -b
 
 ######## THe real beauty behind rice ####
 # nitrogen --restore &
