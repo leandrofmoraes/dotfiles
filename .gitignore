@@ -37,6 +37,8 @@
 /.m2/
 /.mozilla/
 /Modelos/
+.moc/pid
+.moc/last_directory
 .mplayer/
 /mpv-osc-modern/
 /Música/
@@ -114,6 +116,7 @@ Imagens/*
 !/.config/bspwm/
 !/.config/bashtop/
 !/.config/cava/
+.config/cava/shaders/
 !/.config/eww/
 !/.config/htop/
 !/.config/lazygit/
