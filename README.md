@@ -15,7 +15,7 @@ It was customized and designed with the idea of creating a minimalistic developm
 4. <a href="https://github.com/leandrofmoraes/dotfiles#how-to-install-" target="_blank">Installation</a>
 5. <a href="https://github.com/leandrofmoraes/dotfiles#more-screenshots" target="_blank">Screenshots</a>
 6. <a href="https://github.com/leandrofmoraes/dotfiles#notes" target="_blank">Notes</a>
-</p> 
+</p>
 
 ### Features.
 - Modern look with transparency effects
@@ -64,7 +64,7 @@ It was customized and designed with the idea of creating a minimalistic developm
 - Install dependencies according to your Linux distribution. As said, I took Arch as a base, but you can consult the documentation of your favorite distribution and adapt it according to your needs.
 
 ```
-$ yay -Sy bspwm sxhkd polybar alacritty rofi picom dunst playerctl mpc ffmpeg betterlockscreen bluez bluez-utils blueberry alsa pulseaudio pulsemixer feh redshift mpd ncmpcpp pqiv ranger ueberzug
+$ yay -Sy bspwm sxhkd polybar alacritty rofi picom dunst playerctl mpc ffmpeg bluez bluez-utils blueberry alsa pulseaudio pulsemixer feh mpd ncmpcpp pqiv ranger ueberzug
 ```
 - Install LunarVim following the steps can be seen in its <a href=https://github.com/LunarVim/LunarVim target="_blank">official repository</a>.
 - clone this repository to the current user's home directory or /tmp.

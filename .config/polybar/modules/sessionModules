@@ -1,0 +1,55 @@
+; Session Modules
+;############################################################################
+
+[module/session]
+type = custom/text
+format-spacing = 1
+format-padding = 1
+
+; click-left = powermenu
+click-left = ~/.config/rofi/applets/android/powermenu.sh
+; content = %{T4}%{T-}
+content = 
+; content-background = ${colors.shade-2}
+; content-foreground = ${colors.shade-5}
+content-padding = 1
+; content-background = ${color.bg}
+; content-foreground = ${color.fg}
+
+;############################################################################
+
+[module/powermenu]
+type = custom/menu
+
+expand-right = true
+
+format-spacing = 1
+format-margin = 0
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
+format-padding = 2
+
+label-open = 
+label-close = 
+label-separator = |
+
+; reboot
+menu-0-1 = 
+menu-0-1-exec = menu-open-2
+; poweroff
+menu-0-2 = 
+menu-0-2-exec = menu-open-3
+; logout
+menu-0-0 = 
+menu-0-0-exec = menu-open-1
+
+menu-2-0 = 
+menu-2-0-exec = reboot
+
+menu-3-0 = 
+menu-3-0-exec = poweroff
+
+menu-1-0 = 
+menu-1-0-exec = i3-msg exit || openbox --exit
+
+

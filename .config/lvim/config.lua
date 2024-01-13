@@ -1,18 +1,39 @@
-reload "user.options"
-reload "user.plugins"
+-- lvim.builtin.indentlines.active = false
+
+reload("user.options")
 -- reload "user.autocommands"
 reload "user.lualine"
-reload "user.surround"
-reload "user.lsp"
+reload("user.plugins")
+reload("user.surround")
+-- require "user.lsp"
 -- reload "user.staline"
 -- reload "user.colorizer"
 -- reload "user.indentblankline"
 -- reload "user.chatgpt"
-reload "user.toggleterm"
-reload "user.keymaps"
+-- reload("user.telescope")
+-- reload("user.editor")
+reload("user.toggleterm")
+reload("user.keymaps")
+-- reload("user.neoai")
+-- reload("user.lsp")
+-- reload("user.zen-mode")
+-- reload("user.copilot")
 
+local cmp_nvim_lsp = require "cmp_nvim_lsp"
+
+require("lspconfig").clangd.setup {
+    on_attach = lvim.lsp.on_attach,
+    capabilities = cmp_nvim_lsp.default_capabilities(),
+    cmd = {
+        "clangd",
+        "--offset-encoding=utf-16",
+    },
+}
+
+vim.cmd [[au BufEnter *.md setlocal spell]]
 --[[
 lvim is the global options object
+
 
 Linters should be
 filled in as strings with either
@@ -28,7 +49,7 @@ an executable
 -- keymappings [view all the defaults by pressing <leader>Lk]
 -- lvim.leader = "space"
 -- add your own keymapping
-lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+-- lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 -- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- unmap a default keymapping

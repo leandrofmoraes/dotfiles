@@ -12,33 +12,43 @@ git-svn(){
   fi  
 }
 
-function imgv(){
+cpost(){
+  if [[ ! -z "$1" && ! -z "$2" ]]; then
+      curl -vX POST $1 -H "Content-Type: application/json" -d @$2
+  else
+      echo "Use: cpost <url> <file.json>"
+  fi  
+}
+
+function psee(){
     # local caminho=$HOME/.config/nvim
 
     if [ -f $1 ]; then
-        pqiv -ic $1
+        pqiv -ic $1 &
     fi
     if [ -d $1 ]; then
-        pqiv $1    
+        pqiv $1 &   
     fi 
 }
 
-function imgs(){
+function see(){
     # local caminho=$HOME/.config/nvim
 
     if [ -f $1 ]; then
-        sxiv -b $1
+        sxiv -b $1 &
     fi
     if [ -d $1 ]; then
-        sxiv -t $1    
+        sxiv -t $1 &  
     fi 
 }
 
 # alias ncmp="ncmpcpp"
 function ncmp(){
-    mpd=$(pidof mpd)
-    kill $mpd
-    mpd
+
+    if [ ! $(pidof mpd) ]; then
+            mpd && ncmpcpp
+            return 0
+    fi
     ncmpcpp
 }
 
@@ -51,3 +61,43 @@ function ncmp(){
 #         mv $caminho/init.lua $caminho/init.lua.bkp && mv $caminho/init.vim.bkp $caminho/init.vim
 #     fi 
 # }
+
+# docker container create for mysql server
+# example: docker-mysql-create <container-name> <password>
+function docker-mysql-create(){
+    # sudo docker run -e MYSQL_ROOT_PASSWORD={$2} --name $1 -d -p 3306:3306 mysql:latest
+    # sudo docker run -e MYSQL_ALLOY_EMPY_PASSWORD=yes --name $1 -v ~/workspace/databases/mysql:/var/lib/mysql -d -p 3306:3306 mysql:latest
+    # sudo docker run -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --name $1 -v /home/leandro-f/workspace/databases/mysql:/var/lib/mysql -d mysql:latest
+    sudo docker run -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --name $1 --mount type=bind,source=/home/leandro-f/workspace/databases/mysql,target=/var/lib/mysql -d mysql:latest
+}
+
+# $1 = container-name
+# $2 = database name. (optional)
+# function mysql-server-start(){
+#     docker_status=$(systemctl status docker | head -n 3 | tail -n 1 | awk -F' ' '{ print $2 }')
+#     print($docker_status)
+#     if [ $docker_status == "inactive" ]; then
+#         sudo systemctl start docker
+#         sudo docker start $1 
+#     fi
+
+#     # sudo docker start $1
+#     mysql --host=localhost --port=3306 --user=root -p ${2:-''}
+# }
+
+# $1 = database name. (optional)
+# function mysql-start(){
+    # mysql --host=localhost --port=3306 --user=root -p ${1:-''}
+    # mysql --host=172.17.0.2 --port=3306 --user=root
+    # sudo docker exec -it $1 bash
+# }
+
+# function monta(){
+#         udisksctl mount -t ntfs --no-user-interaction -b /dev/sda1
+#         case $1 in
+#             "Arquivos")
+#                 media=/dev/sda1
+#             ;;
+#         esac
+#     }
+

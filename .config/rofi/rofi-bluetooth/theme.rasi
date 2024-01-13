@@ -32,13 +32,13 @@ window {
     transparency:                   "real";
     background-color:               @background;
     text-color:                     @foreground;
-	border:							0px;
-	border-color:					@foreground;
+	border:							1px;
+	border-color:					#B542FF66;
     border-radius:                  8px;
 	width:							15%;
     location:                       northeast;
     x-offset:                       -10px;
-    y-offset:                       41px;
+    y-offset:                       36px;
 }
 
 prompt {

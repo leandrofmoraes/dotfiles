@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 10x45
+    offset = 10x40
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -86,10 +86,11 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 0
+    frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#62AEEF"
+    # frame_color = "#62AEEF" #blue
+    frame_color = "#B542FF"
 
     # Define a color for the separator.
     # possible values are:

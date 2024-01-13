@@ -1,0 +1,84 @@
+
+[module/wlan]
+type = internal/network
+; interface = wlp0s20u1
+interface = ${system.network_interface}
+interval = 3.0
+;expand-right = true
+
+; format-connected =  <label-connected>
+format-connected = %{A1:~/.config/rofi/wifi/wifi:}%{A3:konsole -e nmtui:} %{A}%{A} 
+label-connected = %essid%
+; label-connected-color1 = ${colors.foreground}
+label-padding = 1
+
+; click-left = ~/.config/rofi/rofi-wifi-menu.sh
+;format-disconnected =
+format-disconnected = <label-disconnected>
+label-disconnected = %{A1:~/.config/rofi/wifi/wifi:}%{A3:konsole -e nmtui:}睊%{A}%{A}
+; label-disconnected = 睊%ifname% disconnected
+label-disconnected-color1 = #D2646D
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-color1 = ${colors.foreground}
+
+;format-margin = 1
+format-padding = 1
+format-spacing = 1
+
+;############################################################################
+
+[module/wifimenu]
+type = internal/network
+interface = ${system.network_interface}
+interval = 1.0
+
+format-connected = <label-connected>
+format-connected-padding = 1
+; label-connected = %{A1:~/.config/rofi/rofi-wifi-menu.sh:} %essid%%{A}
+label-connected = %{A1:~/.config/rofi/rofi-wifi-menu.sh:} %{A}
+label-connected-foreground = ${colors.fg}
+label-connected-padding = 1
+
+format-disconnected = <label-disconnected>
+format-disconnected-padding = 1
+; label-disconnected = %{A1:~/.config/rofi/rofi-wifi-menu.sh:}%{A}
+label-disconnected = %{A1:~/.config/rofi/rofi-wifi-menu.sh:}睊%{A}
+label-disconnected-foreground = #66ffffff
+label-disconnected-padding = 1
+
+;############################################################################
+
+[module/eth]
+type = internal/network
+; interface = eno1
+interface = enp3s0
+interval = 3.0
+
+format-connected-prefix = ""
+; format-connected-prefix-color1 = ${colors.color1-alt}
+label-connected = %local_ip%
+
+format-disconnected = ""
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+label-disconnected-color1 = #66ffffff
+
+;############################################################################
+
+[module/bluetooth]
+type = custom/script
+exec = ~/.config/rofi/rofi-bluetooth/rofi-bluetooth --status
+interval = 1
+click-left = ~/.config/rofi/rofi-bluetooth/rofi-bluetooth &
+;click-right = ~/.config/dunst/bluetooth_notfication.sh
+click-right = ~/.config/dunst/bluetooth_notfication.sh
+format-padding = 1
+; label-padding = 0.5
+; format-foreground = #ffffff
+

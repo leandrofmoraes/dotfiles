@@ -5,15 +5,15 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-#set lunar vim as default editor
+source $HOME/Documentos/.token
+#set lunarvim as default editor
 VISUAL=/home/leandro-f/.local/bin/lvim
 export EDITOR="$VISUAL"
 export PATH=$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin
+export PATH=$PATH:$HOME/.emacs.d/bin
+export GITHUB_TOKEN=$TOKEN
 
-# Use powerline
-USE_POWERLINE="true"
-# Source manjaro-zsh-configuration
-  
+
 if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
   source /usr/share/zsh/manjaro-zsh-config
 fi
@@ -21,6 +21,28 @@ fi
 if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
+
+## Options section
+setopt correct                                                  # Auto correct mistakes
+setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
+setopt nocaseglob                                               # Case insensitive globbing
+setopt rcexpandparam                                            # Array expension with parameters
+setopt nocheckjobs                                              # Don't warn about running processes when exiting
+setopt numericglobsort                                          # Sort filenames numerically when it makes sense
+setopt nobeep                                                   # No beep
+setopt appendhistory                                            # Immediately append history instead of overwriting
+setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
+setopt autocd                                                   # if only directory path is entered, cd there.
+setopt inc_append_history                                       # save commands are added to the history immediately, otherwise only when shell exits.
+setopt histignorespace                                          # Don't save commands that start with space
+
+HISTFILE=~/.zhistory
+HISTSIZE=50000
+SAVEHIST=50000
+
+# Use powerline
+USE_POWERLINE="true"
+# Source manjaro-zsh-configuration
 
 # Substitui simbolo do OS na powerline do terminal. Comente as duas linhas padrao simbolo do Manjaro.
 # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uF303' #Arch OS symbol
@@ -50,8 +72,9 @@ typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uF17C' #Tux OS symbol
 # \uE722 - Rasberry Pi
 # \uf315 - Raspberry Pi
 
-source /home/leandro/.my_aliases
-source /home/leandro/.my_functions
+source $HOME/.zkeybingings
+source $HOME/.my_aliases
+source $HOME/.my_functions
 PATH=$PATH:/usr/sbin:/sbin
 
 #Plugins

@@ -5,7 +5,7 @@ case $- in
 esac
 
 # Path to your oh-my-bash installation.
-export OSH=/home/leandro/.oh-my-bash
+# export OSH=/home/leandro/.oh-my-bash
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
@@ -13,7 +13,7 @@ export OSH=/home/leandro/.oh-my-bash
 # OSH_THEME="powerline"
 
 # OSH_THEME="agnoster"
-OSH_THEME="rjorgenson"
+# OSH_THEME="rjorgenson"
 
 # OSH_THEME="modern"
 # OSH_THEME="modern-t"
@@ -90,7 +90,7 @@ plugins=(
 #      plugins+=(tmux-autoattach)
 #  fi
 
-source "$OSH"/oh-my-bash.sh
+: #source "$OSH"/oh-my-bash.sh
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -119,8 +119,8 @@ source "$OSH"/oh-my-bash.sh
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
-source /home/leandro/.my_aliases
-source /home/leandro/.my_functions
+#source $HOME/.my_aliases
+#source $HOME/.my_functions
 
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi

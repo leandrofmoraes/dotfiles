@@ -1,0 +1,129 @@
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-padding = 2
+format-foreground = ${colors.foreground}
+label = %percentage%%
+
+;############################################################################
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-padding = 1
+format-prefix = " "
+format-foreground = ${colors.foreground}
+label = %percentage_used%%
+
+;############################################################################
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format =  <label>
+format-warn = <ramp> <label-warn>
+
+label = %temperature-c%
+label-warn = %temperature-c%
+label-warn-color1 = ${colors.secondary}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+
+;############################################################################
+
+[module/battery]
+type = internal/battery
+full-at = 100
+time-format = %H:%M
+battery = ${system.battery}
+adapter = ${system.adapter}
+
+format-padding = 1
+; format-charging = <animation-charging> <label-charging>
+format-charging = <animation-charging>
+format-charging-foreground = ${colors.green}
+; format-charging-foreground = #50FA7B
+format-charging-padding = 1
+; format-discharging = <ramp-capacity> <label-discharging>
+format-discharging = <ramp-capacity>
+format-discharging-foreground = ${colors.amber}
+format-discharging-padding = 1
+format-full = <label-full>
+; format-full = ""
+format-full-padding = 1
+; label-charging = %percentage%% (%time%)
+; label-charging = %percentage%%
+; label-discharging = %percentage%%
+;label-discharging = %percentage%% (%time%)
+;label-charging-underline = ${colors.tertiary}
+;label-discharging-underline = ${colors.tertiary}
+label-full = %{A1:notify-send -t 1500 -i battery-full-charging-symbolic $(acpi -b | cut -d ' ' -f4) -u low:}%{A}
+
+
+; format-charging-underline = ${colors.foreground}
+; format-discharging-underline = ${colors.foreground}
+; format-full-prefix = ""
+ramp-capacity-0 = %{A1:notify-send -t 1500 -i battery-full-charging-symbolic $(acpi -b | cut -d ' ' -f4) -u low:}%{F${colors.pink}}%{F-}%{A}
+ramp-capacity-1 = %{A1:notify-send -t 1500 -i battery-full-charging-symbolic $(acpi -b | cut -d ' ' -f4) -u low:}%{A}
+ramp-capacity-2 = %{A1:notify-send -t 1500 -i battery-full-charging-symbolic $(acpi -b | cut -d ' ' -f4) -u low:}%{A}
+ramp-capacity-3 = %{A1:notify-send -t 1500 -i battery-full-charging-symbolic $(acpi -b | cut -d ' ' -f4) -u low:}%{A}
+ramp-capacity-4 = %{A1:notify-send -t 1500 -i battery-full-charging-symbolic $(acpi -b | cut -d ' ' -f4) -u low:}%{F${colors.foreground}}%{F-}%{A} 
+; ramp-capacity-4 = 
+; ramp-capacity-0-foreground = #FF5555
+; ramp-capacity-0-foreground = ${colors.foreground}
+; ramp-capacity-foreground   = ${colors.foreground}
+; bar-capacity-width = 10
+
+animation-charging-0 = ""
+animation-charging-1 = ""
+animation-charging-2 = ""
+animation-charging-3 = ""
+animation-charging-4 = ""
+
+animation-charging-framerate = 750
+
+label-font = 1
+
+; ramp-capacity-0-underline = ${colors.tertiary}
+; ramp-capacity-1-underline = ${colors.tertiary}
+; ramp-capacity-2-underline = ${colors.tertiary}
+; ramp-capacity-3-underline = ${colors.tertiary}
+; ramp-capacity-4-underline = ${colors.tertiary}
+;
+; animation-charging-0-underline = ${colors.tertiary}
+; animation-charging-1-underline = ${colors.tertiary}
+; animation-charging-2-underline = ${colors.tertiary}
+; animation-charging-3-underline = ${colors.tertiary}
+; animation-charging-4-underline = ${colors.tertiary}
+
+; Uncomment these for anmated discharging battery underline
+; ramp-capacity-0-underline = ${colors.primary}
+; ramp-capacity-1-underline = ${colors.primary}
+; ramp-capacity-2-underline = ${colors.tertiary}
+; ramp-capacity-3-underline = ${colors.tertiary}
+; ramp-capacity-4-underline = ${colors.tertiary}
+
+;############################################################################
+
+[module/battery-info]
+type = custom/script
+exec = ~/.config/polybar/scripts/battery-combined-udev/battery-combined-udev.sh
+format-padding = 1
+; interval = 2
+tail = true
+
+[module/battery_info-2]
+type = custom/script
+exec = ~/.config/polybar/scripts/battery_info-2.sh
+; interval = 2
+format-padding = 1
+tail = true
+
+;############################################################################
+

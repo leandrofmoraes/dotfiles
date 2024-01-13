@@ -1,38 +1,58 @@
-## Home Directory 
-*.pyc 
+## Home Directory
+*.pyc
 *.pyo
 *.class
 *.log
 
 #.git/
+/.appimages/
+/Arduino/
+.arduino15
+/.arduinoIDE/
 /Área de trabalho/
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc.omb-uninstalled-20231209144821
+/.byobu/
 /.doom.d/
+/.cargo/
+/.docker/
+/docker-images
 /Documentos/
 /Downloads/
-/Modelos/
-/Música/
-/Público/
-/Vídeos/
-/Arduino/
-/workspace/
-/Postman/
-/.byobu/
-/.cargo/
-/.lemminx/
-/.lyrics/
-/.mozilla/
 /.eclipse/
 /eclipse-workspace/
+/.emacs.d/
+.gnupg/
 /.fonts/
 /.gnome/
+.hplip/
 /.icons/
+/inspire-dotfiles/
 /.kde4/
+/.lemminx/
+/.links/
+/.lyrics/
 /.m2/
+/.mozilla/
+/Modelos/
+.mplayer/
+/mpv-osc-modern/
+/Música/
+/net.downloadhelper.coapp-1.6.3/
 /.npm/
 .oh-my-bash/
 /.pki/
+/Postman/
+.psensor/
+/Público/
+/Vídeos/
+/workspace/
 /.rustup/
 /.ssh/
+.ssr/
+.sts4/
 /.swt
 /.subversion/
 /.themes/
@@ -40,16 +60,9 @@
 /.vim/
 /.vscode/
 /.yarn/
-/.appimages/
 /.redhat/
 /.p2/
 /.java/
-/.docker/
-/docker-images
-.arduino15
-.bash_history
-.bash_logout
-.bash_profile
 .dir_colors
 .fonts.conf
 .gitconfig
@@ -61,6 +74,7 @@
 .mysql_history
 .node_repl_history
 .sdirs
+/.session-rtorrent/
 .viminfo
 /.vnc/
 /.webclipse/
@@ -80,6 +94,8 @@
 !.my_aliases
 !.my_functions
 !.p10k.zsh
+!.rtorrent.rc
+!.tmux.conf
 
 ## Imagens
 Imagens/*
@@ -88,19 +104,33 @@ Imagens/*
 
 /.cache/
 
+!/.zsh/
+.zsh/cache/
+
 ## .config
 .config/*
+!/.config/alacritty/
 !/.config/betterlockscreenrc
 !/.config/bspwm/
+!/.config/bashtop/
+!/.config/cava/
+!/.config/eww/
+!/.config/htop/
+!/.config/lazygit/
 !/.config/lvim/
+!/.config/moc
+!/.config/neofetch/
+!/.config/nnn/
 !/.config/nvim/
-!/.config/alacritty/
 !/.config/kitty/
 !/.config/redshift/
+!/.config/zathura/
+
+!/.config/mpv/
+~/.config/mpv/watch_later
 
 .config/Code/*
 !/.config/Code/Backups/
-
 
 !/.config/mpd/
 .config/mpd/*
@@ -110,7 +140,6 @@ Imagens/*
 #!/.config/mpd/playlists/
 #!/.config/mpd/database
 
-!/.config/mpv/
 !/.config/picom/
 .config/picom/picom.conf.example
 .config/picom/picom.conf.bak-2
@@ -133,7 +162,7 @@ Imagens/*
 
 ## Polybar
 !/.config/polybar/
-.config/polybar/themes/reference-themes
+!/.config/polybar-neon/
 
 #!/.config/pulse/
 !/.config/pulseaudio-ctl/

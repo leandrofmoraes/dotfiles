@@ -7,7 +7,7 @@ send_notification() {
 	# FOOT="\n<i>       ~ calendar</i> 󰸗 "
     #LINE="------------------------"
 	FOOT="\n  $TEMPERATURE  ~ $CURRENT_CONDITION"
-	dunstify -h string:x-canonical-private-synchronous:calendar \
+    notify-send -h string:x-canonical-private-synchronous:calendar \
 		-i calendar "$HEAD" "$BODY$LINE$FOOT" -u normal
 }
 

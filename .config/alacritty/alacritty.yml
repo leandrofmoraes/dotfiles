@@ -3,6 +3,8 @@ import:
   # - ~/.config/alacritty/themes/catppuccin-mocha.yml
   # - ~/.config/alacritty/themes/catppuccin-macchiato.yml
   # - ~/.config/alacritty/themes/catppuccin-latte.yml
+  # - ~/.config/alacritty/themes/tokyo-night.yaml
+  # - ~/.config/alacritty/themes/tokyo-night-storm.yaml
 
 env:
   TERM: 'xterm-256color'
@@ -73,20 +75,20 @@ font:
     family: 'JetBrains Mono Nerd Font'
     # family: 'DroidSansMono Nerd Font'
     # style:  Book
-    style:  Regular
+    # style:  Regular
     # style:  Medium
   bold:
     family: 'JetBrains Mono Nerd Font'
     # family: 'DroidSansMono Nerd Font'
-    style:  Bold
+    # style:  Bold
   italic:
     family: 'JetBrains Mono Nerd Font'
     # family: 'DroidSansMono Nerd Font'
-    style:  MediumItalic
+    # style:  MediumItalic
   bold_italic:
     family: 'JetBrains Mono Nerd Font'
     # family: 'DroidSansMono Nerd Font'
-    style: BoldItalic
+    # style: BoldItalic
   size: 9
 # draw_bold_text_with_bright_colors: true
 
