@@ -41,7 +41,7 @@ It was customized and designed with the idea of creating a minimalistic developm
 - UI for git: [LazyGit](https://github.com/jesseduffield/lazygit)
 - Monitor of resources: [btop](https://github.com/aristocratos/btop) or [bashtop](https://github.com/aristocratos/bashtop)
 - bar: [polybar](https://github.com/polybar/polybar)
-- Compositor: [picom](https://github.com/ibhagwan/picom.git)
+- Compositor: [picom (ftlabs fork)](https://github.com/FT-Labs/picom)
 - Audio: [pulseaudio](https://gitlab.freedesktop.org/pulseaudio/pulseaudio)
 - Player Control: [playerctl](https://github.com/altdesktop/playerctl)
 - Music: [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp.git)
@@ -89,9 +89,9 @@ $ cp -r . $HOME
 |-|
 |![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_05.png)|
 
-| LunarVim (NeoVim with Lua), mocp (Music player) and LazyGit | btop |
+| NeoVim, Tmux and cava | btop, Neovi and Ranger |
 |-|-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_03.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_07.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_12.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_10.png)|
 
 | Polybar with rounded corners and LunarVim with Lunar color scheme | Visual Studio Code with Winter is Coming theme |
 |-|-|

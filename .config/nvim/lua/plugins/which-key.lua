@@ -12,6 +12,7 @@ return {
       ['gc'] = { name = '+comments' },
       ['gb'] = { name = '+block comments' },
       ['gz'] = { name = '+surrounds' },
+      ['g/'] = { name = '+split/Join' },
       [']'] = { name = '+next' },
       ['['] = { name = '+prev' },
       ['<leader>q'] = { name = '+quit/session' },

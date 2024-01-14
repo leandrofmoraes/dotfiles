@@ -144,8 +144,8 @@ return {
               ["<leader>cx"] = { name = "+extract" },
               ["<leader>cxv"] = { require("jdtls").extract_variable_all, "Extract Variable" },
               ["<leader>cxc"] = { require("jdtls").extract_constant, "Extract Constant" },
-              ["gs"] = { require("jdtls").super_implementation, "Goto Super" },
-              ["gS"] = { require("jdtls.tests").goto_subjects, "Goto Subjects" },
+              ["gu"] = { require("jdtls").super_implementation, "Goto Super" },
+              ["gU"] = { require("jdtls.tests").goto_subjects, "Goto Subjects" },
               ["<leader>co"] = { require("jdtls").organize_imports, "Organize Imports" },
               ["<leader>cr"] = { "<cmd>lua _RUN_CODE()<cr>", "Run Code" },
               ["<leader>ci"] = { "<cmd>lua _JAVA_TOGGLE()<cr>", "JShell" }

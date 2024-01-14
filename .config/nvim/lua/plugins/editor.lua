@@ -414,6 +414,24 @@ return {
     },
   },
 
+  -- mini.splitjoin
+  {
+    enabled = false,
+    'echasnovski/mini.splitjoin',
+    keys = {
+      {
+        'g/j',
+        function() return require('mini.splitjoin').join() end,
+        desc = 'Join',
+      },
+      {
+        'g/s',
+        function() return require('mini.splitjoin').split() end,
+        desc = 'Split',
+      },
+    },
+  },
+
   -- mini.trailspace
   --{ 'echasnovski/mini.trailspace', event = 'InsertEnter', config = true },
 

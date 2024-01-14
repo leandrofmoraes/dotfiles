@@ -124,7 +124,13 @@ Imagens/*
 !/.config/moc
 !/.config/neofetch/
 !/.config/nnn/
+
+## Neovim
 !/.config/nvim/
+.config/nvim/*
+!/.config/nvim/lua/
+!/.config/nvim/init.lua
+
 !/.config/kitty/
 !/.config/redshift/
 !/.config/zathura/

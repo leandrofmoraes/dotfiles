@@ -60,14 +60,15 @@ return {
 
   -- treesj
   {
+    -- enabled = false,
     'Wansmer/treesj',
     dependencies = 'nvim-treesitter/nvim-treesitter',
-    opts = { max_join_length = 150 },
+    opts = { max_join_length = 500 },
     keys = {
       -- stylua: ignore start
-      { '<leader>m', function() return require('treesj').toggle() end, desc = 'Toggle node under cursor' },
-      { '<leader>j', function() return require('treesj').join() end,   desc = 'Join node under cursor' },
-      { '<leader>s', function() return require('treesj').split() end,  desc = 'Split node under cursor' },
+      { 'g/m', function() return require('treesj').toggle() end, desc = 'Toggle' },
+      { 'g/j', function() return require('treesj').join() end,   desc = 'Join' },
+      { 'g/s', function() return require('treesj').split() end,  desc = 'Split' },
       -- stylua: ignore end
     },
   },
