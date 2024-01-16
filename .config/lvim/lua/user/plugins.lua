@@ -231,13 +231,23 @@ lvim.plugins = {
     end,
   },
   -- { 'iamcco/markdown-preview.nvim', build = function() vim.fn["mkdp#util#install"]() end, },
+  -- {
+  --   "iamcco/markdown-preview.nvim",
+  --   build = "cd app && npm install",
+  --   ft = "markdown",
+  --   config = function()
+  --     vim.g.mkdp_auto_start = 0 --autostart 0 = No, 1 = yes.
+  --   end,
+  -- },
   {
     "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    -- install with yarn or npm
     build = "cd app && npm install",
-    ft = "markdown",
-    config = function()
-      vim.g.mkdp_auto_start = 0 --autostart 0 = No, 1 = yes.
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
     end,
+    ft = { "markdown" },
   },
 
   -- { 'tamton-aquib/staline.nvim', require("staline") },
@@ -245,7 +255,14 @@ lvim.plugins = {
 
   -- "jackMort/ChatGPT.nvim",
 
-  { "p00f/nvim-ts-rainbow" },
+  -- rainbow-delimiters.nvim
+  {
+    --   'hiphish/rainbow-delimiters.nvim',
+    'HiPhish/rainbow-delimiters.nvim',
+    dependencies = 'nvim-treesitter/nvim-treesitter',
+    event = { 'BufReadPost', 'BufNewFile' },
+  },
+  -- { "p00f/nvim-ts-rainbow" },
 
   { "mg979/vim-visual-multi" },
 

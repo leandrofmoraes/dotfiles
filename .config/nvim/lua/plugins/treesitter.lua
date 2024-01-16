@@ -75,10 +75,13 @@ return {
 
   -- rainbow-delimiters.nvim
   {
-    'hiphish/rainbow-delimiters.nvim',
+    --   'hiphish/rainbow-delimiters.nvim',
+    'HiPhish/rainbow-delimiters.nvim',
     dependencies = 'nvim-treesitter/nvim-treesitter',
     event = { 'BufReadPost', 'BufNewFile' },
   },
+
+  -- { "p00f/nvim-ts-rainbow" },
 
   -- indent-blankline.nvim
   {

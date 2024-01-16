@@ -120,6 +120,10 @@ return {
       on_attach = on_attach,
     })
 
+    lspconfig.taplo.setup({
+      capabilities = capabilities,
+    })
+
     lspconfig.marksman.setup({
       capabilities = capabilities
     })

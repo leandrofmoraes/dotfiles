@@ -31,12 +31,14 @@ return {
   },
 
   {
-    'iamcco/markdown-preview.nvim',
-    build = 'cd app && npm install',
-    ft = 'markdown',
-    config = function()
-      vim.g.mkdp_auto_start = 0 --autostart 0 = No, 1 = yes.
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    -- install with yarn or npm
+    build = "cd app && npm install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
     end,
+    ft = { "markdown" },
   },
 
   {

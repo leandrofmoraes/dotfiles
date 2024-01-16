@@ -93,6 +93,7 @@ alias play="mpg123"
 alias musicp="ncmp" # Alias to custom NCMPCPP and MPD function
 alias music="mocp -m"
 alias amp="audacious"
+alias screenshot="flameshot gui"
 
 alias pwo="pomodoro 'work'"
 alias pbr="pomodoro 'break'"

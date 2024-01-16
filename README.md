@@ -5,7 +5,7 @@
 It was customized and designed with the idea of creating a minimalistic development environment with Arch and Bspwm but it can be easily adapted to any linux distro as long as it installs the required dependencies.</p>
 
 <p align="center">
-<img src="https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_01.png" align="right" width="400px">
+<img src="https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_15.png" align="right" width="400px">
 </p>
 
 ### Contents
@@ -81,13 +81,13 @@ $ cp -r . $HOME
 <details>
 <summary>click</summary>
 
-| Polybar with rounded corners, Alacritty, Rofi Search Menu and Ranger File Manager |
+| Btop, Calendar Notification, Rofi Search Menu and Ranger File Manager |
 |-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_06.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_14.png)|
 
-| NCMPCPP, LunarVim, cava and music notification |
+| NCMPCPP, Termux and music notification |
 |-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_05.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_11.png)|
 
 | NeoVim, Tmux and cava | btop, Neovi and Ranger |
 |-|-|
