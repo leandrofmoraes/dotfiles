@@ -33,7 +33,8 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 10x40
+    # offset = 10x40
+    offset = 6x36 # Position following the edge of tilled window
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0

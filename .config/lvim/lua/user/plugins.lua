@@ -9,6 +9,7 @@ lvim.plugins = {
   { import = "user.ui" },
   { import = "user.editor" },
   { import = "user.lsp" },
+  { import = "user.noice"},
   -- { import = "user.indentblankline" },
   -- Colorscheme plugins
 
@@ -79,6 +80,7 @@ lvim.plugins = {
         hl.TelescopePreviewTitle = { bg = transparent, fg = blue }
         --   hl.TelescopeResultsTitle = { bg = c.bg_dark, fg = c.bg_dark }
         hl.TelescopeResultsTitle = { bg = transparent, fg = blue }
+        hl.TroubleNormal = { bg = transparent }
         hl.NeoTreeNormal = { bg = transparent, fg = blue }
         hl.NeoTreeNormalNC = { bg = transparent, fg = blue }
         -- Whichkey
@@ -480,6 +482,12 @@ lvim.plugins = {
   {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
+    dependencies = 'nvim-tree/nvim-web-devicons',
+    opts = {
+      use_diagnostic_signs = true,
+      mode = "workspace_diagnostics", -- "workspace_diagnostics", "document_diagnostics", "quickfix", "lsp_references", "loclist"
+      auto_preview = true, -- automatically preview the location of the diagnostic. <esc> to close preview and go back to last window
+    },
   },
   {
     "folke/zen-mode.nvim",

@@ -120,7 +120,7 @@ alias pbr="pomodoro 'break'"
 # alias lm="lc -alht | more" 
 
 ### ls to exa 
-alias list="eza" 
+alias li="eza" 
 alias ls='eza --icons' # Desative se houver problemas ao executar scripts
 alias lt='eza --icons -snew'
 alias ll='eza --icons -lgh'
@@ -155,14 +155,16 @@ alias fsize='du -sh'
 alias fz='du -sh'
 #alias np="nano -w PKGBUILD"
 
+alias jb='jobs' # List all jobs running in the background
+
 alias logoff="sudo pkill -KILL -u"
 
 #alias spy="pqiv"                         # Visualisador de imagens pelo terminal
 alias xplore="ranger"                    # Explorador de arquivos
 alias xp="ranger"                    # Explorador de arquivos
 
-alias bro="qutebrowser & disown"
-alias qute="qutebrowser & disown"
+# alias bro="qutebrowser & disown"
+# alias qute="qutebrowser & disown"
 
 # alias cat="bat"  # Troca o gato pelo morcego xD 
 
@@ -182,7 +184,7 @@ alias matrix="cmatrix -kasC blue"
 alias ips='ip -c -br a'
 alias please='sudo'
 alias nf='neofetch'
-alias onde-eu-parei='if [ -f ./onde_eu_parei.md ]; then cat onde_eu_parei.md; fi'
+alias wdis='if [ -f ./onde_eu_parei.md ]; then cat onde_eu_parei.md; else echo -e Arquivo \"onde_eu_parei.md\" não encontrado neste diretório!; fi'
 # alias ask='echo "Pergunte: " && read pergunta && shell-genie ask "$pergunta"'
 # alias ask='shell-genie ask'
 

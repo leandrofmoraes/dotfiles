@@ -1,6 +1,7 @@
 -- Highly experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu.
 return {
   {
+    -- enabled = false,
     "folke/noice.nvim",
     event = "VeryLazy",
     opts = {

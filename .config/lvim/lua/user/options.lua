@@ -222,6 +222,19 @@ lvim.builtin.treesitter.highlight.enable = true
 
 lvim.builtin.cmp.cmdline.enable = true
 
+lvim.builtin.project.on_config_done = {
+  config = function()
+    require("project_nvim").setup {
+      sync_root_with_cwd = true,
+      respect_buf_cwd = true,
+      update_focused_file = {
+        enable = true,
+        update_root = true
+      }
+    }
+  end
+}
+
 -- Indentlines
 -- lvim.builtin.indentlines.options.char = ""
 -- lvim.builtin.indentlines.options.show_first_indent_level = true

@@ -131,12 +131,20 @@ keymap("n", "Q", "<cmd>Bdelete!<CR>", opts)
 
 lvim.builtin.which_key.mappings["t"] = {
 	name = "Diagnostics",
-	t = { "<cmd>TroubleToggle<cr>", "trouble" },
-	w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "workspace" },
-	d = { "<cmd>TroubleToggle document_diagnostics<cr>", "document" },
-	q = { "<cmd>TroubleToggle quickfix<cr>", "quickfix" },
-	l = { "<cmd>TroubleToggle loclist<cr>", "loclist" },
-	r = { "<cmd>TroubleToggle lsp_references<cr>", "references" },
+	-- t = { "<cmd>TroubleToggle<cr>", "trouble" },
+	-- w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "workspace" },
+	-- d = { "<cmd>TroubleToggle document_diagnostics<cr>", "document" },
+	-- q = { "<cmd>TroubleToggle quickfix<cr>", "quickfix" },
+	-- l = { "<cmd>TroubleToggle loclist<cr>", "loclist" },
+	-- r = { "<cmd>TroubleToggle lsp_references<cr>", "references" },
+   t = { function() return require('trouble').toggle() end, 'Trouble' },
+   w = { function() return require('trouble').toggle('workspace_diagnostics') end, 'Open workspace' },
+   d = { function() return require('trouble').toggle('document_diagnostics') end, 'Open document' },
+   q = { function() return require('trouble').toggle('quickfix') end, 'Open quickfix' },
+   l = { function() return require('trouble').toggle('loclist') end, 'Open location list' },
+   r = { function() return require('trouble').toggle('lsp_references') end, 'References' },
+      -- { '<leader>xt', '<cmd>TodoTrouble<CR>', 'Todo (Trouble)' },
+   T = { '<cmd>TodoTrouble keywords=TODO,FIX,FIXME<CR>', 'Todo/Fix/Fixme (Trouble)' },
 }
 
 lvim.builtin.which_key.mappings["E"] = {

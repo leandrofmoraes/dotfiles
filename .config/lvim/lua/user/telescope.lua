@@ -1,6 +1,8 @@
 -- lvim.builtin.telescope.on_config_done = function(telescope)
 --   pcall(telescope.load_extension, "file_browser")
+  -- pcall(telescope.load_extension, "projects")
 -- end
+local builtin = require("telescope.builtin")
 
 local buffers_list = function()
   require('telescope.builtin').buffers({
@@ -93,17 +95,41 @@ return {
   {
     "telescope.nvim",
     dependencies = {
+      'nvim-lua/plenary.nvim',
       {
         "nvim-telescope/telescope-fzf-native.nvim",
         build = "make",
+        config = function()
+          require('telescope').load_extension('fzf')
+        end,
       },
       "nvim-telescope/telescope-file-browser.nvim",
+      "debugloop/telescope-undo.nvim",
+      {
+        "ahmedkhalf/project.nvim",
+        -- opts = {
+            -- manual_mode = true,
+        -- },
+        event = "VeryLazy",
+        -- lvim.builtin.telescope.on_config_done {
+          config = function()
+            require("telescope").load_extension("projects")
+          end,
+        -- }
+      },
+      -- {
+      --   "nvim-telescope/telescope-project.nvim",
+      --   event = "BufWinEnter",
+      --   setup = function()
+      --     vim.cmd [[packadd telescope.nvim]]
+      --   end,
+      -- },
     },
     keys = {
       {
         ";;",
         function()
-          require("telescope.builtin").find_files({
+          builtin.find_files({
             cwd = require("lazy.core.config").options.root,
           })
         end,
@@ -112,7 +138,6 @@ return {
       {
         ";f",
         function()
-          local builtin = require("telescope.builtin")
           builtin.find_files({
             no_ignore = false,
             hidden = true,
@@ -124,10 +149,12 @@ return {
       { "<leader><leader>", buffers_list, desc = "Buffers Lists" },
       { ";.", file_browser, desc = "File Browser" },
       { ";w", live_grep, desc = "Search a string" },
+      { ';u', '<cmd>Telescope undo<cr>', desc = 'Undo History' },
+      { '<leader>u', '<cmd>Telescope undo<cr>', desc = 'Undo History' },
       {
         ";T",
         function()
-          local builtin = require("telescope.builtin")
+          -- local builtin = require("telescope.builtin")
           builtin.help_tags()
         end,
         desc = "Lists available help tags and opens a new window with the relevant help info on <cr>",
@@ -135,7 +162,7 @@ return {
       {
         ";R",
         function()
-          local builtin = require("telescope.builtin")
+          -- local builtin = require("telescope.builtin")
           builtin.resume()
         end,
         desc = "Resume the previous telescope picker",
@@ -143,7 +170,7 @@ return {
       {
         ";d",
         function()
-          local builtin = require("telescope.builtin")
+          -- local builtin = require("telescope.builtin")
           builtin.diagnostics()
         end,
         desc = "Lists Diagnostics for all open buffers or a specific buffer",
@@ -151,7 +178,7 @@ return {
       {
         ";s",
         function()
-          local builtin = require("telescope.builtin")
+          -- local builtin = require("telescope.builtin")
           builtin.treesitter()
         end,
         desc = "Lists Function names, variables, from Treesitter",
@@ -159,21 +186,28 @@ return {
     },
     config = function(_, opts)
       local telescope = require("telescope")
+      local telescopeConfig = require('telescope.config')
       local actions = require("telescope.actions")
       local fb_actions = require("telescope").extensions.file_browser.actions
+      local vimgrep_arguments = { unpack(telescopeConfig.values.vimgrep_arguments) }
 
       -- opts.defaults = vim.tbl_deep_extend("force", opts.defaults, {
       opts.defaults = {
+        -- lvim.builtin.telescope.defaults = {
         wrap_results = true,
-        layout_strategy = "horizontal",
+        -- layout_strategy = "horizontal",
+        layout_strategy = 'bottom_pane',
         layout_config = { prompt_position = "top" },
         sorting_strategy = "ascending",
+        vimgrep_arguments = vimgrep_arguments,
+        file_ignore_patterns = { '.git/' },
         winblend = 0,
         mappings = {
           n = {},
         },
       -- })
       }
+      -- lvim.builtin.telescope.pickers = {
       opts.pickers = {
         diagnostics = {
           theme = "ivy",
@@ -183,6 +217,7 @@ return {
           },
         },
       }
+      -- lvim.builtin.telescope.extensions = {
       opts.extensions = {
         file_browser = {
           theme = "dropdown",
@@ -216,6 +251,8 @@ return {
       telescope.setup(opts)
       require("telescope").load_extension("fzf")
       require("telescope").load_extension("file_browser")
+      require("telescope").load_extension('undo')
+      -- require("telescope").load_extension("projects")
     end,
   },
 }

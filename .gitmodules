@@ -3,3 +3,6 @@
     url = https://github.com/LunarVim/LunarVim.git
     ignore = dirty
 
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/leandrofmoraes/neovim-configs

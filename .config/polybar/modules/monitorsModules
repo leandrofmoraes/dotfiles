@@ -63,17 +63,20 @@ format-full-padding = 1
 ;label-discharging = %percentage%% (%time%)
 ;label-charging-underline = ${colors.tertiary}
 ;label-discharging-underline = ${colors.tertiary}
-label-full = %{A1:notify-send -t 1500 -i battery-full-charging-symbolic $(acpi -b | cut -d ' ' -f4) -u low:}%{A}
+label-full = %{A1:~/.config/dunst/battery_notification.sh:}%{A}
+;label-full = 
+
+;click-left = ~/.config/dunst/battery_notification.sh
 
 
 ; format-charging-underline = ${colors.foreground}
 ; format-discharging-underline = ${colors.foreground}
 ; format-full-prefix = ""
-ramp-capacity-0 = %{A1:notify-send -t 1500 -i battery-full-charging-symbolic $(acpi -b | cut -d ' ' -f4) -u low:}%{F${colors.pink}}%{F-}%{A}
-ramp-capacity-1 = %{A1:notify-send -t 1500 -i battery-full-charging-symbolic $(acpi -b | cut -d ' ' -f4) -u low:}%{A}
-ramp-capacity-2 = %{A1:notify-send -t 1500 -i battery-full-charging-symbolic $(acpi -b | cut -d ' ' -f4) -u low:}%{A}
-ramp-capacity-3 = %{A1:notify-send -t 1500 -i battery-full-charging-symbolic $(acpi -b | cut -d ' ' -f4) -u low:}%{A}
-ramp-capacity-4 = %{A1:notify-send -t 1500 -i battery-full-charging-symbolic $(acpi -b | cut -d ' ' -f4) -u low:}%{F${colors.foreground}}%{F-}%{A} 
+ramp-capacity-0 = %{A1:~/.config/dunst/battery_notification.sh:}%{F${colors.pink}}%{F-}%{A}
+ramp-capacity-1 = %{A1:~/.config/dunst/battery_notification.sh:}%{A}
+ramp-capacity-2 = %{A1:~/.config/dunst/battery_notification.sh:}%{A}
+ramp-capacity-3 = %{A1:~/.config/dunst/battery_notification.sh:}%{A}
+ramp-capacity-4 = %{A1:~/.config/dunst/battery_notification.sh:}%{F${colors.foreground}}%{F-}%{A}
 ; ramp-capacity-4 = 
 ; ramp-capacity-0-foreground = #FF5555
 ; ramp-capacity-0-foreground = ${colors.foreground}

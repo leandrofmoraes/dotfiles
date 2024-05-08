@@ -5,7 +5,7 @@
 It was customized and designed with the idea of creating a minimalistic development environment with Arch and Bspwm but it can be easily adapted to any linux distro as long as it installs the required dependencies.</p>
 
 <p align="center">
-<img src="https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_15.png" align="right" width="400px">
+<img src="https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_15.png" align="right" width="400px">
 </p>
 
 ### Contents
@@ -83,19 +83,19 @@ $ cp -r . $HOME
 
 | Btop, Calendar Notification, Rofi Search Menu and Ranger File Manager |
 |-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_14.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_14.png)|
 
 | NCMPCPP, Termux and music notification |
 |-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_11.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_11.png)|
 
 | NeoVim, Tmux and cava | btop, Neovi and Ranger |
 |-|-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_12.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_10.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_12.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_10.png)|
 
 | Polybar with rounded corners and LunarVim with Lunar color scheme | Visual Studio Code with Winter is Coming theme |
 |-|-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_08.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/assets/Screenshot_09.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_08.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_09.png)|
 
 </details>
 

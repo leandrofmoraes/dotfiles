@@ -45,7 +45,7 @@ super + b
     google-chrome-stable
 
 super + shift + b
-    qutebrowser
+    firefox
 
 # flameshot options
 {Print}

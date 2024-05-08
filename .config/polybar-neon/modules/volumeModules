@@ -57,14 +57,17 @@ bar-volume-indicator =
 bar-volume-indicator-font = 2
 bar-volume-fill = ""
 bar-volume-fill-font = 2
-bar-volume-empty = "󰇘"
+;bar-volume-empty = "󰇘"
+bar-volume-empty = ""
 bar-volume-empty-foreground = "{colors.foreground}"
 
 format-volume-foreground = ${colors.foreground}
 format-volume-background = ${colors.background}
 ;format-muted-prefix = ""
-format-muted-foreground = ${xrdb:color6:#D2646D}
+format-muted-foreground = ${colors.pink}
 ;format-muted-background = ${colors.background}
+;format-volume-padding = 1
+format-muted-padding = 1
 
 click-right = exec pavucontrol
 

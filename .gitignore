@@ -45,6 +45,7 @@
 /net.downloadhelper.coapp-1.6.3/
 /.npm/
 .oh-my-bash/
+.p10k.zsh.bak
 /.pki/
 /Postman/
 .psensor/
@@ -54,6 +55,11 @@
 /.rustup/
 /.ssh/
 .ssr/
+.scripts/start_project.sh
+.steam/
+.steampath
+.steampid
+.zsh/.zshrc
 .sts4/
 /.swt
 /.subversion/
@@ -126,7 +132,7 @@ Imagens/*
 !/.config/nnn/
 
 ## Neovim
-!/.config/nvim/
+.config/nvim/
 .config/nvim/*
 !/.config/nvim/lua/
 !/.config/nvim/init.lua

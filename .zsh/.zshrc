@@ -5,13 +5,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# source $HOME/Documentos/.token
+source $HOME/Documentos/.token
 #set lunarvim as default editor
 VISUAL=/home/leandro-f/.local/bin/lvim
 export EDITOR="$VISUAL"
 export PATH=$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin
 export PATH=$PATH:$HOME/.emacs.d/bin
-# export GITHUB_TOKEN=$TOKEN
+export GITHUB_TOKEN=$TOKEN
 
 
 if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
@@ -85,10 +85,5 @@ source /usr/share/zsh/plugins/colored-man-pages/colored-man-pages.plugin.zsh
 # source /usr/share/zsh/plugins/zsh-extend-history/extend-history.plugin.zsh
 # source /usr/share/zsh/plugins/auto-color-ls/auto-color-ls.plugin.zsh
 
-# if [[ ! $TERM_PROGRAM =~ tmux ]]; then
-#   tmux new-session -s session
-# fi
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-

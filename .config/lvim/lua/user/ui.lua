@@ -1,3 +1,5 @@
+-- lvim.builtin.breadcrumbs.active = false
+
 return{
   -- mini.animate
   {
@@ -21,6 +23,48 @@ return{
       }
     end,
   },
+  -- {
+  --   "Bekaboo/dropbar.nvim",
+  --   name = "dropbar",
+  --   event = { "BufReadPost", "BufNewFile" },
+  --   dependencies = {
+  --     "nvim-tree/nvim-web-devicons",
+  --   },
+  --   opts = {
+  --     bar = {
+  --       sources = function(buf, _)
+  --         local sources = require "dropbar.sources"
+  --         local utils = require "dropbar.utils"
+
+  --         local filename = {
+  --           get_symbols = function(buff, win, cursor)
+  --             local path = sources.path.get_symbols(buff, win, cursor)
+  --             return { path[#path] }
+  --           end,
+  --         }
+
+  --         if vim.bo[buf].ft == "markdown" then
+  --           return {
+  --             filename,
+  --             utils.source.fallback {
+  --               sources.treesitter,
+  --               sources.markdown,
+  --               sources.lsp,
+  --             },
+  --           }
+  --         else
+  --           return {
+  --             filename,
+  --             utils.source.fallback {
+  --               sources.lsp,
+  --               sources.treesitter,
+  --             },
+  --           }
+  --         end
+  --       end,
+  --     },
+  --   }
+  -- },
   -- {
   --   "lukas-reineke/indent-blankline.nvim",
   --   -- event = "VeryLazy",

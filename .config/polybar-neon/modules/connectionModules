@@ -7,7 +7,8 @@ interval = 3.0
 ;expand-right = true
 
 ; format-connected =  <label-connected>
-format-connected = %{A1:~/.config/rofi/wifi/wifi:}%{A3:konsole -e nmtui:} %{A}%{A} 
+;format-connected = %{A1:~/.config/rofi/wifi/wifi:}%{A3:konsole -e nmtui:} %{A}%{A}
+format-connected = %{A1:~/.config/rofi/wifi/wifi:}%{A3:st -e nmtui:}<ramp-signal> %{A}%{A}
 label-connected = %essid%
 ; label-connected-color1 = ${colors.foreground}
 label-padding = 1
@@ -15,20 +16,21 @@ label-padding = 1
 ; click-left = ~/.config/rofi/rofi-wifi-menu.sh
 ;format-disconnected =
 format-disconnected = <label-disconnected>
-label-disconnected = %{A1:~/.config/rofi/wifi/wifi:}%{A3:konsole -e nmtui:}睊%{A}%{A}
+label-disconnected = %{A1:~/.config/rofi/wifi/wifi:}%{A3:alacritty -e nmtui:}睊%{A}%{A}
 ; label-disconnected = 睊%ifname% disconnected
-label-disconnected-color1 = #D2646D
+label-disconnected-foreground = ${colors.pink}
+;label-disconnected-padding = 1
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+ramp-signal-0 = 󰤯
+ramp-signal-1 = 󰤟
+ramp-signal-2 = 󰤢
+ramp-signal-3 = 󰤥
+ramp-signal-4 = 󰤨
 ramp-signal-color1 = ${colors.foreground}
 
 ;format-margin = 1
 format-padding = 1
-format-spacing = 1
+;format-spacing = 1
 
 ;############################################################################
 
@@ -48,7 +50,7 @@ format-disconnected = <label-disconnected>
 format-disconnected-padding = 1
 ; label-disconnected = %{A1:~/.config/rofi/rofi-wifi-menu.sh:}%{A}
 label-disconnected = %{A1:~/.config/rofi/rofi-wifi-menu.sh:}睊%{A}
-label-disconnected-foreground = #66ffffff
+label-disconnected-foreground = ${colors.pink}
 label-disconnected-padding = 1
 
 ;############################################################################

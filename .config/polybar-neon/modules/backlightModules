@@ -6,7 +6,7 @@
 type = internal/backlight
 ; Use the following command to list available cards:
 ; $ ls -1 /sys/class/backlight/
-card = amdgpu_bl1 
+card = ${system.graphics_card}
 ; Use the `/sys/class/backlight/actual-brightness` file
 ; rather than the regular `brightness` file.
 ; Defaults to true unless the specified card is an amdgpu backlight.
@@ -28,24 +28,36 @@ use-actual-brightness = true
 ;   <label> (default)
 ;   <ramp>
 ;   <bar>
-format = <label>
+format = <ramp>
+format-padding = 1
+;format-spacing = 1
 
 ; Available tokens:
 ;   %percentage% (default)
-label = %percentage%%
+label = %percentage%
 
 ; Only applies if <ramp> is used
-ramp-0 = 🌕
-ramp-1 = 🌔
-ramp-2 = 🌓
-ramp-3 = 🌒
-ramp-4 = 🌑
+ramp-0 = %{A1:~/.config/dunst/brightness_notification.sh --inc:}%{A}
+ramp-1 = %{A1:~/.config/dunst/brightness_notification.sh --inc:}%{A}
+ramp-2 = %{A1:~/.config/dunst/brightness_notification.sh --inc:}%{A}
+ramp-3 = %{A1:~/.config/dunst/brightness_notification.sh --inc:}%{A}
+ramp-4 = %{A1:~/.config/dunst/brightness_notification.sh --inc:}%{A}
+ramp-5 = %{A1:~/.config/dunst/brightness_notification.sh --inc:}%{A}
+ramp-6 = %{A1:~/.config/dunst/brightness_notification.sh --inc:}%{A}
+ramp-7 = %{A1:~/.config/dunst/brightness_notification.sh --inc:}%{A}
+ramp-8 = %{A1:~/.config/dunst/brightness_notification.sh --inc:}%{A}
+ramp-9 = %{A1:~/.config/dunst/brightness_notification.sh --inc:}%{A}
+ramp-10 = %{A1:~/.config/dunst/brightness_notification.sh --inc:}%{A}
+ramp-11 = %{A1:~/.config/dunst/brightness_notification.sh --inc:}%{A}
+ramp-12 = %{A1:~/.config/dunst/brightness_notification.sh --inc:}%{A}
 
 ; Only applies if <bar> is used
 ; bar-width = 10
 ; bar-indicator = |
 ; bar-fill = ─
 ; bar-empty = ─
+
+click-right = ~/.config/dunst/brightness_notification.sh --inc
 
 ;############################################################################
 
