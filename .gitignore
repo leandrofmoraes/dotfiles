@@ -108,7 +108,7 @@
 ## Imagens
 Imagens/*
 !/Imagens/wallpapers/
-!/Imagens/assets/
+!/Imagens/screenshots/
 
 /.cache/
 
@@ -139,7 +139,6 @@ Imagens/*
 
 !/.config/kitty/
 !/.config/redshift/
-!/.config/zathura/
 
 !/.config/mpv/
 ~/.config/mpv/watch_later
@@ -175,9 +174,13 @@ Imagens/*
 .config/ncmpcpp/*
 !/.config/ncmpcpp/config
 
+## nnn
+!/.config/nnn/
+
 ## Polybar
 !/.config/polybar/
 !/.config/polybar-neon/
+!/.config/polybar-neon/polybar-neon-alt
 
 #!/.config/pulse/
 !/.config/pulseaudio-ctl/
@@ -206,6 +209,9 @@ Imagens/*
 ## SXHKD
 !/.config/sxhkd/
 /.config/sxhkd/hotkeys.txt
+
+## zathura
+!/.config/zathura/
 
 ## .local
 .local/*
