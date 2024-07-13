@@ -1,0 +1,125 @@
+#!/usr/bin/env bash
+
+# dmur: Device Mount Unmount and Remove
+# Desc.: An interface to udisksctl, with the aim of further simplifying the management of storage devices on GNU/Linux systems.
+# Author: Leandro F. Moraes
+# Dependencies: udiskctl.
+
+opt=$2
+
+if [ ! -z $opt ]; then
+    getName=$( lsblk -ndo NAME,LABEL /dev/sd[a-d][1-9] | grep -w $opt | cut -c6- )
+    blkName=$( lsblk -ndo NAME,LABEL /dev/sd[a-d][1-9] | grep -w $opt | cut -c1-4 )
+    getFileType=$( lsblk -ndo FSTYPE /dev/$blkName)
+fi
+
+unitName="$getName em (/dev/$blkName)"
+
+iconDir="$HOME/.local/share/icons"
+iconName="drive-removable"
+iconTheme="Papirus"
+icon=$(find "$iconDir/$iconTheme" -type f -name "*$iconName*.svg" | head -n 1)
+nofifyOptions="-i $icon -u low -t 3000 --hint=int:transient:1"
+
+listDsk(){
+
+    if [ $(echo $opt | grep "sd[a-d][1-9]") ]; then
+        lsblk -ndo NAME,LABEL /dev/$opt | sed -e 's/\ /\ =\ /'
+        return 0
+    fi
+
+    if [ $(echo $opt | grep "sd[a-d]") ]; then
+        lsblk -ndo NAME,LABEL /dev/$opt* | tail -n +2 | sed -e 's/\ /\ =\ /'
+        return 0
+    fi
+
+    for i in `lsblk -ndo NAME /dev/sd[a-d][1-9]`; do
+        lsblk -ndo NAME,LABEL /dev/$i | sed -e 's/\ /\ =\ /'
+    done
+}
+
+mountDsk(){
+
+    if [ $(echo $getName | echo $blkName) ]; then
+
+        echo "Montando $unitName... " # em /run/media/$USER/$getName"
+        notify-send "Montando $unitName" $nofifyOptions
+
+        udisksctl mount -t $getFileType --no-user-interaction -b /dev/$blkName
+        return 0
+    fi
+
+    return 1
+}
+
+unmountDsk(){
+
+    if [ $(echo $getName | echo $blkName) ]; then
+
+        echo "Desmontando $unitName..."
+        notify-send "Desmontando $unitName" $nofifyOptions
+
+        udisksctl unmount -b /dev/$blkName
+
+        sleep 3
+
+        notify-send "$getName em (/dev/$blkName) foi desmontado com sucesso!" $nofifyOptions
+        return 0
+    fi
+
+    return 1
+}
+
+# Turn off removable device
+poffDsk(){
+
+    if [ $(echo $getName | echo $blkName) ]; then
+
+        # udisksctl unmount -b /dev/$blkName
+        udisksctl power-off -b /dev/$blkName
+
+        sleep 3
+
+        echo "...$unitName pode ser removido com segurança"
+        notify-send "$unitName pode ser removido com segurança" $nofifyOptions
+
+        return 0
+    fi
+
+    return 1
+}
+
+ejectDsk(){
+
+    if [ $(echo $getName | echo $blkName) ]; then
+
+        # udisksctl unmount -b /dev/$blkName
+        echo "Removendo $unitName..."
+        notify-send "Removendo $unitName..." $nofifyOptions
+        unmountDsk && poffDsk
+
+        return 0
+    fi
+
+    return 1
+}
+
+help(){
+
+        echo -e "[-option] [parameter] \n
+        --list or -l       = Lists connected devices and their respective labels.\n
+        --mount or -m      = Mounts connected device, (Requires label-name or block-name as parameter).\n
+        --unmount or -u    = Unmount connected device, (Requires label-name or block-name as parameter).\n
+        --poweroff or -off = Power off device for safe removal, (Requires label-name or block-name as parameter).\n
+        --eject or -e      = Unmount and turn off device for safe removal, (Requires label-name or block-names parameter)."
+}
+
+case "$1" in
+    '--list' | '-l' ) listDsk;;
+    '--mount' | '-m') mountDsk;;
+    '--unmount' | '-u') unmountDsk;;
+    '--poweroff' | '-off') poffDsk;;
+    '--eject' | '-e') ejectDsk;;
+    '--help' | '-h') help;;
+    *) echo "dctl requires the use of parameters. To get usage information try: dctl [ --help or -h]";;
+esac

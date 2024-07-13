@@ -32,7 +32,7 @@ pomo() {
         echo $val | lolcat
         timer ${pomo_options["$val"]}m
         spd-say "'$val' session done"
-        notify-send "Tarefa concluída" -i $icon -u low -t 3000 --hint=int:transient:1 
+        notify-send "Tarefa concluída" -i $icon -u low -t 3000 --hint=int:transient:1
     fi
 }
 
@@ -40,7 +40,7 @@ pomo() {
 fopen() {
     dev='/dev/sda1'
     archive="/run/media/$USER/Arquivos"
-    
+
     if ! df | grep -q $dev; then
         udisksctl mount --no-user-interaction -b $dev
     fi
@@ -72,6 +72,7 @@ alias ..web="fopen Estudo/Informatica/Web"
 alias ..data="fopen Estudo/Informatica/Dados"
 alias ..redes="fopen Estudo/Informatica/Redes"
 alias ..regex="fopen Estudo/Informatica/Regex"
+alias ..docker="fopen Estudo/Informatica/Docker"
 
 alias monta="dmur --mount"
 alias desmonta="dmur --unmount"
@@ -79,9 +80,14 @@ alias remove="dmur --eject"
 
 alias ytd='youtube_downloader'
 
-alias lvi="lvim"
+# alias ovi="/usr/bin/vi"
+# alias vi="/usr/bin/vim"
+
+# alias vi="/usr/bin/nvim"
 alias nvi="nvim"
 alias nv="nvim"
+
+alias lvi="lvim"
 alias lv="lvim"
 alias nvrc="nvim ~/.config/nvim/init.vim" # Abre arquivo de configuração do neovim
 alias nbrc="nvim ~/.bashrc"               # Abre arquivo de configuração do bash
@@ -104,8 +110,8 @@ alias pbr="pomodoro 'break'"
 # alias lss='ls -sh'
 # alias ll='ls -lht'
 # alias la='ls -aCt'
-# alias lla="ls -tlha" 
-# alias lm="ls -alht | more" 
+# alias lla="ls -tlha"
+# alias lm="ls -alht | more"
 
 ### ls to Colorls
 # alias ls='colorls' # Desative se houver problemas ao executar scripts
@@ -116,20 +122,20 @@ alias pbr="pomodoro 'break'"
 # alias lss='lc -sh'
 # alias ll='lc -lht'
 # alias la='lc -aCt'
-# alias lla="lc -tlha" 
-# alias lm="lc -alht | more" 
+# alias lla="lc -tlha"
+# alias lm="lc -alht | more"
 
-### ls to exa 
-alias li="eza" 
-alias ls='eza --icons' # Desative se houver problemas ao executar scripts
+### ls to exa
+alias li="eza"
+alias ls='eza --icons=auto' # Desative se houver problemas ao executar scripts
 alias lt='eza --icons -snew'
 alias ll='eza --icons -lgh'
 alias llt='eza --icons -lghsnew'
 alias la='eza --icons -a'
 alias lat='eza --icons -asnew'
 alias lla='eza --icons -lgha'
-alias llat="eza --icons -lghasnew" 
-alias lm="eza --icons -lghasnew | more" 
+alias llat="eza --icons -lghasnew"
+alias lm="eza --icons -lghasnew | more"
 
 # Aliases from zsh-colorls plugin
 # lc	colorls	Colorls with no options
@@ -166,7 +172,11 @@ alias xp="ranger"                    # Explorador de arquivos
 # alias bro="qutebrowser & disown"
 # alias qute="qutebrowser & disown"
 
-# alias cat="bat"  # Troca o gato pelo morcego xD 
+# alias cat="bat"  # Troca o gato pelo morcego xD
+
+alias exif="exiftool"
+
+alias cool="cool-retro-term -p futuristic --fullscreen & disown"
 
 #TMUX Alias
 alias tmx="tmux"
@@ -174,12 +184,12 @@ alias tmxns="tmux new -s"
 alias tmxks="tmux kill-session -t"
 alias tmxa="tmux attach -t"
 
-alias atalhos="lvim $HOME/.my_aliases"
-alias composi="lvim ~/.config/picom/picom.conf"
-alias bspcfg="lvim ~/.config/bspwm/bspwmrc"
-alias keycfg="lvim ~/.config/sxhkd/sxhkdrc"
-alias barcfg="lvim ~/.config/polybar/themes/tempest_rc/config.ini"
-alias chwall="lvim ~/.fehbg"
+alias atalhos="nvim $HOME/.my_aliases"
+alias composi="nvim ~/.config/picom/picom.conf"
+alias bspcfg="nvim ~/.config/bspwm/bspwmrc"
+alias keycfg="nvim ~/.config/sxhkd/sxhkdrc"
+alias barcfg="nvim ~/.config/polybar/themes/tempest_rc/config.ini"
+alias chwall="nvim ~/.fehbg"
 alias matrix="cmatrix -kasC blue"
 alias ips='ip -c -br a'
 alias please='sudo'
@@ -194,11 +204,11 @@ alias :q='exit'
 # alias desliga='poweroff'
 
 # Github Copilot CLI
-alias cop='gh copilot'
-alias gcs='gh copilot suggest'
-alias gce='gh copilot explain'
+# alias cop='gh copilot'
+# alias gcs='gh copilot suggest'
+# alias gce='gh copilot explain'
 
-alias raspi-login="ssh leandro@10.0.0.200"
+# alias raspi-login="ssh leandro@10.0.0.200"
 alias spring-init="curl https://start.spring.io/starter.zip"
 
 # --- Docker ---

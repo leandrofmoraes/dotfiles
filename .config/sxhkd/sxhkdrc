@@ -20,6 +20,9 @@
     # kitty
 	# konsole
 
+{super + shift + Return}
+    kitty
+
 {ctrl + alt + t}
     bspterm --float
 
@@ -55,7 +58,7 @@ shift + Print
     ~/.config/rofi/applets/android/screenshot-flameshot.sh
 
 # Volume Control
-XF86AudioRaiseVolume 
+XF86AudioRaiseVolume
     pulseaudio-ctl up
     # amixer -Mq set Master,0 2%+ unmute && ~/.config/dunst/custom_notification.sh --vol_up
 XF86AudioLowerVolume
@@ -85,13 +88,13 @@ XF86AudioPrev
 
 XF86AudioStop
     mpc -q stop || playerctl -p spotify stop || mocp -s || playerctl stop
-    
+
 
 # Brightness Control
 XF86MonBrightnessUp
-    brightnessctl -q set +5% && ~/.config/dunst/brightness_notification.sh --inc 
+    brightnessctl -q set +5% && ~/.config/dunst/brightness_notification.sh --inc
 XF86MonBrightnessDown
-    brightnessctl -q set 5%- && ~/.config/dunst/brightness_notification.sh --dec 
+    brightnessctl -q set 5%- && ~/.config/dunst/brightness_notification.sh --dec
     # brightnessctl -q set 10%- && notify-send -t 1500 "Brightness Up $(brightnessctl get)%" -h int:value:$(brightnessctl get) -u low
 
 # Toggle Redshift temporarily

@@ -1,0 +1,16 @@
+# Use terminal colors
+# --theme="Dracula"
+# --theme="ansi"
+--theme="tokyonight_storm"
+
+# Show line numbers, Git modifications and file header (but no grid)
+--style="numbers,changes,header"
+
+# Use italic text on the terminal (not supported on all terminals)
+--italic-text=always
+
+# Use C++ syntax for Arduino .ino files
+--map-syntax "*.ino:C++"
+
+# Use CSS syntax for rofi stylesheets
+--map-syntax "*.rasi:CSS"

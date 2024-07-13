@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+# Endereço MAC do seu fone de ouvido Bluetooth
+DEVICE_ADDRESS="5C:C6:E9:17:6E:95"
+
+# Verifica se o Bluetooth está ativado
+BLUETOOTH_STATUS=$(systemctl is-active bluetooth)
+
+    if [ "$BLUETOOTH_STATUS" != "active" ]; then
+    echo "Ativando o Bluetooth..."
+    sudo systemctl start bluetooth
+    fi
+
+# Remove o dispositivo se estiver pareado
+    bluetoothctl <<EOF
+    power on
+    remove $DEVICE_ADDRESS
+    scan on
+    pairable on
+    exit
+    EOF
+
+# Aguarde a digitalização
+    sleep 15
+
+# Pareie o dispositivo novamente
+    bluetoothctl <<EOF
+    power on
+    scan off
+    pair $DEVICE_ADDRESS
+    connect $DEVICE_ADDRESS
+    exit
+    EOF

@@ -44,6 +44,7 @@
 /Música/
 /net.downloadhelper.coapp-1.6.3/
 /.npm/
+/node_modules/
 .oh-my-bash/
 .p10k.zsh.bak
 /.pki/
@@ -118,16 +119,21 @@ Imagens/*
 ## .config
 .config/*
 !/.config/alacritty/
-!/.config/betterlockscreenrc
+!/.config/bat/
+!/.config/betterlockscreenrc/
 !/.config/bspwm/
 !/.config/bashtop/
+!/.config/btop/
 !/.config/cava/
 .config/cava/shaders/
+!/.config/cmus/
 !/.config/eww/
+!/.config/flameshot/
 !/.config/htop/
 !/.config/lazygit/
 !/.config/lvim/
-!/.config/moc
+!/.config/moc/
+!/.config/micro/
 !/.config/neofetch/
 !/.config/nnn/
 
@@ -156,6 +162,7 @@ Imagens/*
 
 !/.config/picom/
 .config/picom/picom.conf.example
+.config/picom/picom.conf.bak
 .config/picom/picom.conf.bak-2
 
 #!/.config/gcolor3/
@@ -180,11 +187,14 @@ Imagens/*
 ## Polybar
 !/.config/polybar/
 !/.config/polybar-neon/
-!/.config/polybar-neon/polybar-neon-alt
+!/.config/polybar-neon/polybar-neon-alt/
 
 #!/.config/pulse/
 !/.config/pulseaudio-ctl/
 !/.config/ranger/
+
+## VLC
+!/.config/vlc/
 
 ## Rofi
 !/.config/rofi/
@@ -218,8 +228,17 @@ Imagens/*
 
 ## local/bin
 !/.local/bin
-.local/bin/*
-!/.local/bin/pulseaudio-ctl
+/.local/bin/activate-global-python-argcomplete
+/.local/bin/python-argcomplete-check-easy-install-script
+/.local/bin/register-python-argcomplete
+/.local/bin/pipx
+/.local/bin/openai
+/.local/bin/obsidian
+/.local/bin/arduino
+/.local/bin/sgpt
+/.local/bin/chatgpt.sh
+# .local/bin/*
+# !/.local/bin/pulseaudio-ctl
 
 ## local/share
 # !/.local/share

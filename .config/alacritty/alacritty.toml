@@ -19,7 +19,8 @@ shell = { program = '/bin/zsh' }
 TERM = "xterm-256color"
 
 [colors.primary]
-background = "0x000819"
+# background = "0x000819"
+background = "0x020221"
 
 [scrolling]
 history = 5000
@@ -57,7 +58,7 @@ dynamic_title = true
 #gtk_theme_variant: None
 
 [font]
-# normal = { family = 'DroidSans Nerd Font', style = "Regular" }
+# normal = { family = 'Maple Mono', style = 'Regular' }
 normal = { family = 'JetBrains Mono Nerd Font', style = 'Regular' }
 bold = { family = 'JetBrains Mono Nerd Font', style = 'Bold' }
 italic = { family = 'JetBrains Mono Nerd Font', style = 'MediumItalic' }

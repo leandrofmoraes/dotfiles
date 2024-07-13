@@ -10,7 +10,8 @@ fi
 VISUAL=/home/leandro-f/.local/bin/lvim
 export EDITOR="$VISUAL"
 export PATH=$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin
-export PATH=$PATH:$HOME/.emacs.d/bin
+export PATH=$PATH:$HOME/.local/share/bob/nvim-bin/
+# export PATH=$PATH:$HOME/.emacs.d/bin
 # export GITHUB_TOKEN=$TOKEN
 
 
@@ -71,6 +72,7 @@ typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uF17C' #Tux OS symbol
 # \uE7B0 - Docker
 # \uE722 - Rasberry Pi
 # \uf315 - Raspberry Pi
+# eval "$(gh copilot alias -- zsh)"
 
 source $HOME/.zkeybingings
 source $HOME/.my_aliases

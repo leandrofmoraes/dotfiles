@@ -83,19 +83,19 @@ $ cp -r . $HOME
 
 | Btop, Calendar Notification, Rofi Search Menu and Ranger File Manager |
 |-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_14.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_14b.png)|
 
 | NCMPCPP, Termux and music notification |
 |-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_11.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_11b.png)|
 
 | NeoVim, Tmux and cava | btop, Neovi and Ranger |
 |-|-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_12.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_10.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_12b.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_10.png)|
 
 | Polybar with rounded corners and LunarVim with Lunar color scheme | Visual Studio Code with Winter is Coming theme |
 |-|-|
-|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_08.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_09.png)|
+|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_08b.png)|![img](https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_09.png)|
 
 </details>
 
