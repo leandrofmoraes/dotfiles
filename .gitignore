@@ -95,6 +95,7 @@
 .zcompdump
 .zhistory
 .python_history
+/yt-dlp/
 
 ## not ignored
 !.fehbg
