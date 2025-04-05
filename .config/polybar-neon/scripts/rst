@@ -1,3 +1,0 @@
-#!/bin/bash
-clear
-macchina -o Host Kernel Distribution Packages Terminal Uptime Resolution

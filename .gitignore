@@ -5,18 +5,23 @@
 *.log
 
 #.git/
-/.appimages/
+apps/
 /Arduino/
+.android/
 .arduino15
 /.arduinoIDE/
 /Área de trabalho/
+/backups/
 .bash_history
 .bash_logout
 .bash_profile
 .bashrc.omb-uninstalled-20231209144821
 /.byobu/
-/.doom.d/
+/.cache/
 /.cargo/
+/chone.tar.gz
+/Desktop/
+.dir_colors
 /.docker/
 /docker-images
 /Documentos/
@@ -24,149 +29,134 @@
 /.eclipse/
 /eclipse-workspace/
 /.emacs.d/
-.gnupg/
-/.fonts/
-/.gnome/
-.hplip/
-/.icons/
-/inspire-dotfiles/
-/.kde4/
-/.lemminx/
-/.links/
-/.lyrics/
-/.m2/
-/.mozilla/
-/Modelos/
-.moc/pid
-.moc/last_directory
-.mplayer/
-/mpv-osc-modern/
-/Música/
-/net.downloadhelper.coapp-1.6.3/
-/.npm/
-/node_modules/
-.oh-my-bash/
-.p10k.zsh.bak
-/.pki/
-/Postman/
-.psensor/
-/Público/
-/Vídeos/
-/workspace/
-/.rustup/
-/.ssh/
-.ssr/
-.scripts/start_project.sh
-.steam/
-.steampath
-.steampid
-.zsh/.zshrc
-.sts4/
-/.swt
-/.subversion/
-/.themes/
-/.var/
-/.vim/
-/.vscode/
-/.yarn/
-/.redhat/
-/.p2/
-/.java/
-.dir_colors
+.face
+.face.jpg
 .fonts.conf
 .gitconfig
-#.gitignore
 .gitignore.old
+/.gk/
+/.gnome/
+/.gnupg/
+/go/
 .gtkrc-2.0
-.lesshst
-.luarc.json
-.mysql_history
-.node_repl_history
-.sdirs
-/.session-rtorrent/
-.viminfo
-/.vnc/
-/.webclipse/
-.wget-hsts
-.Xauthority
-.Xclients
-.xinitrc
-.yarnrc
-.zcompdump
-.zhistory
-.python_history
-/yt-dlp/
-
-## not ignored
-!.fehbg
-!.zshrc
-!.bashrc
-!.my_aliases
-!.my_functions
-!.p10k.zsh
-!.rtorrent.rc
-!.tmux.conf
+.h2.server.properties
+/.hplip/
+/.icons/
 
 ## Imagens
 Imagens/*
 !/Imagens/wallpapers/
 !/Imagens/screenshots/
 
-/.cache/
+/inspire-dotfiles/
+/.java/
+/.john/
+/.kde4/
+/.lemminx/
+.lesshst
+/.links/
+.luarc.json
+/.m2/
+/.moc/
+/Modelos/
+/.mozilla/
+/.mplayer/
+/mpv-osc-modern/
+/Música/
+/.mutt/
+.mysql_history
+/net.downloadhelper.coapp-1.6.3/
+/node_modules/
+.node_repl_history
+/.npm/
+.oh-my-bash/
+/.p2/
+.p10k.zsh.bak
+.p10k.zsh.bkp
+package.json
+package-lock.json
+/.pki/
+.psensor/
+.python_history
+/Postman/
+/Público/
+/.redhat/
+.rtorrent.rc
+/.rustup/
+.sdirs
+/.session-rtorrent/
+/.ssh/
+/.ssr/
+.scripts/start_project.sh
+st/
+.steam/
+.steampath
+.steampid
+/.sts4/
+/.subversion/
+/.swt
+/.themes/
+/.var/
+/.vscode/
+/.yarn/
+/.redhat/
+.sdirs
+/.session-rtorrent/
+/.var/
+/Vídeos/
+.viminfo
+/.vimiv/
+/.vnc/
+/.vscode/
+/.w3m/
+/.webclipse/
+.wget-hsts
+/workspace/
+.Xauthority
+.Xclients
+.xinitrc
+/.yarn/
+.yarnrc
+.zcompdump
+.zhistory
+/yt-dlp/
+/workspace/
+
+## not ignored
+!.fehbg
+!.zshrc
+!.bashrc
+!.aliases
+!.functions
+!.p10k.zsh
+!.tmux.conf
+!/.vim/
+.vim/plugged/*
 
 !/.zsh/
 .zsh/cache/
 
+############################################################################################################
+
 ## .config
 .config/*
 !/.config/alacritty/
-!/.config/bat/
-!/.config/betterlockscreenrc/
-!/.config/bspwm/
 !/.config/bashtop/
+!/.config/bat/
+!/.config/bspwm/
 !/.config/btop/
+!/.config/betterlockscreenrc
 !/.config/cava/
 .config/cava/shaders/
 !/.config/cmus/
-!/.config/eww/
-!/.config/flameshot/
-!/.config/htop/
-!/.config/lazygit/
-!/.config/lvim/
-!/.config/moc/
-!/.config/micro/
-!/.config/neofetch/
-!/.config/nnn/
 
-## Neovim
-.config/nvim/
-.config/nvim/*
-!/.config/nvim/lua/
-!/.config/nvim/init.lua
-
-!/.config/kitty/
-!/.config/redshift/
-
-!/.config/mpv/
-~/.config/mpv/watch_later
-
+## Vscode
+!.config/Code/
 .config/Code/*
-!/.config/Code/Backups/
-
-!/.config/mpd/
-.config/mpd/*
-!/.config/mpd/mpd.conf
-!/.config/mpd/mpd.fifo
-!/.config/mpd/socket
-#!/.config/mpd/playlists/
-#!/.config/mpd/database
-
-!/.config/picom/
-.config/picom/picom.conf.example
-.config/picom/picom.conf.bak
-.config/picom/picom.conf.bak-2
-
-#!/.config/gcolor3/
+!.config/Code/User/
+.config/Code/User/*
+!.config/Code/User/settings.json
+!.config/Code/User/keybindings.json
 
 ## Dunst
 !/.config/dunst/
@@ -177,6 +167,34 @@ Imagens/*
 !/.config/dunst/calendar.sh
 !/.config/dunst/music_notification.sh
 
+!/.config/eww/
+!/.config/fastfetch/
+!/.config/flameshot/
+!/.config/htop/
+!/.config/hypr/
+
+!/.config/kew/
+!/.config/kitty/
+
+!/.config/lazygit/
+!/.config/micro/
+!/.config/moc/
+
+# mpd
+!/.config/mpd/
+.config/mpd/*
+!/.config/mpd/mpd.conf
+!/.config/mpd/mpd.fifo
+!/.config/mpd/socket
+#!/.config/mpd/playlists/
+#!/.config/mpd/database
+
+# mpv
+!/.config/mpv/
+.config/mpv/watch_later
+
+!/.config/neofetch/
+
 ## NCMPCPP
 !/.config/ncmpcpp/
 .config/ncmpcpp/*
@@ -185,17 +203,28 @@ Imagens/*
 ## nnn
 !/.config/nnn/
 
+## Neovim
+!/.config/nvim/
+# .config/nvim/*
+# !/.config/nvim/lua/
+# !/.config/nvim/init.lua
+
+# picom
+!/.config/picom/
+.config/picom/picom.conf.example
+.config/picom/picom.conf.bak
+.config/picom/picom.conf.bak-2
+
+#!/.config/gcolor3/
+
 ## Polybar
 !/.config/polybar/
-!/.config/polybar-neon/
-!/.config/polybar-neon/polybar-neon-alt/
 
 #!/.config/pulse/
 !/.config/pulseaudio-ctl/
 !/.config/ranger/
 
-## VLC
-!/.config/vlc/
+!/.config/redshift/
 
 ## Rofi
 !/.config/rofi/
@@ -204,7 +233,7 @@ Imagens/*
 !/.config/rofi/config
 !/.config/rofi/config.rasi
 !/.config/rofi/music/
-
+!/.config/rofi/scripts/
 !/.config/rofi/rofi-bluetooth/
 .config/rofi/rofi-bluetooth/*
 !/.config/rofi/rofi-bluetooth/LICENSE
@@ -212,34 +241,47 @@ Imagens/*
 #!/.config/rofi/rofi-bluetooth/README.md
 !/.config/rofi/rofi-bluetooth/rofi-bluetooth
 !/.config/rofi/rofi-bluetooth/theme.rasi
-
 !/.config/rofi/themes/
 !/.config/rofi/wifi/
 #!/.config/rofi/powermenu/
+
+!/.config/speech-dispatcher/
+!/.config/swappy/
+
+## Swaync
+!/.config/swaync/
 
 ## SXHKD
 !/.config/sxhkd/
 /.config/sxhkd/hotkeys.txt
 
+!/.config/terminator/
+!/.config/ueberzugpp/
+
+## VLC
+!/.config/vlc/
+
+## Waybar
+!/.config/waybar/
+
+!/.config/wlogout
+
 ## zathura
 !/.config/zathura/
+
+############################################################################################################
 
 ## .local
 .local/*
 
 ## local/bin
-!/.local/bin
-/.local/bin/activate-global-python-argcomplete
-/.local/bin/python-argcomplete-check-easy-install-script
-/.local/bin/register-python-argcomplete
-/.local/bin/pipx
-/.local/bin/openai
-/.local/bin/obsidian
-/.local/bin/arduino
-/.local/bin/sgpt
-/.local/bin/chatgpt.sh
-# .local/bin/*
-# !/.local/bin/pulseaudio-ctl
+!/.local/bin/
+.local/bin/*
+!/.local/bin/youtube_downloader
+!/.local/bin/pomodoro
+!/.local/bin/changevolume
+!/.local/bin/changebrightness
+!/.local/bin/screenshot
 
 ## local/share
 # !/.local/share

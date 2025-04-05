@@ -1,0 +1,69 @@
+{
+    "files.autoSave": "afterDelay",
+    "cSpell.dictionaryDefinitions": [
+
+    ],
+    "cSpell.language": "pt-BR",
+    "cSpell.languageSettings": [
+
+    ],
+    "workbench.iconTheme": "material-icon-theme",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.wordWrap": "on",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Tokyo Night",
+    "window.autoDetectHighContrast": false,
+    "workbench.preferredDarkColorTheme": "Tokyo Night",
+    "editor.minimap.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "diffEditor.codeLens": true,
+    "editor.rulers": [
+
+    ],
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "settingsSync.ignoredSettings": [
+
+    ],
+    "zenMode.hideLineNumbers": false,
+    "window.menuBarVisibility": "toggle",
+    "files.eol": "\n",
+    "tabnine.experimentalAutoImports": true,
+    "glassit.alpha": 200,
+    "workbench.colorCustomizations": {
+       "editor.background": "#020221",
+       "panel.background": "#020221",
+       "panelSection.dropBackground": "#020221",
+       "terminal.background": "#020221",
+       "statusBar.background": "#020221",
+       "activityBar.background": "#020221",
+       "activityBar.border": "#B542FF",
+       "sideBar.background": "#020221",
+       //"sideBar.border": "#B542FF",
+       "editorGroupHeader.tabsBackground": "#020221",
+       "editorGroupHeader.tabsBorder": "#020221",
+       "editorGroupHeader.border": "#020221",
+       "tab.activeBackground": "#020221",
+       "tab.activeBorder": "#B542FF",
+       "tab.inactiveBackground": "#020221",
+       "breadcrumb.background": "#020221"
+
+
+    },
+    "terminal.external.linuxExec": "kitty",
+    "terminal.explorerKind": "both",
+    "terminal.sourceControlRepositoriesKind": "both",
+    "editor.fontFamily": "'Maple Mono', 'JetBrainsMono NF', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontLigatures": true,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "workbench.activityBar.location": "hidden",
+    "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "off"
+}

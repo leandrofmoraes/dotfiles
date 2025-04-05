@@ -1,0 +1,272 @@
+{
+
+    "custom/launcher":{
+        // "format": " ", # For dynamic icon, change the commented line (85 and 86) in the exec script
+        "rotate": 0,
+        "on-click": "rofi -show drun -theme ~/.config/rofi/themes/hypr_launcher.rasi",
+        "on-click-right": "killall rofi",
+        "interval" : 600, // once every hour
+        "tooltip": true,
+        // "tooltip-format": "{}",
+        "return-type": "json",
+        "exec": "~/.config/waybar/scripts/sysinfo.sh"
+    },
+
+    "custom/file_manager": {
+        "format": " ",
+        "on-click": "thunar",
+        "tooltip": true,
+        "tooltip-format": "File Manager"
+    },
+
+    "custom/tty": {
+        "format": " ",
+        "on-click": "kitty",
+        "tooltip": true,
+        "tooltip-format": "Launch Terminal"
+    },
+
+    "custom/browser": {
+        // "format": " ",
+        "format": " ",
+        // "on-click": "firefox",
+        "on-click": "google-chrome-stable",
+        "tooltip": true,
+        "tooltip-format": "Launch Browser"
+    },
+
+    "custom/quit": {
+        "format": "󰗼{}",
+        "tooltip": true,
+        "rotate": 0,
+        "on-click": "hyprctl dispatch exit"
+    },
+    "custom/lock": {
+        "format": "󰍁{}",
+        "tooltip": true,
+        "rotate": 0,
+        "on-click": "hyprlock"
+    },
+    "custom/reboot": {
+        "format": "󰜉{}",
+        "tooltip": true,
+        "rotate": 0,
+        "on-click": "reboot"
+    },
+    "custom/power": {
+        "format": "{}",
+        "tooltip": true,
+        "rotate": 0,
+        "on-click": "poweroff"
+    },
+
+    // "custom/power": {
+    //     "format": "{}",
+    //     "rotate": 0,
+    //     "exec": "echo ; echo  logout",
+    //     "on-click": "logoutlaunch.sh 2",
+    //     "on-click-right": "logoutlaunch.sh 1",
+    //     "interval" : 86400, // once every day
+    //     "tooltip": true
+    // },
+
+    "custom/cliphist": {
+        "format": "{}",
+        "rotate": 0,
+        "exec": "echo ; echo 󰅇 clipboard history",
+        "on-click": "sleep 0.1 && cliphist.sh c",
+        "on-click-right": "sleep 0.1 && cliphist.sh d",
+        "on-click-middle": "sleep 0.1 && cliphist.sh w",
+        "interval" : 86400, // once every day
+        "tooltip": true
+    },
+
+    "custom/spotify": {
+        "exec": "mediaplayer.py --player spotify",
+        "format": " {}",
+        "rotate": 0,
+        "return-type": "json",
+        "on-click": "playerctl play-pause --player spotify",
+        "on-click-right": "playerctl next --player spotify",
+        "on-click-middle": "playerctl previous --player spotify",
+        "on-scroll-up": "volumecontrol.sh -p spotify i",
+        "on-scroll-down": "volumecontrol.sh -p spotify d",
+        "max-length": 25,
+        "escape": true,
+        "tooltip": true
+    },
+
+    "custom/notifications": {
+        "tooltip": true,
+        "tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
+        // "format": "{} {icon}",
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<span foreground='white'><sup></sup></span>",
+            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "inhibited-none": "",
+            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": "",
+            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": "",
+            "email-notification": "<span foreground='white'><sup></sup></span>",
+            "chat-notification": "󱋊<span foreground='white'><sup></sup></span>",
+            "warning-notification": "󱨪<span foreground='yellow'><sup></sup></span>",
+            "error-notification": "󱨪<span foreground='red'><sup></sup></span>",
+            "network-notification": "󱂇<span foreground='white'><sup></sup></span>",
+            "battery-notification": "󰁺<span foreground='white'><sup></sup></span>",
+            "update-notification": "󰚰<span foreground='white'><sup></sup></span>",
+            "music-notification": "󰝚<span foreground='white'><sup></sup></span>",
+            "volume-notification": "󰕿<span foreground='white'><sup></sup></span>",
+            // "none": ""
+            "none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        // "on-click": "swaync-client -t -sw",
+        "on-click": "sleep 0.1 && swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+    "custom/hypridle": {
+        "format": "󱫗 ",
+        "return-type": "json",
+        "escape": true,
+        "exec-on-event": true,
+        "interval": 60,
+        "exec": "$HOME/.config/waybar/scripts/hypridle.sh status",
+        "on-click": "$HOME/.config/waybar/scripts/hypridle.sh toggle",
+        "on-click-right": "hyprlock"
+    },
+
+    "custom/keybindhint": {
+        "format": " ",
+        "rotate": 0,
+        "on-click": "keybinds_hint.sh"
+    },
+
+    "custom/cava_mviz": {
+        "format": "{}",
+        "exec": "$HOME/.config/waybar/scripts/cava.sh"
+    },
+
+    "custom/vpn": {
+        "interval": 3,
+        "exec": "~/.config/hypr/scripts/hideme.sh",
+        "format": "VPN {} ",
+        "on-click": "kitty --title VPN-Connecting sh -c 'hideme -c USA'",
+        "on-click-right": "kitty --title VPN-Disconnecting sh -c 'hideme -d'"
+    },
+
+    "custom/wbar": {
+        "format": "{}", //    //
+        "rotate": 0,
+        "exec": "echo ; echo  switch bar //  dock",
+        "on-click": "wbarconfgen.sh n",
+        "on-click-right": "wbarconfgen.sh p",
+        "on-click-middle": "sleep 0.1 && quickapps.sh kitty firefox spotify code dolphin",
+        "interval" : 86400,
+        "tooltip": true
+    },
+
+    "custom/theme": {
+        "format": "{}",
+        "rotate": 0,
+        "exec": "echo ; echo 󰟡 switch theme",
+        "on-click": "themeswitch.sh -n",
+        "on-click-right": "themeswitch.sh -p",
+        "on-click-middle": "sleep 0.1 && themeselect.sh",
+        "interval" : 86400, // once every day
+        "tooltip": true
+    },
+
+    "custom/wallchange": {
+        "format": "{}",
+        "rotate": 0,
+        "exec": "echo ; echo 󰆊 switch wallpaper",
+        "on-click": "swwwallpaper.sh -n",
+        "on-click-right": "swwwallpaper.sh -p",
+        "on-click-middle": "sleep 0.1 && swwwallselect.sh",
+        "interval" : 86400, // once every day
+        "tooltip": true
+    },
+
+
+    // --MODULES FOR PADDING--
+
+    "custom/l_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/r_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/sl_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/sr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rl_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/padd": {
+        "format": "  ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    // Separators
+    "custom/separator#dot": {
+        "format": "",
+        "interval": "once",
+        "tooltip": false
+    },
+    "custom/separator#dot-line": {
+        "format": "",
+        "interval": "once",
+        "tooltip": false
+    },
+    "custom/separator#line": {
+        "format": "|",
+        "interval": "once",
+        "tooltip": false
+    },
+    "custom/separator#blank": {
+        "format": "",
+        "interval": "once",
+        "tooltip": false
+    },
+    "custom/separator#blank_2": {
+        "format": "  ",
+        "interval": "once",
+        "tooltip": false
+    },
+    "custom/separator#blank_3": {
+        "format": "   ",
+        "interval": "once",
+        "tooltip": false
+    }
+}

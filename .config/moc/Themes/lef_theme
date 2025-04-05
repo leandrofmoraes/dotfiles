@@ -1,0 +1,41 @@
+###########################################################
+#
+#                      lef Theme
+#
+# Email        leandrofmraes@gmail.com
+# GitHub       https://github.com/leandrofmoraes
+# 
+##########################################################
+
+background				= default   default
+frame					= magenta   default
+window_title			= blue	    default bold,underline
+directory				= blue		default	bold
+selected_directory		= magenta	default	bold,underline
+playlist				= magenta	default	bold
+selected_playlist		= grey		default	bold,underline
+file					= white		default	
+selected_file			= grey      default	bold,underline
+marked_file				= blue		default	bold
+marked_selected_file	= grey		default	bold,underline
+info					= blue		default	
+status					= blue		default	
+title					= blue		default	bold
+state					= magenta	default
+current_time			= grey   	default	
+time_left				= grey		default	
+total_time				= grey		default	
+time_total_frames		= grey		default
+sound_parameters		= grey		default	bold
+legend					= grey		default	bold
+disabled				= red		default
+enabled					= grey		default	bold
+empty_mixer_bar			= blue		default	bold,underline
+filled_mixer_bar		= blue		default	underline
+empty_time_bar			= white		default	underline
+filled_time_bar			= blue		default	underline
+entry					= white		default	
+entry_title				= white		default
+error					= red		default	bold,underline
+message					= blue  	default	bold
+plist_time				= blue		default	underline

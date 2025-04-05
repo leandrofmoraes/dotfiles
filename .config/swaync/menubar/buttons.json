@@ -1,0 +1,26 @@
+{
+    "menubar": {
+        "menu#screenshot-buttons": {
+            "label": "",
+            "position": "right",
+            "actions": [
+                {
+                    "label": "   Entire screen",
+                    "command": "$HOME/.config/hypr/scripts/ScreenShot.sh --now"
+                },
+                {
+                    "label": "   Active window",
+                    "command": "$HOME/.config/hypr/scripts/ScreenShot.sh --active"
+                },
+                {
+                    "label": "  Select a area",
+                    "command": "$HOME/.config/hypr/scripts/ScreenShot.sh --area"
+                },
+                {
+                    "label": "   Open screenshot editor",
+                    "command": "$HOME/.config/hypr/scripts/ScreenShot.sh --swappy"
+                }
+            ]
+        }
+    }
+}

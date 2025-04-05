@@ -1,0 +1,116 @@
+/*******************************************************************************
+ * MACOS LAUNCHPAD LIKE THEME FOR ROFI
+ * User                 : LR-Tech
+ * Theme Repo           : https://github.com/lr-tech/rofi-themes-collection
+ *******************************************************************************/
+
+
+* {
+    dark-blue:                     #020221;
+    dark-blue2:                    #02022133;
+    dark-blue3:                    #0202216D;
+    darker-blue:                   #000819;
+
+    light-blue:                    #62AEEF;
+    t-light-blue:                  #62AEEF80;
+    t-light-blue2:                 #62AEEFE6;
+
+    pink:                          #B542FF;
+    t-pink:                        #B542FF99;
+
+    /*font:                        "Montserrat 9";*/
+    font:                          "Iosevka Nerd Font Mono 10";
+
+    show-icons:                     true;
+    background-color:               transparent;
+    text-color:                     @light-blue;
+    transparency:                   "real";
+    padding:                        0px;
+    margin:                         0px;
+    fullscreen:                     true;
+
+
+    display-drun:                   "";
+    display-ssh:                    "";
+    display-run:                    "";
+    display-window:                 "";
+    display-combi:                  "";
+    display-emoji:                  "ﲃ";
+    /* display-calc:                ""; */
+    /* display-clipboard:           ""; */
+
+}
+
+window {
+  fullscreen: true;
+  padding: 1em;
+  background-color: @dark-blue3;
+}
+
+mainbox {
+  padding:  8px;
+}
+
+inputbar {
+    background-color: @darker-blue;
+
+    margin:        0px calc( 50% - 120px );
+    padding:       2px 4px;
+    spacing:       4px;
+
+    border:        1px;
+    border-color:  @t-pink;
+    border-radius: 15px;
+
+    children: [icon-search,entry];
+}
+
+prompt {
+  enabled:  false;
+}
+
+icon-search {
+  expand:   false;
+  filename: "search";
+  vertical-align: 0.5;
+}
+
+entry {
+  /*placeholder:        "Search";*/
+  placeholder-color:  @pink;
+}
+
+listview {
+  margin:   48px calc( 50% - 560px );
+  spacing:  48px;
+  columns:  6;
+  fixed-columns: true;
+}
+
+element, element-text, element-icon {
+  cursor: pointer;
+}
+
+element {
+  padding:      8px;
+  spacing:      4px;
+
+  orientation:    vertical;
+  border-radius:  16px;
+  background-color: @dark-blue2;
+}
+
+element selected {
+  background-color: @t-light-blue2;
+  text-color:       @darker-blue;
+}
+
+element-icon {
+  size: 4em;
+  horizontal-align: 0.5;
+}
+
+element-text {
+  horizontal-align: 0.5;
+  text-color:       inherit;
+}

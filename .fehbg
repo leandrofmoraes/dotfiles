@@ -8,7 +8,7 @@
 # feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/gordon-zuchhold-cityscape-ix-final.jp"
 # feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/landscape.jpg" #Asthenic
 # feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/neon-wallpaper-city.jpg" #Neon City
-feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/retowave2k.jpg" # retrowave
+# feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/retowave2k.jpg" # retrowave
 # feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/oak_tree.png" # Oak
 # feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/retrowave-neon-moon.jpg" #retrowave moon
 # feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/retrowave-neon-sunrise.jpg" #retrowave sunrise
@@ -20,3 +20,5 @@ feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/retowave2k.jpg" # retrowave
 # feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/wp6004876-hd-games-retro-wallpapers.jpg" # Retro computer
 # feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/wallpaper2.jpg"
 # feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/xxiob2iqctga1.png" #comet
+feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/mountain-abstract-digital-art-8k.jpg" #abstract mountain
+# feh --no-fehbg --bg-scale "$HOME/Imagens/wallpapers/sky.jpg"

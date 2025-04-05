@@ -1,0 +1,122 @@
+{
+    "$schema": "/etc/xdg/swaync/configSchema.json",
+
+    "positionX": "right",
+    "positionY": "top",
+    "control-center-positionX": "right",
+    "control-center-positionY": "top",
+    "control-center-margin-top": 8,
+    "control-center-margin-bottom": 8,
+    "control-center-margin-right": 8,
+    "control-center-margin-left": 8,
+    "control-center-width": 450,
+    "control-center-height": 700,
+    "fit-to-screen": false,
+
+    "layer": "overlay",
+    "cssPriority": "user",
+    "notification-icon-size": 64,
+    "notification-body-image-height": 64,
+    "notification-body-image-width": 64,
+    "timeout": 3,
+    "timeout-low": 2,
+    "timeout-critical": 0,
+    "notification-window-width": 500,
+    "keyboard-shortcuts": true,
+    "image-visibility": "when-available",
+    "transition-time": 100,
+    "hide-on-clear": true,
+    "hide-on-action": true,
+    "script-fail-notify": true,
+
+    "widgets": [
+        "menubar#label",
+        "dnd",
+        "inhibitors",
+        "label",
+        "volume",
+        "backlight",
+        "mpris",
+        "title",
+        "notifications"
+    ],
+    "widget-config": {
+        "menubar#label": {
+            "menu#power-buttons": {
+                "label": "⏻",
+                "position": "right",
+                "actions": [
+                    {
+                        "label": "󰌾 Lock",
+                        "command": "swaync-client -t -sw && swaylock -f"
+                    },
+                    {
+                        "label": "󰍃 Exit",
+                        "command": "hyprctl dispatch exit"
+                    },
+                    {
+                        "label": " Suspender",
+                        "command": "swaync-client -t -sw && loginctl suspend"
+                    },
+                    {
+                        "label": " Reboot",
+                        "command": "swaync-client -t -sw && reboot"
+                    },
+                    {
+                        "label": "⏻ Desligar",
+                        "command": "swaync-client -t -sw && poweroff"
+                    }
+                ]
+            },
+            "buttons-grid": {
+                "actions": [
+                    {
+                        "label": "直",
+                        "command": "iwgtk"
+                    },
+                    {
+                        "label": "",
+                        "command": "blueman-manager"
+                    }
+                ]
+            },
+            "buttons#topbar-buttons": {
+                "position": "left",
+                "actions": [
+                    {
+                        "label": "",
+                        "command": "swaync-client -t -sw && grim -t png -l 1 -g \"$(slurp)\" - | swappy -f -"
+                    }
+                ]
+            }
+        },
+        "inhibitors": {
+            "text": "Inhibidores",
+            "button-text": "Clear All",
+            "clear-all-button": true
+        },
+        "title": {
+            "text": "Notifications",
+            "clear-all-button": true,
+            "button-text": "Limpiar todo"
+        },
+        "label": {
+            "max-lines": 5,
+            "text": "Controller"
+        },
+        "dnd": {
+            "text": "Do Not Disturb"
+        },
+        "mpris": {
+            "image-size": 128,
+            "image-radius": 8
+        },
+        "volume": {
+            "label": "󰕾 "
+        },
+        "backlight": {
+            "label": "󰃟 ",
+            "device": "intel_backlight"
+        }
+    }
+}

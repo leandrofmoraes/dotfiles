@@ -4,7 +4,8 @@
 --theme="tokyonight_storm"
 
 # Show line numbers, Git modifications and file header (but no grid)
---style="numbers,changes,header"
+#--style="numbers,changes,header"
+--style="numbers,changes"
 
 # Use italic text on the terminal (not supported on all terminals)
 --italic-text=always

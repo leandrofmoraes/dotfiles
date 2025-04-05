@@ -1,0 +1,23 @@
+// Coloque as suas associações de teclas neste arquivo para substituir os padrõesauto[]
+[
+    {
+        "key": "ctrl+b a",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "ctrl+/ j",
+        "command": "java.view.package.newJavaClass"
+    },
+    {
+        "key": "ctrl+shift+/",
+        "command": "workbench.action.activityBarLocation.hide"
+    },
+    {
+        "key": "ctrl+space e",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    }
+]

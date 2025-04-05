@@ -1,8 +1,10 @@
-#! /bin/sh
+#! /usr/bin/env bash
 
 BORDER_WIDTH=1
+XDG_CURRENT_DESKTOP="bspwm"
 
 export BORDER_WIDTH
+export XDG_CURRENT_DESKTOP
 
 ####################################################
 #                                                   #
@@ -90,6 +92,7 @@ redshift &
 # picom  &
 # picom -b --experimental-backends
 picom -b
+# picom --animations -b
 
 ######## To set a wallpaper ####
 # nitrogen --restore &
@@ -100,6 +103,8 @@ picom -b
 # ~/.config/polybar/switch_theme.sh tempest &
 # ~/.config/polybar/switch_theme.sh tempest_rc &
 ~/.config/polybar/launch.sh &
+
+dunst
 
 # variável guarda a quantidade de monitores
 # MONS=$(polybar --list-monitors | wc -l)

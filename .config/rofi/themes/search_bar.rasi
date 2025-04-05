@@ -52,11 +52,13 @@ window {
 	border-color:					#B542FF99;
     border-radius:	                12px;
 	/* height:							5%; */
-	/*width:							40%;*/
-	width:							37%;
+	/*width:							37%;*/
+	width:							24.9%;
     location:                       northwest;
-    x-offset:                       31.45%;
+    /*x-offset:                       31.45%;*/
+    x-offset:                       0.42%;
     y-offset:                       0.65%;
+    /* y-offset:                       20%; */
 }
 
 prompt {
