@@ -47,7 +47,7 @@
 
 .notification-content{
 	color: @light-blue;
-    background: @dark-blue-t4;
+    background: @dark-blue-t2;
     padding: 3px 10px 3px 6px;
     /* border-radius: 12px; */
     /* border: 0.5px solid @pink; */
@@ -55,7 +55,7 @@
     border-right: 0.5px solid @pink;
     border-bottom: 0.5px solid @pink;
     border-left: 0.5px solid @light-blue;
-    /* margin: 0px; */
+     margin: 0px;
     /* border-image-source: linear-gradient(to right, @light-blue, @pink); */
     /* animation: rainbowBorder 2s infinite; */
 }
