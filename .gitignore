@@ -57,7 +57,7 @@ Imagens/*
 /.links/
 .luarc.json
 /.m2/
-/.moc/
+.moc/
 /Modelos/
 /.mozilla/
 /.mplayer/
@@ -222,7 +222,7 @@ st/
 
 #!/.config/pulse/
 !/.config/pulseaudio-ctl/
-!/.config/ranger/
+# !/.config/ranger/
 
 !/.config/redshift/
 
@@ -265,6 +265,8 @@ st/
 !/.config/waybar/
 
 !/.config/wlogout
+
+!/.config/yazi/
 
 ## zathura
 !/.config/zathura/

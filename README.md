@@ -2,7 +2,7 @@
 
 ## About
 
-<p>This repository contains a collection of configuration files that I currently use. It was designed with the idea of creating a minimalistic development environment based on Arch and Bspwm, but it can be easily adapted to any Linux distribution as long as the required dependencies are installed.</p>
+<p>This repository contains a collection of configuration files that I currently use. It was designed with the idea of ​​creating a minimalist development environment based on Arch Linux with Bspwm and/or Hyprland, but can easily be adapted to any Linux distribution as long as the necessary dependencies are installed.</p>
 
 <p align="center">
   <img src="https://github.com/leandrofmoraes/dotfiles/blob/master/Imagens/screenshots/Screenshot_01a.png" alt="Screenshot" width="400px">
@@ -68,7 +68,7 @@
 - **Music players:** [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp.git), [mpd](https://github.com/MusicPlayerDaemon/MPD), [mpc](https://github.com/MusicPlayerDaemon/mpc), _(optional)_ [mocp](https://github.com/jonsafari/mocp), _(optional)_ [kew](https://github.com/ravachol/kew)
 - **Video player:** [mpv](https://mpv.io/) + [mpvconfig](https://github.com/zydezu/mpvconfig)
 - **Visualizer:** [Cava](https://github.com/karlstav/cava.git)
-- **File managers:** _(optional)_ [Thunar](https://wiki.archlinux.org/title/thunar) and [ranger](https://github.com/ranger/ranger)
+- **File managers:** _(optional)_ [Thunar](https://wiki.archlinux.org/title/thunar) and [yazi](https://github.com/sxyazi/yazi)
 - **System fetch:** [fastfetch](https://github.com/fastfetch-cli/fastfetch)
 - **PDF reader:** [zathura](https://github.com/pwmt/zathura)
 - **Bonus utilities:**

@@ -183,8 +183,8 @@ alias vol="pulseaudio-ctl set"
 alias logoff="sudo pkill -KILL -u"
 
 #alias spy="pqiv"                         # Visualisador de imagens pelo terminal
-alias xplore="ranger"                    # Explorador de arquivos
-alias xp="ranger"                    # Explorador de arquivos
+alias xplore="yazi"                    # Explorador de arquivos
+alias xp="yazi"                    # Explorador de arquivos
 
 # alias bro="qutebrowser & disown"
 # alias qute="qutebrowser & disown"
