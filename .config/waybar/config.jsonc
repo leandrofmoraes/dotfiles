@@ -239,12 +239,12 @@
         // "format": "{icon} {volume}",
         "format": "{icon}",
         "rotate": 0,
-        "format-muted": "婢",
-        "on-click": "pulseaudio-ctl mute",
+        "format-muted": "󰖁",
+        "on-click": "pipewirectl mute",
         "on-click-right": "pavucontrol -t 3",
         // "on-click-middle": "volumecontrol.sh -o m",
-        "on-scroll-up": "pulseaudio-ctl up",
-        "on-scroll-down": "pulseaudio-ctl down",
+        "on-scroll-up": "pipewirectl up",
+        "on-scroll-down": "pipewirectl down",
         "tooltip-format": "{icon} {desc}\nVolume:\t{volume}%",
         "scroll-step": 5,
         "format-icons": {
@@ -264,12 +264,25 @@
         "rotate": 0,
         "format-source": "",
         "format-source-muted": "",
-        "on-click": "pavucontrol -t 4",
+        "on-click": "pipewirectl mic-mute",
         "on-click-middle": "volumecontrol.sh -i m",
-        "on-scroll-up": "volumecontrol.sh -i i",
-        "on-scroll-down": "volumecontrol.sh -i d",
+        "on-scroll-up": "pipewirectl mic-up",
+        "on-scroll-down": "pipewirectl mic-down",
         "tooltip-format": "{format_source} {source_desc}\nVolume:\t{source_volume}%",
         "scroll-step": 5
+    },
+
+    "wireplumber": {
+        "format": "{icon}",
+        "format-muted": "婢",
+        "on-click": "changevolume mute",
+        "on-click-right": "pavucontrol -t 3",
+        "on-scroll-up": "changevolume up",
+        "on-scroll-down": "changevolume down",
+        "tooltip-format": "{icon} {desc}\nVolume:\t{volume}%",
+        "max-volume": 150,
+        "scroll-step": 5,
+        "format-icons": ["", "", ""]
     },
 
     // --GROUP MODULES--

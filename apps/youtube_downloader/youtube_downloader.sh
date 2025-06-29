@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 downloadPath="$HOME/Downloads"
-ytdlp="$HOME/apps/yt-dlp"
+ytdlp="$HOME/apps/youtube_downloader/yt-dlp_linux"
 
 echo '======================='
 echo '|  Youtube Downloader |'
@@ -71,7 +71,7 @@ echo -n "digite ou cole a url: "
 read -r url
 
 if [[ $format == "mp3" ]]; then
-  downloadPath="$HOME/Música"
+  downloadPath="$HOME/Músicas"
   "$ytdlp" --format bestaudio --extract-audio --audio-format "$format" --audio-quality 320K --path "$downloadPath" "$url"
 else
   downloadPath="$HOME/Vídeos"

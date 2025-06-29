@@ -82,7 +82,7 @@ alias monta="dmur --mount"
 alias desmonta="dmur --unmount"
 alias remove="dmur --eject"
 
-alias ytd='youtube_downloader'
+alias ytd='yt-dlp'
 
 # Vi, Vim and Neovim Aliases
 
@@ -163,8 +163,8 @@ alias lm="eza --icons -lghasnew | more"
 alias rmdir='rmdir -v'
 alias rmd='rmdir -v'                      # Same as above.
 alias del='rm -vi'                          # Interactive remove. safer
-alias cp="cp -vig"                          # confirm before overwriting somethin    g
-alias mv="mv -vig"                          # confirm before overwriting somethin    g
+alias cp="cp -vi"                          # confirm before overwriting somethin    g
+alias mv="mv -vi"                          # confirm before overwriting somethin    g
 alias df="df -h"                          # human-readable sizes
 alias mo="more"
 alias mkd="mkdir -pv"
@@ -178,7 +178,7 @@ alias fz='du -sh'
 alias jb='jobs' # List all jobs running in the background
 alias btctl="bluetoothctl"
 
-alias vol="pulseaudio-ctl set"
+alias vol="pipewirectl set"
 
 alias logoff="sudo pkill -KILL -u"
 
@@ -223,7 +223,7 @@ alias wdis='if [ -f ./onde_eu_parei.md ]; then cat onde_eu_parei.md; else echo -
 
 ## APPIMAGES
 alias obsidian='~/apps/Obsidian.AppImage & disown'
-alias spfy="~/apps/Spotify.AppImage"
+alias spfy="~/apps/spotify/Spotify.AppImage"
 
 alias list-services='systemctl list-units --type=service'
 alias ports='netstat -tulanp'

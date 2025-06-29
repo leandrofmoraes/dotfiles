@@ -82,8 +82,8 @@ esac
 
 TOOLTIP=$(echo -ne "$OS_ICON OS: $OS\n Kernel: $KERNEL ($ARCH)\n User: $USER\n󰟀 Host: $HOSTNAME\n󱦟 Uptime: $UPTIME" | jq -R -s '.')
 
-# TEXT=$(echo -ne "$OS_ICON " | jq -R -s '.') # Uncomment this line if you want to display the OS icon dinamically
-TEXT=$(echo -ne "\uF303 " | jq -R -s '.') # Uncomment this line if you want to display the Arch Linux icon
+TEXT=$(echo -ne "$OS_ICON " | jq -R -s '.') # Uncomment this line if you want to display the OS icon dinamically
+# TEXT=$(echo -ne "\uF303 " | jq -R -s '.') # Uncomment this line if you want to display the Arch Linux icon
 
 # echo -e "{\"text\": \"\", \"tooltip\": \"$TOOLTIP\", \"class\": \"sysinfo\"}"
 echo "{\"text\": $TEXT, \"tooltip\": $TOOLTIP, \"class\": \"sysinfo\"}"

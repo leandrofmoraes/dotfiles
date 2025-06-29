@@ -5,43 +5,50 @@
 *.log
 
 #.git/
-apps/
-/Arduino/
+apps/*
+!apps/youtube_downloader/
+apps/youtube_downloader/*
+!apps/youtube_downloader/youtube_downloader.sh
+
+Arduino/
 .android/
 .arduino15
-/.arduinoIDE/
-/Área de trabalho/
-/backups/
+.arduinoIDE/
+Área de trabalho/
+backups/
 .bash_history
 .bash_logout
 .bash_profile
 .bashrc.omb-uninstalled-20231209144821
-/.byobu/
-/.cache/
-/.cargo/
-/chone.tar.gz
-/Desktop/
+.byobu/
+.cache/
+.cargo/
+chone.tar.gz
+Desktop/
 .dir_colors
-/.docker/
-/docker-images
-/Documentos/
-/Downloads/
-/.eclipse/
-/eclipse-workspace/
-/.emacs.d/
+.docker/
+docker-images
+.dotnet/
+Documentos/
+Downloads/
+.eclipse/
+eclipse-workspace/
+.emacs.d/
 .face
 .face.jpg
 .fonts.conf
+.fonts/.uuid
+Games/
 .gitconfig
 .gitignore.old
-/.gk/
-/.gnome/
-/.gnupg/
-/go/
+.gk/
+.gnome/
+.gnupg/
+go/
 .gtkrc-2.0
 .h2.server.properties
-/.hplip/
-/.icons/
+.hplip/
+.icons/
 
 ## Imagens
 Imagens/*
@@ -63,6 +70,7 @@ Imagens/*
 /.mplayer/
 /mpv-osc-modern/
 /Música/
+/Músicas/
 /.mutt/
 .mysql_history
 /net.downloadhelper.coapp-1.6.3/
@@ -70,6 +78,10 @@ Imagens/*
 .node_repl_history
 /.npm/
 .oh-my-bash/
+
+.oh-my-zsh/*
+!.oh-my-zsh/custom/
+
 /.p2/
 .p10k.zsh.bak
 .p10k.zsh.bkp
@@ -80,11 +92,14 @@ package-lock.json
 .python_history
 /Postman/
 /Público/
+.pulse-cookie
+powerlevel10k/
 /.redhat/
 .rtorrent.rc
 /.rustup/
 .sdirs
 /.session-rtorrent/
+.shell.pre-oh-my-zsh
 /.ssh/
 /.ssr/
 .scripts/start_project.sh
@@ -117,9 +132,13 @@ st/
 .xinitrc
 /.yarn/
 .yarnrc
-.zcompdump
+.zcompdump*
+.zsh_extended_history
 .zhistory
+.zsh_history
+.zshrc.pre-oh-my-zsh
 /yt-dlp/
+.wine/
 /workspace/
 
 ## not ignored
@@ -180,37 +199,39 @@ st/
 !/.config/micro/
 !/.config/moc/
 
+!.config/kdeglobals
+
 # mpd
-!/.config/mpd/
+!.config/mpd/
 .config/mpd/*
-!/.config/mpd/mpd.conf
-!/.config/mpd/mpd.fifo
-!/.config/mpd/socket
-#!/.config/mpd/playlists/
-#!/.config/mpd/database
+!.config/mpd/mpd.conf
+!.config/mpd/mpd.fifo
+!.config/mpd/socket
+#!.config/mpd/playlists/
+#!.config/mpd/database
 
 # mpv
-!/.config/mpv/
+!.config/mpv/
 .config/mpv/watch_later
 
-!/.config/neofetch/
+!.config/neofetch/
 
 ## NCMPCPP
-!/.config/ncmpcpp/
+!.config/ncmpcpp/
 .config/ncmpcpp/*
-!/.config/ncmpcpp/config
+!.config/ncmpcpp/config
 
 ## nnn
-!/.config/nnn/
+!.config/nnn/
 
 ## Neovim
-!/.config/nvim/
+!.config/nvim/
 # .config/nvim/*
 # !/.config/nvim/lua/
 # !/.config/nvim/init.lua
 
 # picom
-!/.config/picom/
+!.config/picom/
 .config/picom/picom.conf.example
 .config/picom/picom.conf.bak
 .config/picom/picom.conf.bak-2
@@ -277,13 +298,13 @@ st/
 .local/*
 
 ## local/bin
-!/.local/bin/
+!.local/bin/
 .local/bin/*
-!/.local/bin/youtube_downloader
-!/.local/bin/pomodoro
-!/.local/bin/changevolume
-!/.local/bin/changebrightness
-!/.local/bin/screenshot
+!.local/bin/youtube_downloader
+!.local/bin/pomodoro
+!.local/bin/changevolume
+!.local/bin/changebrightness
+!.local/bin/screenshot
 
 ## local/share
 # !/.local/share

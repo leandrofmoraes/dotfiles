@@ -159,6 +159,7 @@ tooltip label {
 #custom-reboot,
 #custom-launcher,
 #pulseaudio,
+#wireplumber,
 #custom-spotify,
 #taskbar,
 #custom-theme,
@@ -189,7 +190,7 @@ tooltip label {
   border-bottom: 0.5px solid @pink;
 }
 
-#pulseaudio{
+#pulseaudio,#wireplumber{
   padding-top: 1px;
   /* font-size: 9pt; */
 }
@@ -278,7 +279,7 @@ tooltip label {
   animation-direction: alternate;
 }
 
-#bluetooth.off{
+#bluetooth.off, #pulseaudio.muted{
   color: @pink;
 }
 

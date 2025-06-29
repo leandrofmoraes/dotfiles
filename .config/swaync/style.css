@@ -323,7 +323,7 @@
 .widget-buttons-grid {
     font-size: large;
     padding: 0px 2px 0px 2px;
-    margin: 2px 1px 5px 1px;
+    margin: 2px 1px 8px 1px;
     background: transparent;
 }
 
@@ -331,13 +331,14 @@
     color: @light-blue;
     background: @dark-blue-t6;
     border-radius: 16px;
+    border: 0.5px solid @light-blue;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
-    background: @dark-blue;
-    color: @light-blue;
-    border: 0.5px solid @light-blue;
-    box-shadow: @pink 0px 0px 5px;
+    background: @light-blue;
+    color: @dark-blue;
+    border: 0.5px solid @pink;
+    box-shadow: @pink 0px 0px 2px;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:checked {
