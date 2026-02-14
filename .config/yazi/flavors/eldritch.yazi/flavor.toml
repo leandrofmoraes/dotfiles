@@ -1,0 +1,148 @@
+"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
+
+[mgr]
+cwd = { fg = "#04d1f9" }
+find_keyword = { fg = "#f1fc79", bold = true, italic = true, underline = true }
+find_position = { fg = "#f265b5", bg = "reset", bold = true, italic = true }
+symlink_target = { italic = true }
+marker_copied = { fg = "#37f499", bg = "#37f499" }
+marker_cut = { fg = "#f16c75", bg = "#f16c75" }
+marker_marked = { fg = "#a48cf2", bg = "#a48cf2" }
+marker_selected = { fg = "#f7c67f", bg = "#f7c67f" }
+count_copied = { fg = "#212337", bg = "#37f499" }
+count_cut = { fg = "#212337", bg = "#f16c75" }
+count_selected = { fg = "#212337", bg = "#f7c67f" }
+border_symbol = "│"
+border_style = { fg = "#a48cf2" }
+
+
+[tabs]
+active = { fg = "#212337", bg = "#04d1f9", bold = true }
+inactive = { fg = "#04d1f9", bg = "#292e42" }
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
+
+
+[mode]
+normal_main = { fg = "#212337", bg = "#04d1f9", bold = true }
+normal_alt = { fg = "#04d1f9", bg = "#292e42" }
+select_main = { fg = "#212337", bg = "#a48cf2", bold = true }
+select_alt = { fg = "#a48cf2", bg = "#292e42" }
+unset_main = { fg = "#212337", bg = "#f16c75", bold = true }
+unset_alt = { fg = "#f16c75", bg = "#292e42" }
+
+
+[indicator]
+parent = { reversed = true, fg = "#04d1f9" }
+current = { reversed = true, fg = "#04d1f9" }
+preview = { underline = true, fg = "#04d1f9" }
+padding = { open = "█", close = "█" }
+
+
+[status]
+overall = {}
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+perm_sep = { fg = "#ABB4DA" }
+perm_type = { fg = "#04d1f9" }
+perm_read = { fg = "#f1fc79" }
+perm_write = { fg = "#f16c75" }
+perm_exec = { fg = "#37f499" }
+progress_label = { fg = "#ebfafa", bold = true }
+progress_normal = { fg = "#a48cf2", bg = "#292e42" }
+progress_error = { fg = "#292e42", bg = "#f16c75" }
+
+
+[which]
+cols = 3
+mask = { bg = "#171928" }
+cand = { fg = "#04d1f9", bold = true }
+rest = { fg = "#7081d0" }
+desc = { fg = "#7081d0", italic = true }
+separator = "  "
+separator_style = { fg = "#7081d0" }
+
+
+[confirm]
+border = { fg = "#04d1f9", bold = true }
+title = { fg = "#04d1f9" }
+body = { fg = "#7081d0" }
+list = { fg = "#ebfafa" }
+btn_yes = { fg = "#ebfafa", bg = "#292e42", bold = true }
+btn_no = { fg = "#ABB4DA" }
+btn_labels = ["  [Y]es  ", "  (N)o  "]
+
+
+[spot]
+border = { fg = "#04d1f9", bold = true }
+title = { fg = "#04d1f9" }
+tbl_col = { fg = "#7081d0" }
+tbl_cell = { fg = "#04d1f9", bg = "#292e42", bold = true }
+
+
+[notify]
+title_info = { fg = "#37f499" }
+title_warn = { fg = "#f7c67f" }
+title_error = { fg = "#f16c75" }
+icon_info = ""
+icon_warn = ""
+icon_error = ""
+
+
+[pick]
+border = { fg = "#04d1f9", bold = true }
+active = { fg = "#04d1f9", bold = true }
+inactive = { fg = "#7081d0" }
+
+
+[input]
+border = { fg = "#04d1f9", bold = true }
+title = { fg = "#04d1f9" }
+value = { fg = "#ebfafa" }
+selected = { reversed = true }
+
+
+[cmp]
+border = { fg = "#04d1f9", bold = true }
+active = { reversed = true }
+inactive = {}
+
+
+[tasks]
+border = { fg = "#04d1f9", bold = true }
+title = { fg = "#04d1f9" }
+hovered = { fg = "#f265b5", bold = true }
+
+
+[help]
+on = { fg = "#04d1f9" }
+run = { fg = "magenta" }
+desc = { fg = "#7081d0" }
+hovered = { bg = "#292e42", bold = true }
+footer = { fg = "#ebfafa", bg = "#292e42" }
+
+
+[filetype]
+rules = [
+  # Image
+  { mime = "image/*", fg = "#04d1f9" },
+  # Media
+  { mime = "video/*", fg = "#f1fc79" },
+  { mime = "audio/*", fg = "#f1fc79" },
+  # Archive
+  { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#f265b5" },
+  # Document
+  { mime = "application/{pdf,doc,rtf}", fg = "#37f499" },
+  # Virtual file system
+  { mime = "vfs/{absent,stale}", fg = "#7081d0" },
+  # Special file
+  { url = "*", is = "orphan", bg = "#f16c75" },
+  { url = "*", is = "exec", fg = "#37f499" },
+  # Symbolic link
+  { url = "*", is = "link", fg = "#04d1f9" },
+  # Dummy file
+  { url = "*", is = "dummy", bg = "#f16c75" },
+  { url = "*/", is = "dummy", bg = "#f16c75" },
+  # Fallback
+  { url = "*/", fg = "#a48cf2" },
+]

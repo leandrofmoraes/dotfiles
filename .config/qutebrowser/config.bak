@@ -1,0 +1,103 @@
+# Autoload Config #
+config.load_autoconfig()
+
+# Libraries
+import os
+from urllib.request import urlopen
+
+# Session #
+c.auto_save.session = True
+
+# Search #
+c.url.searchengines = {
+    'DEFAULT':  'https://paulgo.io/search?q={}',
+    '!i':       'https://yewtu.be/search?q={}', 
+    '!a':       'https://www.amazon.com/s?k={}',
+    '!d':       'https://duckduckgo.com/?ia=web&q={}',
+    '!dd':      'https://thefreedictionary.com/{}',
+    '!e':       'https://www.ebay.com/sch/i.html?_nkw={}', 
+    '!gh':      'https://github.com/search?o=desc&q={}&s=stars',
+    '!gist':    'https://gist.github.com/search?q={}',
+    '!m':       'https://www.google.com/maps/search/{}',
+    '!p':       'https://pry.sh/{}',
+    '!r':       'https://www.reddit.com/search?q={}',
+    '!t':       'https://www.thesaurus.com/browse/{}'
+}
+
+c.url.start_pages = ['https://paulgo.io/']
+config.set('url.default_page', 'https://paulgo.io/')
+
+# Binds #
+config.bind('J', 'tab-prev')
+config.bind('K', 'tab-next')
+
+config.bind('1', 'tab-focus 1')
+config.bind('2', 'tab-focus 2')
+config.bind('3', 'tab-focus 3')
+config.bind('4', 'tab-focus 4')
+config.bind('5', 'tab-focus 5')
+config.bind('6', 'tab-focus 6')
+config.bind('7', 'tab-focus 7')
+config.bind('8', 'tab-focus 8')
+config.bind('9', 'tab-focus 9')
+config.bind('0', 'tab-focus 10')
+config.bind('!', 'tab-focus 11')
+config.bind('@', 'tab-focus 12')
+config.bind('#', 'tab-focus 13')
+config.bind('$', 'tab-focus 14')
+config.bind('%', 'tab-focus 15')
+config.bind('^', 'tab-focus 16')
+config.bind('&', 'tab-focus 17')
+config.bind('*', 'tab-focus 18')
+config.bind('(', 'tab-focus 19')
+config.bind(')', 'tab-focus -1')
+
+config.unbind('<Ctrl-T>')
+
+# Dvorak binds
+config.unbind('H')
+config.unbind('T')
+
+config.unbind('D')
+config.unbind('N')
+
+config.unbind('l')
+config.unbind('L')
+
+config.unbind('k')
+config.unbind('K')
+
+config.unbind('h')
+config.unbind('d')
+config.unbind('n')
+
+c.hints.chars = "aoeuidhtn"
+
+config.bind('T', 'tab-prev')
+config.bind('H', 'tab-next')
+
+config.bind('D', 'back')
+config.bind('N', 'forward')
+
+config.bind('l', 'search-next')
+config.bind('L', 'search-prev')
+
+config.bind('k', 'tab-close')
+config.bind('K', 'tab-close -o')
+
+config.bind('h', 'scroll down')
+config.bind('t', 'scroll up')
+config.bind('d', 'scroll left')
+config.bind('n', 'scroll right')
+
+# Theme #
+
+if not os.path.exists(config.configdir / "theme.py"):
+    theme = "https://raw.githubusercontent.com/catppuccin/qutebrowser/main/setup.py"
+    with urlopen(theme) as themehtml:
+        with open(config.configdir / "theme.py", "a") as file:
+            file.writelines(themehtml.read().decode("utf-8"))
+
+if os.path.exists(config.configdir / "theme.py"):
+    import theme
+    theme.setup(c, 'macchiato', True)

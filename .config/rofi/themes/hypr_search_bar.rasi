@@ -52,14 +52,19 @@ window {
 	border:							0px;
 	border-color:					@pink;
     border-radius:	                16px;
+    location:                       northwest;
 	/*height:							4%;*/
 	/*width:							37%;*/
-	width:							20.9%;
-    location:                       northwest;
-    /*x-offset:                       31.45%;*/
-    x-offset:                       0.45%;
-    /*y-offset:                       - 4.2%;*/
-    y-offset:                       0.2%;
+
+/* over the waybar (left bar) */
+	width:							20%;
+  x-offset:                       0.85%;
+  y-offset:                       -3.67%;
+
+/* under the waybar (left bar) */
+	/*width:							20.9%;*/
+  /*x-offset:                       0.45%;*/
+  /*y-offset:                       0.2%;*/
 }
 
 prompt {
@@ -69,7 +74,7 @@ prompt {
 	text-color: 					@light-blue;
     /* winRadius:                      10px; */
     /* eleRadius:                      7px; */
-	padding: 						0.5% 0% 0% 0.5%;
+	padding: 						0% 0% 0% 0.5%;
 }
 
 entry {
@@ -78,7 +83,7 @@ entry {
     placeholder-color:              @light-blue;
     horizontal-align:               0;
     /* placeholder:                    "  Search"; */
-    padding:                        0.5% 0% 0% 0.5%;
+    padding:                        0.5% 0% 0.5% 0.5%;
     blink:                          true;
 }
 

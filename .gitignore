@@ -12,6 +12,7 @@ apps/youtube_downloader/*
 
 Arduino/
 .android/
+.angular-config.json
 .arduino15
 .arduinoIDE/
 Área de trabalho/
@@ -49,6 +50,7 @@ go/
 .h2.server.properties
 .hplip/
 .icons/
+.gradle/
 
 ## Imagens
 Imagens/*
@@ -59,6 +61,7 @@ Imagens/*
 /.java/
 /.john/
 /.kde4/
+.klei/
 /.lemminx/
 .lesshst
 /.links/
@@ -66,6 +69,7 @@ Imagens/*
 /.m2/
 .moc/
 /Modelos/
+.mongodb/
 /.mozilla/
 /.mplayer/
 /mpv-osc-modern/
@@ -82,6 +86,7 @@ Imagens/*
 .oh-my-zsh/*
 !.oh-my-zsh/custom/
 
+.openMSX/
 /.p2/
 .p10k.zsh.bak
 .p10k.zsh.bkp
@@ -97,6 +102,7 @@ powerlevel10k/
 /.redhat/
 .rtorrent.rc
 /.rustup/
+.scripts/
 .sdirs
 /.session-rtorrent/
 .shell.pre-oh-my-zsh
@@ -118,6 +124,7 @@ st/
 .sdirs
 /.session-rtorrent/
 /.var/
+.vcpkg/
 /Vídeos/
 .viminfo
 /.vimiv/
@@ -139,7 +146,6 @@ st/
 .zshrc.pre-oh-my-zsh
 /yt-dlp/
 .wine/
-/workspace/
 
 ## not ignored
 !.fehbg
@@ -196,6 +202,7 @@ st/
 !/.config/kitty/
 
 !/.config/lazygit/
+!/.config/MangoHud/
 !/.config/micro/
 !/.config/moc/
 
@@ -245,6 +252,9 @@ st/
 !/.config/pulseaudio-ctl/
 # !/.config/ranger/
 
+
+!.config/qutebrowser/
+
 !/.config/redshift/
 
 ## Rofi
@@ -276,7 +286,9 @@ st/
 !/.config/sxhkd/
 /.config/sxhkd/hotkeys.txt
 
+!.config/superfile/
 !/.config/terminator/
+!/.config/tlpui/
 !/.config/ueberzugpp/
 
 ## VLC

@@ -1,0 +1,8 @@
+hyprdvd
+pulseaudio-ctl
+qview
+timer-bin
+visual-studio-code-bin
+wlogout
+yay-bin
+yay-bin-debug
